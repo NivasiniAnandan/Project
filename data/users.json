@@ -1,0 +1,20 @@
+[
+  {
+    "id": "usr_admin",
+    "name": "Bommal Admin",
+    "email": "admin@bommalfoods.com",
+    "passwordHash": "$2b$10$R2AkK5EalFCngzKUs8fazO.5X/NI9yJhIPh5WX2ro0pI.DTyRgBIG",
+    "role": "admin",
+    "phone": "+91 9876543210",
+    "address": "Admin Block, Bommal Foods Wholesale Plaza, Chennai, TN, India"
+  },
+  {
+    "id": "usr_retailer",
+    "name": "Senthil Store Owner",
+    "email": "retailer@gmail.com",
+    "passwordHash": "$2b$10$R2AkK5EalFCngzKUs8fazOiuMr9Wsl0qXqjmZ3pNBIN/.YDpq5Uny",
+    "role": "retailer",
+    "phone": "+91 9444123456",
+    "address": "No 45, Bazaar Street, Madurai, Tamil Nadu, India"
+  }
+]

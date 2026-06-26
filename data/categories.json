@@ -1,0 +1,68 @@
+[
+  {
+    "id": "edible-oils",
+    "name": "Edible Oils",
+    "slug": "edible-oils",
+    "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "groundnuts",
+    "name": "Groundnuts",
+    "slug": "groundnuts",
+    "image": "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "masala-items",
+    "name": "Masala Items",
+    "slug": "masala-items",
+    "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "rice-varieties",
+    "name": "Rice Varieties",
+    "slug": "rice-varieties",
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "biriyani-powder-mixes",
+    "name": "Biriyani Powder Mixes",
+    "slug": "biriyani-powder-mixes",
+    "image": "https://images.unsplash.com/photo-1541832676-9b763b0239ab?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "malt-powder",
+    "name": "Malt Powder",
+    "slug": "malt-powder",
+    "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "health-mix-products",
+    "name": "Health Mix Products",
+    "slug": "health-mix-products",
+    "image": "https://images.unsplash.com/photo-1610970881699-44a5587caa9e?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "brown-sugar",
+    "name": "Brown Sugar",
+    "slug": "brown-sugar",
+    "image": "https://images.unsplash.com/photo-1608686207856-001b95cf60ca?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "millet-rice",
+    "name": "Millet Rice",
+    "slug": "millet-rice",
+    "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "flours",
+    "name": "Flours",
+    "slug": "flours",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "seekakai-powder",
+    "name": "Seekakai Powder",
+    "slug": "seekakai-powder",
+    "image": "https://images.unsplash.com/photo-1608248597481-496100c80836?w=500&auto=format&fit=crop&q=80"
+  }
+]

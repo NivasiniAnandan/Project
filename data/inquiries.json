@@ -1,0 +1,41 @@
+[
+  {
+    "id": "inq_1781515608526",
+    "name": "Dharsani ",
+    "email": "dharsh@gmail.com",
+    "subject": "Bulk Purchase Inquiry",
+    "message": "Quality of the product is nice.",
+    "status": "pending",
+    "createdAt": "2026-06-15T09:26:48.527Z"
+  },
+  {
+    "id": "inq_1781247509563",
+    "name": "Subhika ",
+    "email": "subi@gmail.com",
+    "subject": "Other Wholesale Inquiries",
+    "message": "Till now product is not received.",
+    "status": "replied",
+    "createdAt": "2026-06-12T06:58:29.563Z",
+    "replyMessage": "Sorry for delay.",
+    "repliedAt": "2026-06-12T07:01:28.715Z"
+  },
+  {
+    "id": "inq_1",
+    "name": "Karthik Raja",
+    "email": "karthik@rajadistributors.com",
+    "subject": "Bulk Purchase Discount Inquiry",
+    "message": "Hello Bommal Foods team, we are a major distributor in Trichy. We are interested in purchasing 100 tins of Groundnut Oil and 50 bags of Sona Masoori Rice monthly. Do you offer special volume discounts or custom delivery contracts for this quantity?",
+    "status": "pending",
+    "createdAt": "2026-06-11T10:00:00.000Z"
+  },
+  {
+    "id": "inq_2",
+    "name": "Priya Mani",
+    "email": "priya@organicsuperstore.com",
+    "subject": "Organic Certification Inquiry",
+    "message": "Hi, I run an organic grocery chain. I want to verify if your Sprouted Health Mix and Country Brown Sugar have official NPOP organic certifications, and can you share the certification certificates over email?",
+    "status": "replied",
+    "replyMessage": "Hello Priya, yes, our Sprouted Health Mix and Brown Sugar are fully certified organic. We have sent the certificates to your email address. Thank you!",
+    "createdAt": "2026-06-10T14:30:00.000Z"
+  }
+]
