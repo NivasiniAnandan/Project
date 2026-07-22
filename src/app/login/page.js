@@ -57,11 +57,7 @@ function LoginContent() {
       )}
 
       {/* Info Badge */}
-      <div style={{ backgroundColor: 'var(--primary-light)', color: 'var(--primary-color)', border: '1px solid #d1fae5', padding: '0.65rem 0.85rem', borderRadius: '6px', fontSize: '0.75rem', marginBottom: '1.25rem', lineHeight: '1.4' }}>
-        <strong>Demo accounts:</strong><br />
-        • Retailer: <code>retailer@gmail.com</code> / <code>retailerpassword</code><br />
-        • Admin: <code>admin@bommalfoods.com</code> / <code>adminpassword</code>
-      </div>
+      
 
       <form onSubmit={handleSubmit}>
         <div className="form-group">

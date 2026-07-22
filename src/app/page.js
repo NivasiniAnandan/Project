@@ -16,23 +16,23 @@ export default function Home() {
   const heroSlides = [
     {
       title: "Direct From Manufacturers to Retailers",
-      tagline: "B2B Wholesale Portal",
-      desc: "Order bulk quantities of wood-pressed edible oils, organic millets, high-quality spices, and flours. Enjoy competitive distributor pricing and reliable delivery.",
-      img: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&auto=format&fit=crop&q=80",
+      tagline: "B2C Wholesale Portal",
+      desc: "Order bulk quantities of cold pressed oils, organic millets, high-quality spices, and flours. Enjoy competitive distributor pricing and reliable delivery.",
+      img: "https://dms.mydukaan.io/original/webp/media/9f1fe248-f8df-42d1-8c00-4646e1d8aeec.png",
       link: "/catalog"
     },
     {
       title: "Premium Cold Wood Pressed Oils",
       tagline: "100% Pure & Traditional",
       desc: "Sourced from high-grade seeds. Pure groundnut oil, coconut oil, and sesame oil pressed in traditional wooden chekku. Free from sulfur, chemical solvents, or argemone oil.",
-      img: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=1200&auto=format&fit=crop&q=80",
+      img: "https://www.holar.com.tw/wp-content/uploads/Holar-Blog-What-are-the-uses-for-different-edible-oils-when-cooking-Cover.jpg",
       link: "/catalog?category=edible-oils"
     },
     {
       title: "Nutritious Sprouted Health Mix",
       tagline: "Traditional Sathu Maavu",
-      desc: "Made from 18 natural grains, millets, pulses, and dry fruits. Rich in protein, dietary fibers, and minerals. Perfect healthy drink mix for wholesale retail distribution.",
-      img: "https://images.unsplash.com/photo-1610970881699-44a5587caa9e?w=1200&auto=format&fit=crop&q=80",
+      desc: "Made from 33 natural grains, millets, pulses, and dry fruits. Rich in protein, dietary fibers, and minerals. Perfect healthy drink mix for wholesale retail distribution.",
+      img: "https://png.pngtree.com/thumb_back/fh260/background/20240522/pngtree-a-large-number-of-grains-image_15674956.jpg",
       link: "/catalog?category=health-mix-products"
     }
   ];
@@ -113,14 +113,14 @@ export default function Home() {
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-          gap: '1.5rem'
+             gap: '1.5rem'
         }}>
           <div style={{
             background: 'white',
             padding: '1.5rem',
             borderRadius: '12px',
             boxShadow: 'var(--shadow-md)',
-            border: '1px solid var(--border-color)',
+              border: '1px solid var(--border-color)',
             display: 'flex',
             alignItems: 'center',
             gap: '1rem'
@@ -205,55 +205,7 @@ export default function Home() {
         )}
       </section>
 
-      {/* Special Wholesale Banner */}
-      <section className="container" style={{ marginTop: '3rem' }}>
-        <div style={{
-          background: 'linear-gradient(135deg, var(--primary-color) 0%, #065f46 100%)',
-          borderRadius: '16px',
-          padding: '2.5rem 3rem',
-          color: 'white',
-          position: 'relative',
-          overflow: 'hidden',
-          boxShadow: 'var(--shadow-lg)'
-        }}>
-          <div style={{ position: 'relative', zIndex: 2, maxWidth: '600px' }}>
-            <span style={{
-              backgroundColor: 'rgba(255, 255, 255, 0.2)',
-              padding: '0.25rem 0.75rem',
-              borderRadius: '20px',
-              fontSize: '0.75rem',
-              fontWeight: 700,
-              textTransform: 'uppercase',
-              letterSpacing: '1px',
-              display: 'inline-block',
-              marginBottom: '1rem'
-            }}>Distributor Benefits</span>
-            <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.75rem', lineHeight: '1.2' }}>Wholesale Bulk Pricing Tiers</h2>
-            <p style={{ fontSize: '0.95rem', opacity: 0.9, marginBottom: '1.5rem', lineHeight: '1.6' }}>
-              Are you a wholesale distributor, institutional buyer, or supermarket owner? Create an account to gain access to customized freight rates and special tier discounts for orders above ₹50,000.
-            </p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
-              <Link href="/register" className="btn-secondary" style={{ color: 'var(--text-main)', backgroundColor: 'white' }}>
-                Register Wholesale Account
-              </Link>
-              <Link href="/contact" className="btn-primary" style={{ border: '1px solid white', backgroundColor: 'transparent' }}>
-                Contact Bulk Sales Manager
-              </Link>
-            </div>
-          </div>
-          {/* Decorative background circle */}
-          <div style={{
-            position: 'absolute',
-            bottom: '-100px',
-            right: '-100px',
-            width: '350px',
-            height: '350px',
-            borderRadius: '50%',
-            background: 'rgba(255, 255, 255, 0.05)',
-            zIndex: 1
-          }}></div>
-        </div>
-      </section>
+
 
       {/* Featured Products / Bestsellers */}
       <section className="container">

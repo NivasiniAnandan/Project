@@ -16,5 +16,23 @@
     "role": "retailer",
     "phone": "+91 9444123456",
     "address": "No 45, Bazaar Street, Madurai, Tamil Nadu, India"
+  },
+  {
+    "id": "usr_1784270269933",
+    "name": "Nivasini",
+    "email": "nivasini2239@gmail.com",
+    "passwordHash": "$2b$10$2d9zij/0cKdl/biyzi6JVedlEy0c9sKhvM/fDd82KhCNA9n77RsJW",
+    "role": "retailer",
+    "phone": "9488335556",
+    "address": "Tirupur"
+  },
+  {
+    "id": "usr_1784270775146",
+    "name": "Subhika ",
+    "email": "subhika@gmail.com",
+    "passwordHash": "$2b$10$spUy7YDfeCSrvkON1dh.d.PNNir59b6SFRIP5FEx2RccfiDC5CTEy",
+    "role": "retailer",
+    "phone": "9150591408",
+    "address": "Perundurai"
   }
 ]

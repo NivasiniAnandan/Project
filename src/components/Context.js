@@ -93,7 +93,7 @@ export function AppProvider({ children }) {
     });
     saveCartToStorage(newCart);
   };
-
+ 
   const clearCart = () => {
     saveCartToStorage([]);
   };

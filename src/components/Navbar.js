@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useApp } from './Context';
@@ -85,10 +86,38 @@ export default function Navbar() {
       {/* Top Main Nav */}
       <div className="nav-main container">
         {/* Brand Logo */}
-        <Link href="/" className="logo">
-          Bommal <span>Foods</span>
-        </Link>
+        {/* Brand Logo */}
+    {/* Brand Logo */}
+<Link
+  href="/"
+  className="logo"
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+    textDecoration: "none",
+  }}
+>
+  <img
+    src="/logo.jpeg"
+    alt="Bommal Foods Logo"
+    style={{
+      width: "70px",
+      height: "45px",
+      borderRadius: "60%",
+    }}
+  />
 
+  <span
+    style={{
+      fontSize: "30px",
+      fontWeight: "800",
+      color: "inherit",
+    }}
+  >
+    Bommal <span>Foods</span>
+  </span>
+</Link>
         {/* Search Bar */}
         <div className="search-container" ref={suggestionsRef}>
           <form onSubmit={handleSearchSubmit} className="search-bar">

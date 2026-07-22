@@ -1,17 +1,16 @@
-[
+ [
   {
     "id": "prod_1",
-    "name": "Cold Pressed Groundnut Oil (Wood Pressed)",
+    "name": "Groundnut Oil",
     "description": "100% pure cold-pressed groundnut oil, made using traditional wooden chekku methods. Packed with nutrients and retains its natural aroma. Ideal for wholesale distribution and bulk kitchen applications.",
-    "price": 2850,
-    "unit": "15L Tin",
+    "price": 280,
+    "unit": "1L",
     "stock": 45,
     "rating": 4.8,
     "numReviews": 24,
     "categoryId": "edible-oils",
     "images": [
-      "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1610970881699-44a5587caa9e?w=500&auto=format&fit=crop&q=80"
+      "/Groundnut Oil.jpeg"
     ],
     "specs": {
       "Extraction Method": "Cold Wood Pressed",
@@ -30,46 +29,17 @@
     ]
   },
   {
-    "id": "prod_2",
-    "name": "Premium Bold Groundnuts (Raw)",
-    "description": "Selected handpicked bold groundnuts. Cleaned, graded, and stored under moisture-controlled conditions. Perfect for oil extraction, roasting, and confectionery use.",
-    "price": 6800,
-    "unit": "50kg Bag",
-    "stock": 30,
-    "rating": 4.6,
-    "numReviews": 18,
-    "categoryId": "groundnuts",
-    "images": [
-      "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?w=500&auto=format&fit=crop&q=80"
-    ],
-    "specs": {
-      "Moisture Content": "Less than 6%",
-      "Count": "40/50 per ounce",
-      "Grade": "Export Grade",
-      "Packaging": "Gunny Bag"
-    },
-    "benefits": [
-      "High oil content",
-      "Uniform size and clean kernels",
-      "Long shelf life under dry conditions"
-    ],
-    "usage": [
-      "Oil pressing plants",
-      "Snack manufacturing and wholesale retailing"
-    ]
-  },
-  {
     "id": "prod_3",
     "name": "Pure Turmeric Powder (High Curcumin)",
     "description": "Grown organically, harvested, polished, and ground. Contains high natural curcumin content (~5%) giving a deep golden color and strong earthy flavor.",
-    "price": 2200,
-    "unit": "10kg Box (1kg x 10)",
+    "price": 25,
+    "unit": "50gm",
     "stock": 60,
     "rating": 4.9,
     "numReviews": 32,
     "categoryId": "masala-items",
     "images": [
-      "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&auto=format&fit=crop&q=80"
+      "/Turmeric Powder.jpeg"
     ],
     "specs": {
       "Curcumin Content": "4.8% - 5.2%",
@@ -88,341 +58,2417 @@
     ]
   },
   {
-    "id": "prod_4",
-    "name": "Jeeraga Samba Rice (Aromatic)",
-    "description": "Highly aromatic, small grain Jeeraga Samba rice. Cleaned and aged for over 1 year to ensure non-sticky texture and perfect cooking quality. The staple rice for authentic South Indian Biriyani.",
-    "price": 3800,
-    "unit": "25kg Bag",
-    "stock": 40,
-    "rating": 4.9,
-    "numReviews": 45,
-    "categoryId": "rice-varieties",
-    "images": [
-      "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&auto=format&fit=crop&q=80"
-    ],
-    "specs": {
-      "Age": "12+ Months Aged",
-      "Grain Size": "Short, Fine Grain",
-      "Aroma": "High Natural Aroma",
-      "Packaging": "BOPP bag"
-    },
-    "benefits": [
-      "Aromatic and tasty",
-      "Light on stomach and easy digestion",
-      "Grains remain separate when cooked"
-    ],
-    "usage": [
-      "Biriyani and Pulao preparation",
-      "Special occasion rice dishes"
-    ]
-  },
-  {
     "id": "prod_5",
-    "name": "Classic Biriyani Masala Powder",
-    "description": "An premium blend of spices (cardamom, cinnamon, cloves, mace, nutmeg, star anise) ground to perfection. A ready-to-use mix that guarantees restaurant-style biriyani aroma.",
-    "price": 1500,
-    "unit": "5kg Pack (500g x 10)",
-    "stock": 80,
-    "rating": 4.7,
-    "numReviews": 29,
-    "categoryId": "biriyani-powder-mixes",
-    "images": [
-      "https://images.unsplash.com/photo-1541832676-9b763b0239ab?w=500&auto=format&fit=crop&q=80"
-    ],
-    "specs": {
-      "Ingredients": "Cardamom, Cinnamon, Cloves, Mace, Star Anise, Fennel, Spices",
-      "Grade": "Aromatic Blend",
-      "Shelf Life": "12 Months"
-    },
-    "benefits": [
-      "Balanced flavor profile",
-      "Time-saving for commercial catering",
-      "Retains aroma for long periods"
-    ],
-    "usage": [
-      "Restaurant kitchens and home cooking",
-      "Caterers and food processors"
-    ]
-  },
-  {
-    "id": "prod_6",
-    "name": "Organic Brown Sugar (Country Sugar)",
-    "description": "Traditional Country Brown Sugar (Nattu Sakkarai) made from organic sugarcane juice without using chemicals or refining agents. Rich in iron and minerals.",
-    "price": 2400,
-    "unit": "20kg bag",
-    "stock": 50,
+    "name": "Health Mix",
+    "description": "A traditional nutritious health mix prepared with a balanced blend of grains, millets, pulses, and dry fruits. Rich in essential nutrients, it is suitable for children, adults, and health-conscious families.",
+    "price": 125,
+    "unit": "250gm",
+    "stock": 30,
     "rating": 4.8,
-    "numReviews": 21,
-    "categoryId": "brown-sugar",
-    "images": [
-      "https://images.unsplash.com/photo-1608686207856-001b95cf60ca?w=500&auto=format&fit=crop&q=80"
-    ],
-    "specs": {
-      "Type": "Unrefined Country Sugar",
-      "Moisture": "Less than 1.5%",
-      "Grade": "Grade 1 Organic",
-      "Chemicals": "Nil"
-    },
-    "benefits": [
-      "Healthy alternative to refined sugar",
-      "Rich in calcium, iron, and potassium",
-      "No chemical bleaching agents"
-    ],
-    "usage": [
-      "Sweetening tea, coffee, and beverages",
-      "Traditional sweet manufacturing"
-    ]
-  },
-  {
-    "id": "prod_7",
-    "name": "Premium Sprouted Health Mix (Sathu Maavu)",
-    "description": "A traditional food prepared from 18 natural ingredients including sprouted millets, grains, pulses, and dry fruits. Highly nutritious, ideal for toddlers, growing children, and health-conscious adults.",
-    "price": 3200,
-    "unit": "10kg (1kg x 10)",
-    "stock": 25,
-    "rating": 4.9,
-    "numReviews": 38,
+    "numReviews": 35,
     "categoryId": "health-mix-products",
     "images": [
-      "https://images.unsplash.com/photo-1610970881699-44a5587caa9e?w=500&auto=format&fit=crop&q=80"
+      "/Health Mix.jpeg"
     ],
     "specs": {
-      "Ingredients": "Sprouted Ragi, Bajra, Wheat, Jowar, Green Gram, Roasted Gram, Almonds, Cashews, Cardamom",
+      "Ingredients": "Ragi, Bajra, Wheat, Jowar, Green Gram, Roasted Gram, Rice, Almonds, Cashews, Cardamom",
       "Form": "Powdered Mix",
       "Preservatives": "None",
       "Age Group": "All ages (6 months+)"
     },
     "benefits": [
-      "Loaded with dietary fibers, proteins, and vitamins",
-      "Improves immunity and bone strength",
-      "Easy to digest and tasty"
+      "Rich source of protein, fiber, and minerals",
+      "Provides natural energy for daily activities",
+      "Supports healthy growth and development",
+      "Easy to digest and nutritious"
     ],
     "usage": [
-      "Porridge preparation with milk or water",
-      "Can be baked into health biscuits or cookies"
-    ]
-  },
-  {
-    "id": "prod_8",
-    "name": "Chocolate Malt Nutrition Powder",
-    "description": "Premium malted beverage powder fortified with essential vitamins and minerals. Perfect for retail packaging or institutional use in school hostels and gyms.",
-    "price": 2900,
-    "unit": "10kg Bag",
-    "stock": 35,
-    "rating": 4.5,
-    "numReviews": 12,
-    "categoryId": "malt-powder",
-    "images": [
-      "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=500&auto=format&fit=crop&q=80"
-    ],
-    "specs": {
-      "Flavor": "Rich Chocolate",
-      "Type": "Malted Milk Food",
-      "Shelf Life": "12 Months"
-    },
-    "benefits": [
-      "High energy drink mix",
-      "Provides vitamins B, D, Iron, and Calcium",
-      "Delicious chocolate flavor"
-    ],
-    "usage": [
-      "Stir into hot or cold milk",
-      "Baking and smoothie addition"
-    ]
-  },
-  {
-    "id": "prod_9",
-    "name": "Organic Foxtail Millet Rice",
-    "description": "Foxtail millet (Thinai) sourced directly from organic farmers. Hull removed carefully to retain maximum nutritional value. Low glycemic index food.",
-    "price": 1800,
-    "unit": "10kg Bag",
-    "stock": 55,
-    "rating": 4.7,
-    "numReviews": 19,
-    "categoryId": "millet-rice",
-    "images": [
-      "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=500&auto=format&fit=crop&q=80"
-    ],
-    "specs": {
-      "Millet Type": "Foxtail (Thinai)",
-      "Grade": "Polished & Cleaned Grade A",
-      "Gluten": "Gluten-Free"
-    },
-    "benefits": [
-      "Regulates blood sugar and cholesterol",
-      "High in dietary fiber and magnesium",
-      "Super food for diabetic diets"
-    ],
-    "usage": [
-      "Alternative to normal white rice",
-      "Used to make porridge, upma, and idli batter"
-    ]
-  },
-  {
-    "id": "prod_10",
-    "name": "Premium Chakki Atta (Whole Wheat)",
-    "description": "Stone ground whole wheat flour. Milled from selected high-quality Sharbati grains. Retains natural bran and fiber for soft, healthy rotis and chapatis.",
-    "price": 2300,
-    "unit": "50kg Bag",
-    "stock": 45,
-    "rating": 4.8,
-    "numReviews": 50,
-    "categoryId": "flours",
-    "images": [
-      "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&auto=format&fit=crop&q=80"
-    ],
-    "specs": {
-      "Milling": "Stone-ground (Chakki)",
-      "Wheat Quality": "100% Sharbati Wheat",
-      "Bran Content": "High (Unrefined)"
-    },
-    "benefits": [
-      "Makes extra soft rotis that last long",
-      "High dietary fiber aids digestion",
-      "No Maida blending"
-    ],
-    "usage": [
-      "Chapati, Roti, Naan, and Parotta",
-      "Commercial bakeries and hotels"
-    ]
-  },
-  {
-    "id": "prod_11",
-    "name": "Natural Seekakai Powder (Herbal Hair Wash)",
-    "description": "Pure, organic Seekakai (Soap pod) powder blended with Reetha (Soapnut), Amla (Gooseberry), and Hibiscus. A traditional chemical-free hair cleanser and conditioner.",
-    "price": 1950,
-    "unit": "5kg (500g x 10)",
-    "stock": 20,
-    "rating": 4.8,
-    "numReviews": 15,
-    "categoryId": "seekakai-powder",
-    "images": [
-      "https://images.unsplash.com/photo-1608248597481-496100c80836?w=500&auto=format&fit=crop&q=80"
-    ],
-    "specs": {
-      "Ingredients": "Seekakai, Reetha, Amla, Methi, Hibiscus petals, Neem",
-      "100% Organic": "Yes",
-      "Chemicals/Sulphates": "0%"
-    },
-    "benefits": [
-      "Reduces dandruff and controls hair fall",
-      "Acts as a natural conditioner and detangler",
-      "Safe for regular use on all hair types"
-    ],
-    "usage": [
-      "Mix with warm water to form paste, apply on hair, and wash"
+      "Prepare porridge with milk or water",
+      "Can be mixed with smoothies",
+      "Suitable for breakfast and evening snacks"
     ]
   },
   {
     "id": "prod_12",
-    "name": "Cold Pressed Coconut Oil (Sulfur-Free)",
-    "description": "Extracted from sun-dried copra without any heat treatment. Naturally clarified and sulfur-free. Rich in medium-chain triglycerides (MCTs).",
-    "price": 3300,
-    "unit": "15L Tin",
-    "stock": 32,
-    "rating": 4.9,
-    "numReviews": 27,
-    "categoryId": "edible-oils",
+    "name": "Premium Wheat Flour",
+    "description": "Finely milled premium wheat flour made from carefully selected wheat grains. Ideal for preparing soft rotis, chapatis, and bakery products.",
+    "price": 75,
+    "unit": "1Kg",
+    "stock": 40,
+    "rating": 4.8,
+    "numReviews": 46,
+    "categoryId": "flours",
     "images": [
-      "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&auto=format&fit=crop&q=80"
+      "/Wheat Flour.jpeg"
     ],
     "specs": {
-      "Extraction": "Cold Pressed Copra",
-      "Sulfur Content": "0%",
-      "Grade": "Premium Cooking Grade"
+      "Milling": "Fine Ground",
+      "Quality": "Premium Wheat",
+      "Texture": "Smooth & Fresh"
     },
     "benefits": [
-      "Immunity booster due to Lauric Acid",
-      "Adds exquisite flavor to South Indian cuisine",
-      "Excellent for hair and skin care too"
+      "Rich in dietary fiber",
+      "Produces soft and fluffy rotis",
+      "Suitable for everyday cooking"
     ],
     "usage": [
-      "Cooking, sautéing, and baking",
-      "Cosmetic formulation ingredient"
+      "Chapati, Roti, Parotta",
+      "Bakery and Hotel Use"
     ]
   },
   {
     "id": "prod_13",
-    "name": "Sona Masoori Rice (Aged 1 Year)",
-    "description": "Premium light-weight and aromatic medium grain Sona Masoori Rice. Aged for minimum 12 months. Low starch content, cooks beautifully.",
-    "price": 1550,
-    "unit": "25kg Bag",
-    "stock": 70,
-    "rating": 4.7,
-    "numReviews": 54,
-    "categoryId": "rice-varieties",
+    "name": "Premium Ragi Flour",
+    "description": "Nutritious finger millet flour processed hygienically to preserve natural nutrients. Rich in calcium and ideal for healthy traditional recipes.",
+    "price": 75,
+    "unit": "1kg",
+    "stock": 35,
+    "rating": 4.9,
+    "numReviews": 41,
+    "categoryId": "flours",
     "images": [
-      "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&auto=format&fit=crop&q=80"
+      "/Ragi_Flour.jpeg"
     ],
     "specs": {
-      "Type": "Medium Grain Sona Masoori",
-      "Age": "12+ Months",
-      "Moisture": "< 12%"
+      "Milling": "Fine Ground",
+      "Grain": "100% Finger Millet",
+      "Processing": "Hygienically Packed"
     },
     "benefits": [
-      "Low starch, suitable for diabetic control",
-      "Fluffy and separate grains upon cooking",
-      "Exceptional taste"
+      "Excellent source of calcium",
+      "High in dietary fiber",
+      "Supports healthy nutrition"
     ],
     "usage": [
-      "Daily rice consumption",
-      "Used in schools, office canteens, and catering"
+      "Ragi Dosa, Roti, Porridge",
+      "Health Foods and Bakery"
     ]
   },
   {
     "id": "prod_14",
-    "name": "Roasted Split Gram (Chutney Dhal)",
-    "description": "Crisp roasted split gram. Fully de-hulled, polished, and roasted under uniform temperatures. Essential ingredient for South Indian chutneys and snacks.",
-    "price": 1400,
-    "unit": "20kg bag",
-    "stock": 45,
+    "name": "Premium Gram Flour (Besan)",
+    "description": "Freshly milled gram flour prepared from premium quality Bengal gram. Perfect for snacks, sweets, and traditional recipes.",
+    "price": 75,
+    "unit": "1kg ",
+    "stock": 30,
     "rating": 4.8,
-    "numReviews": 16,
-    "categoryId": "masala-items",
+    "numReviews": 38,
+    "categoryId": "flours",
     "images": [
-      "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&auto=format&fit=crop&q=80"
+      "/Gram Flour.jpeg"
     ],
     "specs": {
-      "Type": "Roasted Gram (Pottukadalai)",
-      "Grade": "Premium Yellow Bold",
-      "Admixture": "Max 0.5%"
+      "Milling": "Fine Ground",
+      "Raw Material": "Premium Bengal Gram",
+      "Texture": "Smooth"
     },
     "benefits": [
-      "High plant-based protein content",
-      "Crunchy and fresh packing",
-      "No artificial colors"
+      "Rich in protein",
+      "Ideal for crispy snacks",
+      "No added preservatives"
     ],
     "usage": [
-      "Coconut chutneys and snack mixtures",
-      "Sweet preparations like roasted gram laddu"
+      "Pakora, Murukku, Sweets",
+      "Bakery and Food Industry"
     ]
   },
   {
     "id": "prod_15",
-    "name": "Finger Millet (Ragi) Malt Powder",
-    "description": "Finely milled sprouted ragi (finger millet) malt powder mixed with organic cardamom. Excellent morning nutritional drink for all ages.",
-    "price": 1600,
-    "unit": "10kg (1kg x 10)",
-    "stock": 40,
+    "name": "Premium Raw Rice Flour",
+    "description": "High-quality raw rice flour made from carefully selected rice grains. Suitable for traditional South Indian dishes and snacks.",
+    "price": 50,
+    "unit": "1kg",
+    "stock": 42,
     "rating": 4.7,
-    "numReviews": 22,
-    "categoryId": "malt-powder",
+    "numReviews": 35,
+    "categoryId": "flours",
     "images": [
-      "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=500&auto=format&fit=crop&q=80"
+      "/Ragi_Flour.jpeg"
     ],
     "specs": {
-      "Millet Type": "Sprouted Ragi (Finger Millet)",
-      "Cardamom flavor": "Yes",
-      "Shelf life": "9 Months"
+      "Milling": "Fine Ground",
+      "Rice Type": "Premium Raw Rice",
+      "Purity": "100% Rice"
     },
     "benefits": [
-      "Rich in natural Calcium and Iron",
-      "Gluten-free nutrient source",
-      "Aids in cooling down body heat"
+      "Fine texture for smooth batter",
+      "Naturally gluten-free",
+      "Perfect for traditional recipes"
     ],
     "usage": [
-      "Make ragi malt porridge with milk/buttermilk",
-      "Substitute in baking recipes for cookies"
+      "Murukku, Idiyappam, Kozhukattai",
+      "Commercial Food Preparation"
+    ]
+  },
+  {
+    "id": "prod_16",
+    "name": "Premium Nattu Kambu Flour",
+    "description": "Traditional pearl millet flour made from naturally grown kambu. Rich in essential nutrients and suitable for healthy everyday meals.",
+    "price": 85,
+    "unit": "1kg",
+    "stock": 28,
+    "rating": 4.9,
+    "numReviews": 29,
+    "categoryId": "flours",
+    "images": [
+      "/Kambu Flour.jpeg"
+    ],
+    "specs": {
+      "Milling": "Stone Ground",
+      "Grain": "100% Pearl Millet",
+      "Processing": "Traditional"
+    },
+    "benefits": [
+      "High in iron and fiber",
+      "Supports a healthy diet",
+      "Naturally nutritious"
+    ],
+    "usage": [
+      "Kambu Koozh, Roti",
+      "Healthy Traditional Recipes"
+    ]
+  },
+  {
+    "id": "prod_17",
+    "name": "Premium Thinai Flour",
+    "description": "Premium foxtail millet flour produced from carefully selected thinai grains. Ideal for healthy recipes and traditional cooking.",
+    "price": 180,
+    "unit": "1Kg",
+    "stock": 26,
+    "rating": 4.9,
+    "numReviews": 33,
+    "categoryId": "flours",
+    "images": [
+      "/Thinai Flour.png"
+    ],
+    "specs": {
+      "Milling": "Fine Ground",
+      "Grain": "100% Foxtail Millet",
+      "Purity": "Premium Grade"
+    },
+    "benefits": [
+      "Rich in protein and fiber",
+      "Low glycemic index",
+      "Ideal for healthy lifestyles"
+    ],
+    "usage": [
+      "Dosa, Idli, Porridge",
+      "Health Foods and Millet Recipes"
+    ]
+  },
+  {
+    "id": "prod_18",
+    "name": "Premium Multimillet Chapatti Flour",
+    "description": "Healthy blend of multiple millets including ragi, kambu, thinai, and jowar. Stone-ground flour designed for soft, nutritious chapatis and daily consumption.",
+    "price": 110,
+    "unit": "1kg ",
+    "stock": 35,
+    "rating": 4.8,
+    "numReviews": 28,
+    "categoryId": "flours",
+    "images": [
+      "/MultiMillet Chappati Flour.jpeg"
+    ],
+    "specs": {
+      "Ingredients": "Ragi, Kambu, Thinai, Jowar, Bajra",
+      "Milling": "Stone Ground",
+      "Type": "Multi Millet Blend"
+    },
+    "benefits": [
+      "High fiber and protein",
+      "Supports weight management",
+      "Improves digestion"
+    ],
+    "usage": [
+      "Chapati, Roti, Parotta",
+      "Healthy daily meals"
+    ]
+  },
+  {
+    "id": "prod_19",
+    "name": "Premium Multimillet Dosa Flour",
+    "description": "Special blend of millets finely ground for crispy and nutritious dosas. Perfect alternative to traditional rice-based dosa batter.",
+    "price": 130,
+    "unit": "1kg ",
+    "stock": 30,
+    "rating": 4.9,
+    "numReviews": 32,
+    "categoryId": "flours",
+    "images": [
+      "/Multi Millet Dosa Flour.jpeg"
+    ],
+    "specs": {
+      "Ingredients": "Foxtail Millet, Ragi, Kodo Millet, Barnyard Millet",
+      "Milling": "Fine Ground",
+      "Type": "Dosa Ready Flour Mix"
+    },
+    "benefits": [
+      "Crispy and healthy dosas",
+      "Low glycemic index",
+      "Rich in minerals and fiber"
+    ],
+    "usage": [
+      "Dosa, Uttapam, Pancakes",
+      "Breakfast recipes"
+    ]
+  },
+  {
+    "id": "prod_20",
+    "name": "Premium Multi Millets Sathu Maavu",
+    "description": "Nutritious health mix prepared from a blend of premium millets, cereals, and pulses. Rich in protein, fiber, vitamins, and minerals for a wholesome diet suitable for all age groups.",
+    "price": 130,
+    "unit": "250gm",
+    "stock": 35,
+    "rating": 4.9,
+    "numReviews": 40,
+    "categoryId": "flours",
+    "images": [
+      "/Multi Millets Sathu Maavu.jpeg"
+    ],
+    "specs": {
+      "Ingredients": "Multi Millets, Cereals, Pulses",
+      "Milling": "Fine Ground",
+      "Type": "Health Mix Flour"
+    },
+    "benefits": [
+      "High in protein and fiber",
+      "Supports healthy growth",
+      "Suitable for all age groups"
+    ],
+    "usage": [
+      "Health drink",
+      "Porridge",
+      "Breakfast recipes"
+    ]
+  },
+  {
+    "id": "prod_21",
+    "name": "Premium Sprouted Health Mix",
+    "description": "Traditional health mix made from carefully sprouted grains, millets, and pulses to enhance nutrition and improve digestibility.",
+    "price": 130,
+    "unit": "250gm",
+    "stock": 28,
+    "rating": 4.9,
+    "numReviews": 35,
+    "categoryId": "flours",
+    "images": [
+      "/Sprouted Health Mix.jpeg"
+    ],
+    "specs": {
+      "Ingredients": "Sprouted Millets, Cereals, Pulses",
+      "Milling": "Fine Ground",
+      "Type": "Sprouted Health Mix Flour"
+    },
+    "benefits": [
+      "Easy to digest",
+      "Rich in natural nutrients",
+      "Boosts energy and immunity"
+    ],
+    "usage": [
+      "Health drink",
+      "Porridge",
+      "Baby food"
+    ]
+  },
+  {
+    "id": "prod_22",
+    "name": "Premium Health Mix",
+    "description": "Wholesome flour blend made from nutritious grains and pulses for preparing healthy drinks and porridges with excellent taste and nutrition.",
+    "price": 150,
+    "unit": "250gm",
+    "stock": 32,
+    "rating": 4.8,
+    "numReviews": 29,
+    "categoryId": "flours",
+    "images": [
+      "/Health Mix.jpeg"
+    ],
+    "specs": {
+      "Ingredients": "Millets, Cereals, Pulses",
+      "Milling": "Fine Ground",
+      "Type": "Health Mix Flour"
+    },
+    "benefits": [
+      "Balanced nutrition",
+      "Rich in vitamins and minerals",
+      "Ideal for daily consumption"
+    ],
+    "usage": [
+      "Health drink",
+      "Porridge",
+      "Breakfast recipes"
+    ]
+  },
+  {
+    "id": "prod_23",
+    "name": "Premium Karuppu Ulunthu Kanji Maavu",
+    "description": "Traditional porridge flour made from premium black urad dal. Rich in calcium, protein, and iron, making it ideal for a healthy lifestyle.",
+    "price": 125,
+    "unit": "250gm",
+    "stock": 25,
+    "rating": 4.9,
+    "numReviews": 27,
+    "categoryId": "flours",
+    "images": [
+      "/ulunthu kanji maavu.jpg"
+    ],
+    "specs": {
+      "Ingredients": "Black Urad Dal",
+      "Milling": "Fine Ground",
+      "Type": "Kanji Flour"
+    },
+    "benefits": [
+      "Rich in calcium and protein",
+      "Supports bone health",
+      "Traditional nutritious food"
+    ],
+    "usage": [
+      "Kanji",
+      "Health drink"
+    ]
+  },
+  {
+    "id": "prod_24",
+    "name": "Premium Poongar Rice Kanji Maavu",
+    "description": "Traditional porridge flour made from native Poongar rice, known for its nutritional value and authentic taste. Suitable for all age groups.",
+    "price": 200,
+    "unit": "1kg",
+    "stock": 22,
+    "rating": 4.8,
+    "numReviews": 24,
+    "categoryId": "flours",
+    "images": [
+      "/Poongar Rice Kanji Maavu.jpeg"
+    ],
+    "specs": {
+      "Ingredients": "Poongar Rice",
+      "Milling": "Fine Ground",
+      "Type": "Kanji Flour"
+    },
+    "benefits": [
+      "Rich in natural nutrients",
+      "Easy to digest",
+      "Traditional healthy food"
+    ],
+    "usage": [
+      "Kanji",
+      "Health drink",
+      "Baby food"
+    ]
+  },
+  {
+    "id": "prod_25",
+    "name": "Premium Red Rice Puttu Maavu",
+    "description": "Finely ground red rice flour specially prepared for making soft and delicious puttu. Rich in fiber and essential nutrients.",
+    "price": 210,
+    "unit": "1kg",
+    "stock": 30,
+    "rating": 4.8,
+    "numReviews": 31,
+    "categoryId": "flours",
+    "images": [
+      "/Red Rice Flour.jpeg"
+    ],
+    "specs": {
+      "Ingredients": "Red Rice",
+      "Milling": "Medium Fine",
+      "Type": "Puttu Flour"
+    },
+    "benefits": [
+      "High in dietary fiber",
+      "Rich in antioxidants",
+      "Soft and fluffy puttu"
+    ],
+    "usage": [
+      "Puttu",
+      "Traditional breakfast recipes"
+    ]
+  },
+  {
+    "id": "prod_26",
+    "name": "Coconut Oil",
+    "description": "100% pure cold-pressed coconut oil, extracted from premium quality coconuts using traditional wooden chekku methods. Naturally rich in nutrients and aroma. Suitable for cooking, hair care, skin care, and wholesale distribution.",
+    "price": 360,
+    "unit": "1L",
+    "stock": 38,
+    "rating": 4.9,
+    "numReviews": 19,
+    "categoryId": "edible-oils",
+    "images": [
+      "/Coconut Oil.jpeg"
+    ],
+    "specs": {
+      "Extraction Method": "Cold Wood Pressed",
+      "Grade": "Premium Food Grade",
+      "Packaging": "Recyclable Tin",
+      "Shelf Life": "12 Months"
+    },
+    "benefits": [
+      "Rich in healthy medium-chain fatty acids",
+      "Naturally supports skin and hair health",
+      "No artificial preservatives or added chemicals"
+    ],
+    "usage": [
+      "Ideal for cooking and baking",
+      "Suitable for hair oiling, skincare, and wholesale supply"
+    ]
+  },
+  {
+    "id": "prod_27",
+    "name": "Deepam Oil",
+    "description": "Premium quality Deepam Oil specially prepared for lighting traditional lamps during daily pooja and religious ceremonies. Produces a bright, steady flame with minimal smoke and long-lasting performance.",
+    "price": 200,
+    "unit": "1L",
+    "stock": 60,
+    "rating": 4.8,
+    "numReviews": 15,
+    "categoryId": "edible-oils",
+    "images": [
+      "/Deepam oil.jpeg"
+    ],
+    "specs": {
+      "Type": "Lamp Oil",
+      "Purity": "Premium Quality",
+      "Packaging": "Recyclable Tin",
+      "Shelf Life": "18 Months"
+    },
+    "benefits": [
+      "Burns with a bright and steady flame",
+      "Low smoke and pleasant burning quality",
+      "Ideal for daily pooja and temple use"
+    ],
+    "usage": [
+      "Used for lighting diyas and traditional lamps",
+      "Suitable for homes, temples, and religious functions"
+    ]
+  },
+  {
+    "id": "prod_28",
+    "name": "Gingelly Oil",
+    "description": "100% pure cold-pressed gingelly (sesame) oil extracted using traditional wooden chekku methods. Rich in natural antioxidants and nutrients, it enhances flavor while supporting a healthy lifestyle. Ideal for cooking, traditional recipes, and wholesale distribution.",
+    "price": 400,
+    "unit": "1L",
+    "stock": 50,
+    "rating": 4.9,
+    "numReviews": 22,
+    "categoryId": "edible-oils",
+    "images": [
+      "/Gingelly oil.jpeg"
+    ],
+    "specs": {
+      "Extraction Method": "Cold Wood Pressed",
+      "Grade": "Premium Food Grade",
+      "Packaging": "Recyclable Tin",
+      "Shelf Life": "12 Months"
+    },
+    "benefits": [
+      "Rich in antioxidants and healthy fats",
+      "Enhances the flavor of traditional South Indian dishes",
+      "No artificial preservatives or added chemicals"
+    ],
+    "usage": [
+      "Ideal for cooking, seasoning, and pickling",
+      "Suitable for household and commercial kitchen use"
+    ]
+  },
+  {
+    "id": "prod_29",
+    "name": "Castor Oil",
+    "description": "100% pure cold-pressed castor oil extracted using traditional wooden chekku methods. Rich in natural nutrients and widely used for hair care, skin care, massage, and industrial applications. Hygienically processed to retain its natural purity.",
+    "price": 380,
+    "unit": "1L ",
+    "stock": 40,
+    "rating": 4.8,
+    "numReviews": 18,
+    "categoryId": "edible-oils",
+    "images": [
+      "/Castor oil.png"
+    ],
+    "specs": {
+      "Extraction Method": "Cold Wood Pressed",
+      "Grade": "Premium Quality",
+      "Packaging": "Recyclable Tin",
+      "Shelf Life": "12 Months"
+    },
+    "benefits": [
+      "Rich in natural ricinoleic acid",
+      "Supports healthy hair and skin care",
+      "No artificial preservatives or added chemicals"
+    ],
+    "usage": [
+      "Suitable for hair oiling and skincare",
+      "Used for massage and traditional applications"
+    ]
+  },
+  {
+    "id": "prod_30",
+    "name": "Pure Coriander Powder",
+    "description": "Finely ground premium coriander seeds with rich aroma and mild citrus flavor. Essential spice for everyday Indian cooking.",
+    "price": 180,
+    "unit": "250gm",
+    "stock": 75,
+    "rating": 4.7,
+    "numReviews": 28,
+    "categoryId": "masala-items",
+    "images": [
+      "/coriander.jpg"
+    ],
+    "specs": {
+      "Form": "Powdered",
+      "Purity": "100% Natural",
+      "Shelf Life": "18 Months"
+    },
+    "benefits": [
+      "Enhances aroma and flavor",
+      "Aids digestion",
+      "Rich in antioxidants"
+    ],
+    "usage": [
+      "Curries and gravies",
+      "Marinades and spice blends"
+    ]
+  },
+  {
+    "id": "prod_31",
+    "name": "Red Chilli Powder",
+    "description": "Hot and vibrant red chilli powder made from sun-dried chillies, delivering strong heat and rich color to dishes.",
+    "price": 30,
+    "unit": "50gm",
+    "stock": 80,
+    "rating": 4.8,
+    "numReviews": 35,
+    "categoryId": "masala-items",
+    "images": [
+      "/red chilli.jpg"
+    ],
+    "specs": {
+      "Scoville Level": "Medium to High",
+      "Form": "Powdered",
+      "Shelf Life": "18 Months"
+    },
+    "benefits": [
+      "Enhances color and taste",
+      "Boosts metabolism",
+      "Rich in vitamin C"
+    ],
+    "usage": [
+      "Spicy curries",
+      "Pickles and marinades"
+    ]
+  },
+  {
+    "id": "prod_32",
+    "name": "Sambar Powder",
+    "description": "Traditional South Indian spice blend made from roasted lentils, red chillies, and aromatic spices for authentic sambar flavor.",
+    "price": 30,
+    "unit": "50gm",
+    "stock": 65,
+    "rating": 4.9,
+    "numReviews": 42,
+    "categoryId": "masala-items",
+    "images": [
+      "/Sambar Powder.jpeg"
+    ],
+    "specs": {
+      "Form": "Blend Powder",
+      "Shelf Life": "12 Months",
+      "Roasted": "Yes"
+    },
+    "benefits": [
+      "Authentic South Indian taste",
+      "Rich aroma",
+      "Balanced spice mix"
+    ],
+    "usage": [
+      "Sambar preparation",
+      "Vegetable curries"
+    ]
+  },
+  {
+    "id": "prod_33",
+    "name": "Kari Masala",
+    "description": "Aromatic curry masala blend made with carefully selected spices for rich and flavorful gravies.",
+    "price": 30,
+    "unit": "50gm",
+    "stock": 55,
+    "rating": 4.7,
+    "numReviews": 26,
+    "categoryId": "masala-items",
+    "images": [
+      "/kari masala.jpg"
+    ],
+    "specs": {
+      "Form": "Powdered Blend",
+      "Shelf Life": "18 Months"
+    },
+    "benefits": [
+      "Enhances curry flavor",
+      "Rich aroma",
+      "Traditional taste"
+    ],
+    "usage": [
+      "Chicken curry",
+      "Vegetable gravies"
+    ]
+  },
+  {
+    "id": "prod_34",
+    "name": "Rasam Powder",
+    "description": "Traditional South Indian rasam spice mix made from pepper, cumin, and lentils for a tangy and spicy soup base.",
+    "price": 35,
+    "unit": "50gm",
+    "stock": 70,
+    "rating": 4.8,
+    "numReviews": 30,
+    "categoryId": "masala-items",
+    "images": [
+      "/rasam powder.jpg"
+    ],
+    "specs": {
+      "Form": "Powdered Blend",
+      "Shelf Life": "12 Months"
+    },
+    "benefits": [
+      "Improves digestion",
+      "Boosts immunity",
+      "Authentic taste"
+    ],
+    "usage": [
+      "Rasam soup",
+      "Medicinal home remedies"
+    ]
+  },
+  {
+    "id": "prod_35",
+    "name": "Garam Masala",
+    "description": "Classic Indian spice blend made from roasted aromatic spices, adding warmth and depth to dishes.",
+    "price": 50,
+    "unit": "50gm",
+    "stock": 60,
+    "rating": 4.9,
+    "numReviews": 48,
+    "categoryId": "masala-items",
+    "images": [
+      "/Garam Masala.jpeg"
+    ],
+    "specs": {
+      "Form": "Roasted Powder Blend",
+      "Shelf Life": "18 Months"
+    },
+    "benefits": [
+      "Enhances flavor depth",
+      "Aromatic spice mix",
+      "Traditional Indian blend"
+    ],
+    "usage": [
+      "Curries and gravies",
+      "Biryani seasoning"
+    ]
+  },
+  {
+    "id": "prod_36",
+    "name": "Biryani Masala Powder",
+    "description": "Special blend of premium spices crafted to enhance the aroma and taste of authentic biryani dishes.",
+    "price": 40,
+    "unit": "50gm",
+    "stock": 50,
+    "rating": 4.9,
+    "numReviews": 40,
+    "categoryId": "masala-items",
+    "images": [
+      "/biriyani masala.jpg"
+    ],
+    "specs": {
+      "Form": "Fine Powder Blend",
+      "Shelf Life": "18 Months"
+    },
+    "benefits": [
+      "Authentic biryani aroma",
+      "Rich flavor enhancer",
+      "Balanced spices"
+    ],
+    "usage": [
+      "Chicken biryani",
+      "Mutton biryani"
+    ]
+  },
+  {
+    "id": "prod_37",
+    "name": "Chicken Masala",
+    "description": "Perfectly balanced spice mix designed specifically for delicious and flavorful chicken dishes.",
+    "price": 45,
+    "unit": "50gm",
+    "stock": 65,
+    "rating": 4.8,
+    "numReviews": 38,
+    "categoryId": "masala-items",
+    "images": [
+      "/Chicken Masala.jpeg"
+    ],
+    "specs": {
+      "Form": "Powdered Blend",
+      "Shelf Life": "18 Months"
+    },
+    "benefits": [
+      "Enhances chicken flavor",
+      "Rich aroma",
+      "Easy cooking blend"
+    ],
+    "usage": [
+      "Chicken curry",
+      "Fried chicken seasoning"
+    ]
+  },
+  {
+    "id": "prod_38",
+    "name": "Mutton Masala",
+    "description": "Strong and aromatic spice blend specially crafted for rich and flavorful mutton dishes.",
+    "price": 45,
+    "unit": "50gm",
+    "stock": 55,
+    "rating": 4.9,
+    "numReviews": 33,
+    "categoryId": "masala-items",
+    "images": [
+      "/Mutton Masala.jpeg"
+    ],
+    "specs": {
+      "Form": "Powdered Blend",
+      "Shelf Life": "18 Months"
+    },
+    "benefits": [
+      "Rich and bold flavor",
+      "Traditional taste",
+      "Enhances meat dishes"
+    ],
+    "usage": [
+      "Mutton curry",
+      "Gravy preparations"
+    ]
+  },
+  {
+    "id": "prod_39",
+    "name": "Idly Podi",
+    "description": "Traditional South Indian dry chutney powder made from roasted lentils and spices, perfect with idly and dosa.",
+    "price": 35,
+    "unit": "50gm",
+    "stock": 85,
+    "rating": 4.8,
+    "numReviews": 45,
+    "categoryId": "masala-items",
+    "images": [
+      "/Idly Powder.jpeg"
+    ],
+    "specs": {
+      "Form": "Dry Powder",
+      "Shelf Life": "12 Months"
+    },
+    "benefits": [
+      "High protein content",
+      "Traditional taste",
+      "Easy to use"
+    ],
+    "usage": [
+      "Idly and dosa accompaniment",
+      "Travel food mix"
+    ]
+  },
+  {
+    "id": "prod_40",
+    "name": "Paruppu Podi",
+    "description": "Healthy lentil-based spice powder made from roasted dals and spices, rich in protein and flavor.",
+    "price": 40,
+    "unit": "50gm",
+    "stock": 90,
+    "rating": 4.7,
+    "numReviews": 29,
+    "categoryId": "masala-items",
+    "images": [
+      "/parupu podi.jpg"
+    ],
+    "specs": {
+      "Form": "Dry Powder",
+      "Shelf Life": "12 Months"
+    },
+    "benefits": [
+      "High protein food",
+      "Good for digestion",
+      "Traditional South Indian dish"
+    ],
+    "usage": [
+      "Mix with rice and ghee",
+      "Side dish for meals"
+    ]
+  },
+  {
+    "id": "prod_41",
+    "name": "Kashmiri Chilli Powder",
+    "description": "Premium Kashmiri chilli powder known for its vibrant red color, mild heat, and rich aroma. Perfect for enhancing the appearance and flavor of Indian dishes without excessive spiciness.",
+    "price": 60,
+    "unit": "50gm",
+    "stock": 70,
+    "rating": 4.8,
+    "numReviews": 31,
+    "categoryId": "masala-items",
+    "images": [
+      "/Kashmiri Chilly Powder.jpeg"
+    ],
+    "specs": {
+      "Scoville Level": "Low",
+      "Form": "Fine Powder",
+      "Color": "Deep Red",
+      "Shelf Life": "18 Months"
+    },
+    "benefits": [
+      "Enhances color of dishes",
+      "Mild and aromatic flavor",
+      "Rich in antioxidants"
+    ],
+    "usage": [
+      "Curries and gravies",
+      "Tandoori dishes and marinades"
+    ]
+  },
+  {
+    "id": "prod_42",
+    "name": "Black Rice",
+    "description": "Premium quality Black Rice, naturally rich in antioxidants, fiber, and essential nutrients. Known as 'Forbidden Rice', it has a unique nutty flavor and deep purple-black color, making it an excellent choice for healthy meals.",
+    "price": 180,
+    "unit": "1Kg",
+    "stock": 70,
+    "rating": 4.9,
+    "numReviews": 28,
+    "categoryId": "rice-varieties",
+    "images": [
+      "/Black Rice.jpeg"
+    ],
+    "specs": {
+      "Variety": "Black Rice",
+      "Color": "Deep Purple-Black",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in antioxidants",
+      "High in dietary fiber",
+      "Supports heart health",
+      "Naturally gluten-free"
+    ],
+    "usage": [
+      "Daily meals",
+      "Rice bowls",
+      "Salads",
+      "Desserts and puddings"
+    ]
+  },
+  {
+    "id": "prod_43",
+    "name": "Red Cholam",
+    "description": "Premium quality Red Cholam (Red Sorghum), a wholesome millet rich in fiber, protein, and essential minerals. Ideal for preparing healthy traditional recipes and everyday meals.",
+    "price": 170,
+    "unit": "1kg",
+    "stock": 70,
+    "rating": 4.8,
+    "numReviews": 24,
+    "categoryId": "millets",
+    "images": [
+      "/Red Solam.jpeg"
+    ],
+    "specs": {
+      "Variety": "Red Cholam",
+      "Form": "Whole Grain",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "High in dietary fiber",
+      "Rich in protein and iron",
+      "Supports digestive health",
+      "Naturally gluten-free"
+    ],
+    "usage": [
+      "Making flour",
+      "Porridge",
+      "Dosa and roti",
+      "Traditional millet recipes"
+    ]
+  },
+  {
+    "id": "prod_44",
+    "name": "White Cholam",
+    "description": "Premium quality White Cholam (White Sorghum), a nutritious millet rich in fiber, protein, and essential minerals. Perfect for preparing healthy traditional dishes and everyday meals.",
+    "price": 120,
+    "unit": "1kg",
+    "stock": 70,
+    "rating": 4.8,
+    "numReviews": 26,
+    "categoryId": "millets",
+    "images": [
+      "/White Solam.jpeg"
+    ],
+    "specs": {
+      "Variety": "White Cholam",
+      "Form": "Whole Grain",
+      "Color": "Creamy White",
+      "Shelf Life": "12 Months"
+    },
+    "benefits": [
+      "Rich in dietary fiber",
+      "Good source of protein",
+      "Supports digestive health",
+      "Naturally gluten-free"
+    ],
+    "usage": [
+      "Making flour",
+      "Roti and dosa",
+      "Porridge",
+      "Traditional millet recipes"
+    ]
+  },
+  {
+    "id": "prod_45",
+    "name": "Kambu",
+    "description": "Premium quality Kambu (Pearl Millet), a highly nutritious grain rich in fiber, protein, and essential minerals. Ideal for preparing healthy traditional foods.",
+    "price": 80,
+    "unit": "1kg",
+    "stock": 70,
+    "rating": 4.8,
+    "numReviews": 25,
+    "categoryId": "millets",
+    "images": [
+      "/kambu.jpg"
+    ],
+    "specs": {
+      "Variety": "Pearl Millet",
+      "Form": "Whole Grain",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in fiber",
+      "Good source of protein",
+      "Supports heart health",
+      "Naturally gluten-free"
+    ],
+    "usage": [
+      "Kambu koozh",
+      "Roti",
+      "Dosa",
+      "Porridge"
+    ]
+  },
+  {
+    "id": "prod_46",
+    "name": "Thinai",
+    "description": "Premium quality Thinai (Foxtail Millet), packed with nutrients and ideal for healthy everyday meals.",
+    "price": 120,
+    "unit": "1kg",
+    "stock": 70,
+    "rating": 4.9,
+    "numReviews": 28,
+    "categoryId": "millets",
+    "images": [
+      "/thinai.jpg"
+    ],
+    "specs": {
+      "Variety": "Foxtail Millet",
+      "Form": "Whole Grain",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "High in fiber",
+      "Rich in iron",
+      "Supports weight management",
+      "Naturally gluten-free"
+    ],
+    "usage": [
+      "Rice substitute",
+      "Pongal",
+      "Upma",
+      "Porridge"
+    ]
+  },
+  {
+    "id": "prod_47",
+    "name": "Kuthiraivali",
+    "description": "Premium quality Kuthiraivali (Barnyard Millet), a healthy millet known for its light texture and nutritional value.",
+    "price": 90,
+    "unit": "1kg ",
+    "stock": 70,
+    "rating": 4.8,
+    "numReviews": 22,
+    "categoryId": "millets",
+    "images": [
+      "/kuthiraivali.jpg"
+    ],
+    "specs": {
+      "Variety": "Barnyard Millet",
+      "Form": "Whole Grain",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Low in calories",
+      "Rich in dietary fiber",
+      "Easy to digest",
+      "Naturally gluten-free"
+    ],
+    "usage": [
+      "Upma",
+      "Pongal",
+      "Khichdi",
+      "Rice substitute"
+    ]
+  },
+  {
+    "id": "prod_48",
+    "name": "Saamai",
+    "description": "Premium quality Saamai (Little Millet), naturally rich in fiber and essential nutrients for a healthy lifestyle.",
+    "price": 120,
+    "unit": "1kg ",
+    "stock": 70,
+    "rating": 4.8,
+    "numReviews": 24,
+    "categoryId": "millets",
+    "images": [
+      "/saamai.jpg"
+    ],
+    "specs": {
+      "Variety": "Little Millet",
+      "Form": "Whole Grain",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "High in fiber",
+      "Rich in minerals",
+      "Supports digestion",
+      "Naturally gluten-free"
+    ],
+    "usage": [
+      "Rice substitute",
+      "Pongal",
+      "Upma",
+      "Pulao"
+    ]
+  },
+  {
+    "id": "prod_49",
+    "name": "Varagu",
+    "description": "Premium quality Varagu (Kodo Millet), a wholesome grain suitable for nutritious everyday meals.",
+    "price": 110,
+    "unit": "1kg ",
+    "stock": 70,
+    "rating": 4.7,
+    "numReviews": 20,
+    "categoryId": "millets",
+    "images": [
+      "/varagu.jpg"
+    ],
+    "specs": {
+      "Variety": "Kodo Millet",
+      "Form": "Whole Grain",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in antioxidants",
+      "High in fiber",
+      "Supports healthy digestion",
+      "Naturally gluten-free"
+    ],
+    "usage": [
+      "Rice substitute",
+      "Upma",
+      "Porridge",
+      "Traditional recipes"
+    ]
+  },
+  {
+    "id": "prod_50",
+    "name": "Kelvaragu",
+    "description": "Premium quality Kelvaragu (Finger Millet/Ragi), naturally rich in calcium, iron, and dietary fiber. A nutritious choice for all age groups.",
+    "price": 50,
+    "unit": "1kg",
+    "stock": 70,
+    "rating": 4.9,
+    "numReviews": 35,
+    "categoryId": "millets",
+    "images": [
+      "/kelvaragu.jpg"
+    ],
+    "specs": {
+      "Variety": "Finger Millet (Ragi)",
+      "Form": "Whole Grain",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Excellent source of calcium",
+      "Rich in iron",
+      "High in dietary fiber",
+      "Naturally gluten-free"
+    ],
+    "usage": [
+      "Ragi malt",
+      "Porridge",
+      "Dosa",
+      "Roti"
+    ]
+  },
+  {
+    "id": "prod_51",
+    "name": "Arapu Powder",
+    "description": "Premium quality Arapu Powder made from naturally dried Arapu leaves. Traditionally used as a natural hair cleanser, it helps maintain healthy hair and provides gentle cleansing without harsh chemicals.",
+    "price": 30,
+    "unit": "100gm Pack",
+    "stock": 80,
+    "rating": 4.8,
+    "numReviews": 25,
+    "categoryId": "herbal-powders",
+    "images": [
+      "/Arapuu.jpeg"
+    ],
+    "specs": {
+      "Form": "Fine Powder",
+      "Ingredient": "Dried Arapu Leaves",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Natural hair cleanser",
+      "Helps maintain soft and shiny hair",
+      "Supports healthy scalp care",
+      "Free from artificial chemicals"
+    ],
+    "usage": [
+      "Hair wash",
+      "Herbal hair pack",
+      "Traditional hair care routine",
+      "Natural cleansing treatment"
+    ]
+  },
+  {
+    "id": "prod_52",
+    "name": "Kuliyal Podi",
+    "description": "Premium quality Kuliyal Podi made from a traditional blend of natural herbs and ingredients. Used as a herbal bath powder for gentle cleansing, refreshing skin care, and maintaining natural glow.",
+    "price": 60,
+    "unit": "100gm Pack",
+    "stock": 80,
+    "rating": 4.8,
+    "numReviews": 27,
+    "categoryId": "herbal-powders",
+    "images": [
+      "/Bathing Powder.jpeg"
+    ],
+    "specs": {
+      "Form": "Fine Powder",
+      "Type": "Herbal Bath Powder",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Natural skin cleanser",
+      "Helps remove dirt and impurities",
+      "Keeps skin soft and refreshed",
+      "Free from artificial chemicals"
+    ],
+    "usage": [
+      "Herbal bath powder",
+      "Daily body cleansing",
+      "Skin care routine",
+      "Traditional beauty care"
+    ]
+  },
+  {
+    "id": "prod_53",
+    "name": "Seekakai Powder",
+    "description": "Premium quality Shikakai Powder made from naturally dried Shikakai pods. Traditionally used as a natural hair cleanser, it gently cleans the scalp while helping maintain healthy, soft, and shiny hair.",
+    "price": 70,
+    "unit": "100gm Pack",
+    "stock": 80,
+    "rating": 4.9,
+    "numReviews": 30,
+    "categoryId": "herbal-powders",
+    "images": [
+      "/Sekkakai Powder.jpeg"
+    ],
+    "specs": {
+      "Form": "Fine Powder",
+      "Ingredient": "Dried Shikakai Pods",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Natural hair cleanser",
+      "Helps maintain healthy scalp",
+      "Supports soft and shiny hair",
+      "Free from harsh chemicals"
+    ],
+    "usage": [
+      "Hair wash",
+      "Herbal hair pack",
+      "Traditional hair care",
+      "Natural shampoo alternative"
+    ]
+  },
+  {
+    "id": "prod_54",
+    "name": "Multani Mitti Powder",
+    "description": "Premium quality Multani Mitti Powder (Fuller's Earth) known for its natural cleansing and skin-refreshing properties. Traditionally used in face packs and skincare routines to help maintain smooth and healthy-looking skin.",
+    "price": 80,
+    "unit": "100gm Pack",
+    "stock": 80,
+    "rating": 4.8,
+    "numReviews": 28,
+    "categoryId": "herbal-powders",
+    "images": [
+      "/multani mitti.jpg"
+    ],
+    "specs": {
+      "Form": "Fine Powder",
+      "Type": "Natural Clay",
+      "Shelf Life": "24 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Natural skin cleanser",
+      "Helps remove excess oil",
+      "Provides refreshing feel",
+      "Supports smooth skin care"
+    ],
+    "usage": [
+      "Face pack",
+      "Skin care routine",
+      "Natural beauty treatments",
+      "Body pack"
+    ]
+  },
+  {
+    "id": "prod_55",
+    "name": "Kasthuri Manjal Powder",
+    "description": "Premium quality Kasthuri Manjal Powder (Wild Turmeric) made from naturally processed turmeric roots. Traditionally used in skincare routines for its natural cleansing and skin-enhancing properties.",
+    "price": 80,
+    "unit": "100gm Pack",
+    "stock": 80,
+    "rating": 4.9,
+    "numReviews": 32,
+    "categoryId": "herbal-powders",
+    "images": [
+      "/kasthuri manjal.jpg"
+    ],
+    "specs": {
+      "Form": "Fine Powder",
+      "Ingredient": "Wild Turmeric",
+      "Shelf Life": "24 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Natural skin cleanser",
+      "Rich in natural antioxidants",
+      "Helps maintain healthy-looking skin",
+      "Suitable for traditional skincare"
+    ],
+    "usage": [
+      "Face pack",
+      "Herbal skincare",
+      "Beauty treatments",
+      "Traditional bathing routine"
+    ]
+  },
+  {
+    "id": "prod_56",
+    "name": "Black Ulunthu Health Mix",
+    "description": "Premium quality Black Ulunthu Health Mix prepared with nutritious black urad dal and natural ingredients. A traditional health drink mix rich in protein, calcium, and essential nutrients for overall wellness.",
+    "price": 110,
+    "unit": "250gm Pack",
+    "stock": 80,
+    "rating": 4.9,
+    "numReviews": 30,
+    "categoryId": "health-mix-products",
+    "images": [
+      "/Black Ulunthu Health Mix.jpeg"
+    ],
+    "specs": {
+      "Form": "Fine Powder",
+      "Main Ingredient": "Black Urad Dal",
+      "Shelf Life": "6 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in protein and calcium",
+      "Supports bone strength",
+      "Provides natural energy",
+      "Helps maintain overall health"
+    ],
+    "usage": [
+      "Health drink",
+      "Porridge preparation",
+      "Breakfast mix",
+      "Traditional recipes"
+    ]
+  },
+  {
+    "id": "prod_57",
+    "name": "Sprouted Health Mix",
+    "description": "Premium quality Sprouted Health Mix made from carefully selected sprouted grains, millets, and pulses. A nutrient-rich blend designed to provide natural energy and balanced nutrition for all age groups.",
+    "price": 130,
+    "unit": "250gm ",
+    "stock": 80,
+    "rating": 4.9,
+    "numReviews": 35,
+    "categoryId": "health-mix-products",
+    "images": [
+      "/Sprouted Health Mix.jpeg"
+    ],
+    "specs": {
+      "Form": "Fine Powder",
+      "Type": "Sprouted Grain Blend",
+      "Shelf Life": "6 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in vitamins and minerals",
+      "Improves nutritional value through sprouting",
+      "Provides sustained energy",
+      "Supports healthy growth"
+    ],
+    "usage": [
+      "Health drink",
+      "Porridge",
+      "Milk mix",
+      "Breakfast preparation"
+    ]
+  },
+  {
+    "id": "prod_58",
+    "name": "Poongar Rice",
+    "description": "Premium quality Poongar Rice, a traditional Tamil Nadu rice variety known for its rich nutrition, natural aroma, and health benefits. Suitable for everyday cooking.",
+    "price": 180,
+    "unit": "1kg Pack",
+    "stock": 100,
+    "rating": 4.8,
+    "numReviews": 28,
+    "categoryId": "rice-varieties",
+    "images": ["/poongar rice.jpg"],
+    "specs": {
+      "Type": "Traditional Rice",
+      "Color": "Brownish Red",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in fiber",
+      "Supports digestion",
+      "Naturally nutritious",
+      "Suitable for daily meals"
+    ],
+    "usage": [
+      "Steamed rice",
+      "Rice porridge",
+      "Traditional recipes",
+      "Daily cooking"
+    ]
+  },
+  {
+    "id": "prod_59",
+    "name": "Mapillai Samba Rice",
+    "description": "Premium quality Mapillai Samba Rice, a heritage red rice variety packed with iron, fiber, and natural nutrients.",
+    "price": 200,
+    "unit": "1kg Pack",
+    "stock": 90,
+    "rating": 4.9,
+    "numReviews": 36,
+    "categoryId": "rice-varieties",
+    "images": ["/mapalai samba rice.jpg"],
+    "specs": {
+      "Type": "Traditional Rice",
+      "Color": "Red",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in iron",
+      "High fiber",
+      "Boosts stamina",
+      "Supports overall health"
+    ],
+    "usage": [
+      "Cooked rice",
+      "Rice meals",
+      "Porridge",
+      "Traditional dishes"
+    ]
+  },
+  {
+    "id": "prod_60",
+    "name": "Karuppu Kavuni Rice",
+    "description": "Premium quality Karuppu Kavuni Rice, an antioxidant-rich black rice traditionally valued for its exceptional nutritional benefits.",
+    "price": 320,
+    "unit": "1kg Pack",
+    "stock": 70,
+    "rating": 5.0,
+    "numReviews": 42,
+    "categoryId": "rice-varieties",
+    "images": ["/karupu kavuni.jpg"],
+    "specs": {
+      "Type": "Black Rice",
+      "Color": "Black",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in antioxidants",
+      "Supports heart health",
+      "High fiber",
+      "Naturally gluten free"
+    ],
+    "usage": [
+      "Cooked rice",
+      "Desserts",
+      "Porridge",
+      "Healthy meals"
+    ]
+  },
+  {
+    "id": "prod_61",
+    "name": "Kattuyanam Rice",
+    "description": "Premium quality Kattuyanam Rice, a traditional rice variety known for its rich nutritional value and authentic taste.",
+    "price": 210,
+    "unit": "1kg Pack",
+    "stock": 85,
+    "rating": 4.8,
+    "numReviews": 24,
+    "categoryId": "rice-varieties",
+    "images": ["/kattuyanam rice.jpg"],
+    "specs": {
+      "Type": "Traditional Rice",
+      "Color": "Red",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "High fiber",
+      "Supports healthy digestion",
+      "Rich in nutrients",
+      "Traditional wholesome food"
+    ],
+    "usage": [
+      "Daily meals",
+      "Rice dishes",
+      "Porridge",
+      "Traditional recipes"
+    ]
+  },
+  {
+    "id": "prod_62",
+    "name": "Karunguruvai Rice",
+    "description": "Premium quality Karunguruvai Rice, a medicinal traditional rice variety appreciated for its unique nutritional profile.",
+    "price": 250,
+    "unit": "1kg Pack",
+    "stock": 75,
+    "rating": 4.9,
+    "numReviews": 29,
+    "categoryId": "rice-varieties",
+    "images": ["/karunguruvai rice.jpg"],
+    "specs": {
+      "Type": "Traditional Rice",
+      "Color": "Dark Brown",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in minerals",
+      "Supports immunity",
+      "High nutritional value",
+      "Traditional wellness food"
+    ],
+    "usage": [
+      "Cooked rice",
+      "Porridge",
+      "Healthy meals",
+      "Traditional cooking"
+    ]
+  },
+  {
+    "id": "prod_63",
+    "name": "Thooyamalli Rice",
+    "description": "Premium quality Thooyamalli Rice with natural aroma, soft texture, and excellent taste for daily cooking.",
+    "price": 180,
+    "unit": "1kg Pack",
+    "stock": 100,
+    "rating": 4.8,
+    "numReviews": 31,
+    "categoryId": "rice-varieties",
+    "images": ["/thooyamalli.jpg"],
+    "specs": {
+      "Type": "Traditional Rice",
+      "Color": "White",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Easy to digest",
+      "Naturally aromatic",
+      "Rich in nutrients",
+      "Ideal for daily meals"
+    ],
+    "usage": [
+      "Steamed rice",
+      "Lunch meals",
+      "Biryani",
+      "Traditional recipes"
+    ]
+  },
+  {
+    "id": "prod_64",
+    "name": "Sivan Samba Rice",
+    "description": "Premium quality Sivan Samba Rice, a heritage rice variety valued for its nutrition and distinctive flavor.",
+    "price": 190,
+    "unit": "1kg Pack",
+    "stock": 85,
+    "rating": 4.8,
+    "numReviews": 20,
+    "categoryId": "rice-varieties",
+    "images": ["/sivan samba rice.jpg"],
+    "specs": {
+      "Type": "Traditional Rice",
+      "Color": "Brown",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in dietary fiber",
+      "Supports healthy digestion",
+      "Natural source of nutrients",
+      "Traditional wholesome food"
+    ],
+    "usage": [
+      "Cooked rice",
+      "Traditional meals",
+      "Rice porridge",
+      "Healthy recipes"
+    ]
+  },
+  {
+    "id": "prod_65",
+    "name": "Kichili Samba Rice",
+    "description": "Premium quality Kichili Samba Rice known for its aroma, soft texture, and suitability for biryani and daily meals.",
+    "price": 190,
+    "unit": "1kg Pack",
+    "stock": 95,
+    "rating": 4.9,
+    "numReviews": 33,
+    "categoryId": "rice-varieties",
+    "images": ["/kichili samba.jpg"],
+    "specs": {
+      "Type": "Traditional Rice",
+      "Color": "White",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Soft texture",
+      "Naturally aromatic",
+      "Easy to digest",
+      "Nutritious"
+    ],
+    "usage": [
+      "Biryani",
+      "Steamed rice",
+      "Pulao",
+      "Daily meals"
+    ]
+  },
+  {
+    "id": "prod_66",
+    "name": "Red Rice",
+    "description": "Premium quality Red Rice rich in fiber, antioxidants, and essential nutrients for a healthy lifestyle.",
+    "price": 170,
+    "unit": "1kg Pack",
+    "stock": 120,
+    "rating": 4.8,
+    "numReviews": 40,
+    "categoryId": "rice-varieties",
+    "images": ["/red rice.jpg"],
+    "specs": {
+      "Type": "Whole Grain Rice",
+      "Color": "Red",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "High fiber",
+      "Rich in antioxidants",
+      "Supports heart health",
+      "Naturally nutritious"
+    ],
+    "usage": [
+      "Daily meals",
+      "Rice bowls",
+      "Healthy recipes",
+      "Porridge"
+    ]
+  },
+  {
+    "id": "prod_67",
+    "name": "Kaikuthal Rice",
+    "description": "Premium quality hand-pounded Kaikuthal Rice retaining natural bran, nutrients, and authentic taste.",
+    "price": 220,
+    "unit": "1kg Pack",
+    "stock": 75,
+    "rating": 4.9,
+    "numReviews": 22,
+    "categoryId": "rice-varieties",
+    "images": ["/kaikuthal rice.jpg"],
+    "specs": {
+      "Type": "Hand-Pounded Rice",
+      "Color": "Brown",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Retains natural nutrients",
+      "High fiber",
+      "Less processed",
+      "Healthy alternative"
+    ],
+    "usage": [
+      "Cooked rice",
+      "Traditional meals",
+      "Healthy diet",
+      "Daily cooking"
+    ]
+  },
+  {
+    "id": "prod_68",
+    "name": "Matta Rice",
+    "description": "Premium quality Matta Rice, a Kerala traditional rice known for its distinctive flavor and nutritional value.",
+    "price": 160,
+    "unit": "1kg Pack",
+    "stock": 130,
+    "rating": 4.8,
+    "numReviews": 27,
+    "categoryId": "rice-varieties",
+    "images": ["/matta rice.jpg"],
+    "specs": {
+      "Type": "Traditional Rice",
+      "Color": "Pink",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in nutrients",
+      "Good source of fiber",
+      "Supports healthy digestion",
+      "Traditional wholesome food"
+    ],
+    "usage": [
+      "Steamed rice",
+      "Kerala meals",
+      "Lunch",
+      "Daily cooking"
+    ]
+  },
+  {
+    "id": "prod_69",
+    "name": "Moongil Rice",
+    "description": "Premium quality Moongil Rice (Bamboo Rice), a rare forest grain valued for its unique taste and nutritional richness.",
+    "price": 450,
+    "unit": "1kg Pack",
+    "stock": 40,
+    "rating": 5.0,
+    "numReviews": 18,
+    "categoryId": "rice-varieties",
+    "images": ["/moongil rice.jpg"],
+    "specs": {
+      "Type": "Bamboo Rice",
+      "Color": "Brown",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in protein",
+      "High in minerals",
+      "Natural source of antioxidants",
+      "Supports overall wellness"
+    ],
+    "usage": [
+      "Cooked rice",
+      "Porridge",
+      "Healthy recipes",
+      "Traditional meals"
+    ]
+  },
+  {
+    "id": "prod_70",
+    "name": "Barley Rice",
+    "description": "Premium quality Barley Rice, a wholesome grain rich in fiber and essential nutrients for a balanced diet.",
+    "price": 140,
+    "unit": "1kg Pack",
+    "stock": 110,
+    "rating": 4.8,
+    "numReviews": 25,
+    "categoryId": "rice-varieties",
+    "images": ["/barley rice.jpg"],
+    "specs": {
+      "Type": "Barley Grain",
+      "Color": "Light Brown",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "High dietary fiber",
+      "Supports heart health",
+      "Helps maintain digestion",
+      "Nutritious whole grain"
+    ],
+    "usage": [
+      "Cooked grain",
+      "Soup",
+      "Porridge",
+      "Healthy meals"
+    ]
+  },
+  {
+    "id": "prod_71",
+    "name": "Kadala Paruppu (Chana Dal)",
+    "description": "Premium quality Chana Dal rich in protein and dietary fiber, suitable for a variety of Indian dishes.",
+    "price": 110,
+    "unit": "1kg Pack",
+    "stock": 120,
+    "rating": 4.8,
+    "numReviews": 22,
+    "categoryId": "millet-rice",
+    "images": ["/channa dal.jpg"],
+    "specs": {
+      "Type": "Pulse",
+      "Color": "Yellow",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in protein",
+      "High in fiber",
+      "Supports digestion",
+      "Healthy everyday food"
+    ],
+    "usage": ["Dal", "Snacks", "Curries", "Sundal"]
+  },
+  {
+    "id": "prod_72",
+    "name": "Cashew Nuts",
+    "description": "Premium quality whole cashew nuts with rich taste and nutrition.",
+    "price": 450,
+    "unit": "500g Pack",
+    "stock": 60,
+    "rating": 4.9,
+    "numReviews": 35,
+    "categoryId": "millet-rice",
+    "images": ["/cashew.jpg"],
+    "specs": {
+      "Type": "Dry Fruit",
+      "Color": "Cream",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in healthy fats",
+      "Good source of protein",
+      "Supports heart health",
+      "Energy boosting"
+    ],
+    "usage": ["Snacks", "Sweets", "Cooking", "Desserts"]
+  },
+  {
+    "id": "prod_73",
+    "name": "Dry Grapes (Raisins)",
+    "description": "Naturally dried premium raisins with sweet taste and nutritional value.",
+    "price": 320,
+    "unit": "500g Pack",
+    "stock": 90,
+    "rating": 4.8,
+    "numReviews": 30,
+    "categoryId": "millet-rice",
+    "images": ["/dry grapes.jpg"],
+    "specs": {
+      "Type": "Dry Fruit",
+      "Color": "Brown",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in iron",
+      "Natural energy source",
+      "Supports digestion",
+      "Healthy snack"
+    ],
+    "usage": ["Desserts", "Snacks", "Sweets", "Baking"]
+  },
+  {
+    "id": "prod_74",
+    "name": "Cardamom",
+    "description": "Premium aromatic green cardamom for cooking and beverages.",
+    "price": 250,
+    "unit": "250g Pack",
+    "stock": 40,
+    "rating": 4.9,
+    "numReviews": 20,
+    "categoryId": "millet-rice",
+    "images": ["/cardamom.jpg"],
+    "specs": {
+      "Type": "Whole Spice",
+      "Color": "Green",
+      "Shelf Life": "18 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Improves digestion",
+      "Rich aroma",
+      "Natural freshness",
+      "Antioxidant properties"
+    ],
+    "usage": ["Tea", "Sweets", "Curries", "Biryani"]
+  },
+  {
+    "id": "prod_75",
+    "name": "Green Gram",
+    "description": "Premium quality whole green gram rich in protein and nutrients.",
+    "price": 160,
+    "unit": "1kg Pack",
+    "stock": 100,
+    "rating": 4.8,
+    "numReviews": 24,
+    "categoryId": "millet-rice",
+    "images": ["/green gram.jpg"],
+    "specs": {
+      "Type": "Pulse",
+      "Color": "Green",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "High protein",
+      "Rich in fiber",
+      "Easy to digest",
+      "Supports immunity"
+    ],
+    "usage": ["Sprouts", "Dal", "Sundal", "Curries"]
+  },
+  {
+    "id": "prod_76",
+    "name": "Pottu Kadalai (Roasted Gram)",
+    "description": "Premium roasted gram ideal for snacks and traditional recipes.",
+    "price": 130,
+    "unit": "1kg Pack",
+    "stock": 110,
+    "rating": 4.7,
+    "numReviews": 18,
+    "categoryId": "millet-rice",
+    "images": ["/pottukadalai.jpg"],
+    "specs": {
+      "Type": "Roasted Pulse",
+      "Color": "Yellow",
+      "Shelf Life": "10 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Protein rich",
+      "Healthy snack",
+      "High fiber",
+      "Low fat"
+    ],
+    "usage": ["Snacks", "Chutney", "Laddu", "Health Mix"]
+  },
+  {
+    "id": "prod_77",
+    "name": "Javvarisi (Sago)",
+    "description": "Premium quality sago pearls suitable for porridge and desserts.",
+    "price": 90,
+    "unit": "1kg Pack",
+    "stock": 120,
+    "rating": 4.6,
+    "numReviews": 16,
+    "categoryId": "millet-rice",
+    "images": ["/sago.jpg"],
+    "specs": {
+      "Type": "Sago",
+      "Color": "White",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Easy to digest",
+      "Quick energy",
+      "Gluten free",
+      "Ideal for fasting"
+    ],
+    "usage": ["Payasam", "Porridge", "Khichdi", "Desserts"]
+  },
+  {
+    "id": "prod_78",
+    "name": "Brown Sugar",
+    "description": "Natural brown sugar with rich flavor for healthier sweetening.",
+    "price": 75,
+    "unit": "1kg Pack",
+    "stock": 100,
+    "rating": 4.7,
+    "numReviews": 19,
+    "categoryId": "millet-rice",
+    "images": ["/brown sugar.jpg"],
+    "specs": {
+      "Type": "Natural Sugar",
+      "Color": "Brown",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Natural sweetness",
+      "Rich flavor",
+      "Contains minerals",
+      "Ideal for desserts"
+    ],
+    "usage": ["Tea", "Coffee", "Baking", "Desserts"]
+  },
+  {
+    "id": "prod_79",
+    "name": "Mustard Seeds",
+    "description": "Premium quality mustard seeds for authentic Indian seasoning.",
+    "price": 120,
+    "unit": "1kg Pack",
+    "stock": 90,
+    "rating": 4.8,
+    "numReviews": 17,
+    "categoryId": "millet-rice",
+    "images": ["/mustard seed.jpg"],
+    "specs": {
+      "Type": "Whole Spice",
+      "Color": "Black",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Enhances flavor",
+      "Rich aroma",
+      "Supports digestion",
+      "Natural spice"
+    ],
+    "usage": ["Tempering", "Pickles", "Curries", "Seasoning"]
+  },
+  {
+    "id": "prod_80",
+    "name": "Cumin Seeds",
+    "description": "Premium cumin seeds with strong aroma and authentic taste.",
+    "price": 320,
+    "unit": "1kg Pack",
+    "stock": 70,
+    "rating": 4.9,
+    "numReviews": 28,
+    "categoryId": "millet-rice",
+    "images": ["/cumin seeds.jpg"],
+    "specs": {
+      "Type": "Whole Spice",
+      "Color": "Brown",
+      "Shelf Life": "18 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Improves digestion",
+      "Rich aroma",
+      "Natural antioxidant",
+      "Enhances taste"
+    ],
+    "usage": ["Curries", "Rice", "Masala", "Seasoning"]
+  },
+  {
+    "id": "prod_81",
+    "name": "Sombu (Fennel Seeds)",
+    "description": "Premium quality fennel seeds with a refreshing aroma, widely used in Indian cooking and traditional remedies.",
+    "price": 220,
+    "unit": "1kg Pack",
+    "stock": 90,
+    "rating": 4.8,
+    "numReviews": 20,
+    "categoryId": "millet-rice",
+    "images": ["/fennel.jpg"],
+    "specs": {
+      "Type": "Whole Spice",
+      "Color": "Green",
+      "Shelf Life": "18 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Supports digestion",
+      "Freshens breath",
+      "Rich in antioxidants",
+      "Natural flavor enhancer"
+    ],
+    "usage": [
+      "Seasoning",
+      "Masala",
+      "Tea",
+      "Mouth Freshener"
+    ]
+  },
+  {
+    "id": "prod_82",
+    "name": "Sabja Seeds",
+    "description": "Premium quality basil seeds known for their cooling properties and nutritional benefits.",
+    "price": 280,
+    "unit": "500g Pack",
+    "stock": 80,
+    "rating": 4.8,
+    "numReviews": 18,
+    "categoryId": "millet-rice",
+    "images": ["/Sabja seed.jpeg"],
+    "specs": {
+      "Type": "Basil Seeds",
+      "Color": "Black",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Cooling effect",
+      "High in fiber",
+      "Supports digestion",
+      "Keeps you hydrated"
+    ],
+    "usage": [
+      "Juices",
+      "Milkshakes",
+      "Falooda",
+      "Healthy Drinks"
+    ]
+  },
+  {
+    "id": "prod_83",
+    "name": "Rock Salt",
+    "description": "Natural rock salt with essential minerals, suitable for cooking and seasoning.",
+    "price": 70,
+    "unit": "1kg Pack",
+    "stock": 150,
+    "rating": 4.7,
+    "numReviews": 16,
+    "categoryId": "millet-rice",
+    "images": ["/rock salt.jpg"],
+    "specs": {
+      "Type": "Salt",
+      "Color": "Pink",
+      "Shelf Life": "24 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Natural minerals",
+      "Enhances taste",
+      "Suitable for daily cooking",
+      "Less processed"
+    ],
+    "usage": [
+      "Cooking",
+      "Seasoning",
+      "Salads",
+      "Health Drinks"
+    ]
+  },
+  {
+    "id": "prod_84",
+    "name": "Normal Salt",
+    "description": "Premium quality refined iodized salt for everyday cooking.",
+    "price": 28,
+    "unit": "1kg Pack",
+    "stock": 200,
+    "rating": 4.6,
+    "numReviews": 14,
+    "categoryId": "millet-rice",
+    "images": ["/salt.jpg"],
+    "specs": {
+      "Type": "Refined Salt",
+      "Color": "White",
+      "Shelf Life": "24 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Iodized",
+      "Pure quality",
+      "Essential mineral",
+      "Ideal for daily cooking"
+    ],
+    "usage": [
+      "Cooking",
+      "Seasoning",
+      "Baking",
+      "Food Preparation"
+    ]
+  },
+  {
+    "id": "prod_85",
+    "name": "Meal Maker",
+    "description": "Premium quality soya chunks rich in protein for healthy meals.",
+    "price": 180,
+    "unit": "1kg Pack",
+    "stock": 100,
+    "rating": 4.8,
+    "numReviews": 22,
+    "categoryId": "millet-rice",
+    "images": ["/meal maker.jpg"],
+    "specs": {
+      "Type": "Soya Chunks",
+      "Color": "Cream",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "High protein",
+      "Low fat",
+      "Supports muscle growth",
+      "Healthy meat alternative"
+    ],
+    "usage": [
+      "Curries",
+      "Biryani",
+      "Gravy",
+      "Snacks"
+    ]
+  },
+  {
+    "id": "prod_86",
+    "name": "Groundnut",
+    "description": "Premium quality groundnuts rich in protein, healthy fats, and nutrients.",
+    "price": 140,
+    "unit": "1kg Pack",
+    "stock": 120,
+    "rating": 4.8,
+    "numReviews": 24,
+    "categoryId": "millet-rice",
+    "images": ["/groundnut.jpg"],
+    "specs": {
+      "Type": "Nut",
+      "Color": "Brown",
+      "Shelf Life": "10 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in protein",
+      "Healthy fats",
+      "Energy boosting",
+      "Heart friendly"
+    ],
+    "usage": [
+      "Snacks",
+      "Chutney",
+      "Sweets",
+      "Cooking"
+    ]
+  },
+  {
+    "id": "prod_87",
+    "name": "Mochai Kottai",
+    "description": "Premium quality field beans ideal for traditional South Indian recipes.",
+    "price": 180,
+    "unit": "1kg Pack",
+    "stock": 90,
+    "rating": 4.7,
+    "numReviews": 15,
+    "categoryId": "millet-rice",
+    "images": ["/mocha kottai.jpg"],
+    "specs": {
+      "Type": "Field Beans",
+      "Color": "Brown",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Protein rich",
+      "High fiber",
+      "Supports digestion",
+      "Nutritious pulse"
+    ],
+    "usage": [
+      "Curries",
+      "Gravy",
+      "Sundal",
+      "Rice Dishes"
+    ]
+  },
+  {
+    "id": "prod_88",
+    "name": "Green Peas",
+    "description": "Premium quality dried green peas packed with nutrition and flavor.",
+    "price": 120,
+    "unit": "1kg Pack",
+    "stock": 100,
+    "rating": 4.7,
+    "numReviews": 18,
+    "categoryId": "millet-rice",
+    "images": ["/green peas.jpg"],
+    "specs": {
+      "Type": "Dried Peas",
+      "Color": "Green",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in protein",
+      "High fiber",
+      "Good source of vitamins",
+      "Supports heart health"
+    ],
+    "usage": [
+      "Curries",
+      "Snacks",
+      "Soups",
+      "Rice"
+    ]
+  },
+  {
+    "id": "prod_89",
+    "name": "Farm Fresh Eggs",
+    "description": "Fresh and hygienically packed farm eggs rich in protein and essential nutrients.",
+    "price": 90,
+    "unit": "6 Pieces",
+    "stock": 150,
+    "rating": 4.9,
+    "numReviews": 30,
+    "categoryId": "millet-rice",
+    "images": ["/egg.jpg"],
+    "specs": {
+      "Type": "Chicken Eggs",
+      "Color": "Brown",
+      "Shelf Life": "21 Days",
+      "Origin": "India"
+    },
+    "benefits": [
+      "High protein",
+      "Rich in vitamins",
+      "Supports muscle health",
+      "Nutritious breakfast"
+    ],
+    "usage": [
+      "Boiled",
+      "Omelette",
+      "Baking",
+      "Curries"
+    ]
+  },
+  {
+    "id": "prod_90",
+    "name": "Kidney Beans (Rajma)",
+    "description": "Premium quality kidney beans rich in protein, fiber, and essential nutrients.",
+    "price": 180,
+    "unit": "1kg Pack",
+    "stock": 90,
+    "rating": 4.8,
+    "numReviews": 21,
+    "categoryId": "millet-rice",
+    "images": ["/kidney beans.jpg"],
+    "specs": {
+      "Type": "Kidney Beans",
+      "Color": "Red",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "High protein",
+      "Rich in fiber",
+      "Supports heart health",
+      "Keeps you full longer"
+    ],
+    "usage": [
+      "Rajma Curry",
+      "Salads",
+      "Rice",
+      "Soups"
+    ]
+  },
+  {
+    "id": "prod_91",
+    "name": "Pasi Paruppu (Moong Dal)",
+    "description": "Premium quality split moong dal, easy to digest and rich in protein.",
+    "price": 170,
+    "unit": "1kg Pack",
+    "stock": 100,
+    "rating": 4.8,
+    "numReviews": 22,
+    "categoryId": "millet-rice",
+    "images": ["/pasi parupu.jpg"],
+    "specs": {
+      "Type": "Split Moong Dal",
+      "Color": "Yellow",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in protein",
+      "Easy to digest",
+      "High fiber",
+      "Healthy everyday food"
+    ],
+    "usage": [
+      "Dal",
+      "Khichdi",
+      "Payasam",
+      "Soups"
+    ]
+  },
+  {
+    "id": "prod_92",
+    "name": "Orange Paruppu (Masoor Dal)",
+    "description": "Premium quality masoor dal packed with protein and essential nutrients.",
+    "price": 150,
+    "unit": "1kg Pack",
+    "stock": 100,
+    "rating": 4.7,
+    "numReviews": 19,
+    "categoryId": "millet-rice",
+    "images": ["/orange da.jpg"],
+    "specs": {
+      "Type": "Masoor Dal",
+      "Color": "Orange",
+      "Shelf Life": "12 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in protein",
+      "Good source of iron",
+      "Supports heart health",
+      "Easy to cook"
+    ],
+    "usage": [
+      "Dal",
+      "Soup",
+      "Curries",
+      "Khichdi"
+    ]
+  },
+  {
+    "id": "prod_93",
+    "name": "Ragi Aval",
+    "description": "Premium quality flattened finger millet, a healthy and nutritious breakfast option.",
+    "price": 120,
+    "unit": "500g Pack",
+    "stock": 80,
+    "rating": 4.8,
+    "numReviews": 17,
+    "categoryId": "millet-rice",
+    "images": ["/ragi aval.jpg"],
+    "specs": {
+      "Type": "Flattened Ragi",
+      "Color": "Brown",
+      "Shelf Life": "10 Months",
+      "Origin": "India"
+    },
+    "benefits": [
+      "Rich in calcium",
+      "High fiber",
+      "Supports bone health",
+      "Nutritious breakfast"
+    ],
+    "usage": [
+      "Breakfast",
+      "Upma",
+      "Snacks",
+      "Health Recipes"
     ]
   }
 ]
