@@ -1,0 +1,14 @@
+node_modules
+.next
+coverage
+__tests__
+*.test.js
+*.spec.js
+jest.config.js
+jest.setup.js
+data/*.json
+server/seed-mongo.js
+scripts/
+.env
+.env.local
+.swc
