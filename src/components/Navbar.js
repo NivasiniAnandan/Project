@@ -45,16 +45,24 @@ export default function Navbar() {
 
   // Handle autocomplete query updates
   useEffect(() => {
+    let cancelled = false;
+
     if (searchQuery.trim().length < 2) {
-      setSuggestions([]);
-      return;
+      // Clear via a micro-task to avoid top-level synchronous setState in effect
+      const timer = setTimeout(() => {
+        if (!cancelled) setSuggestions([]);
+      }, 0);
+      return () => {
+        cancelled = true;
+        clearTimeout(timer);
+      };
     }
 
     const timer = setTimeout(async () => {
       try {
         const url = `/api/products?search=${encodeURIComponent(searchQuery)}&category=${selectedCategory}`;
         const res = await fetch(url);
-        if (res.ok) {
+        if (res.ok && !cancelled) {
           const data = await res.json();
           // limit suggestions to 6
           setSuggestions(data.products ? data.products.slice(0, 6) : []);
@@ -64,7 +72,10 @@ export default function Navbar() {
       }
     }, 200);
 
-    return () => clearTimeout(timer);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
   }, [searchQuery, selectedCategory]);
 
   const handleSearchSubmit = (e) => {
@@ -136,7 +147,7 @@ export default function Navbar() {
             <input
               type="text"
               className="search-input"
-              placeholder="Search wholesale food items, oils, grains..."
+              placeholder="Search food items, oils, grains..."
               value={searchQuery}
               onChange={(e) => {
                 setSearchQuery(e.target.value);
@@ -221,12 +232,6 @@ export default function Navbar() {
             </Link>
           )}
 
-          {/* Orders */}
-          <Link href="/orders" className="nav-link-item">
-            <span className="nav-link-sub">Wholesale</span>
-            <span className="nav-link-main">Orders</span>
-          </Link>
-
           {/* Cart */}
           <Link href="/cart" className="nav-link-item cart-icon-wrapper">
             <ShoppingCart size={24} />
@@ -247,8 +252,8 @@ export default function Navbar() {
           </Link>
         ))}
         <Link href="/contact" className="sub-nav-item" style={{ marginLeft: 'auto' }}>
-          <PhoneCall size={14} /> Wholesaler Inquiries
-        </Link>
+          <PhoneCall size={14} />Inquiries
+        </Link> 
       </div>
     </header>
   );

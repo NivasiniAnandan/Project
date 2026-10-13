@@ -1125,6 +1125,15 @@ img {
   font-weight: 700;
 }
 
+/* Wholesale Module */
+.wholesale-card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.2rem;
+  box-shadow: var(--shadow-sm);
+}
+
 /* Admin Dashboard Layout */
 .admin-layout {
   display: grid;
@@ -1270,7 +1279,7 @@ img {
     grid-template-columns: 1fr;
   }
   .catalog-sidebar {
-    display: none; /* Hide filter on tablets/mobile, can toggle with menu in future */
+    display: block;
   }
   .detail-layout {
     grid-template-columns: 1fr;

@@ -4,12 +4,12 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Bommal Foods | Wholesale Food Products & Edible Oils",
+  title: "Bommal Foods",
   description: "Shop premium wood-pressed groundnut oil, coconut oil, organic millets, rice varieties, masalas, health mixes, and brown sugar from Bommal Foods wholesale platform. Instant ordering for retailers and distributors.",
-  keywords: "Bommal Foods, wholesale food, edible oils, groundnut oil, organic millets, rice distributor, masala powders, Chennai, health mix, nattu sakkarai",
+  keywords: "Bommal Foods, edible oils, groundnut oil, organic millets, rice distributor, masala powders, Chennai, health mix, nattu sakkarai",
   openGraph: {
-    title: "Bommal Foods | Wholesale Food Products & Edible Oils",
-    description: "Premium wholesale food products and wood-pressed oils. Order online in bulk.",
+    title: "Bommal Foods",
+    description: "Premium food products and wood-pressed oils. Order online in bulk.",
     type: "website",
     locale: "en_IN",
     siteName: "Bommal Foods",

@@ -18,7 +18,7 @@ export default function Footer() {
             </h3>
 
             <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '1.5rem', lineHeight: '1.6' }}>
-              Premium wholesale manufacturers and distributors of pure wood-pressed edible oils, organic millets, high-quality spices, grains, and traditional health mixes. Serving retailers, restaurants, and households since 2020.
+              Premium manufacturers and distributors of pure wood-pressed edible oils, organic millets, high-quality spices, grains, and traditional health mixes. Serving retailers, restaurants, and households since 2020.
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', fontSize: '0.85rem' }}>
@@ -62,7 +62,7 @@ export default function Footer() {
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
                 <MapPin size={14} className="text-muted" style={{ marginTop: '3px' }} />
                 <span>
-                  Kowsalya Traders, Vaikalmedu Perundurai to Erode main road, Erode
+                  Kowsalya Traders, Vaikalmedu Perundurai to Erode main road, Erode 638052
                 </span>
               </div>
 
@@ -84,7 +84,7 @@ export default function Footer() {
 
           {/* Column 3 */}
           <div>
-            <h4 className="footer-col-title">Wholesale Services</h4>
+            <h4 className="footer-col-title">Services</h4>
             <ul className="footer-links" style={{ fontSize: '0.85rem' }}>
               <li><Link href="/contact">Apply for Distributor Account</Link></li>
               <li><Link href="/contact">Bulk Pricing Quotation</Link></li>
@@ -124,7 +124,7 @@ export default function Footer() {
                 <Clock size={28} style={{ color: '#3b82f6', flexShrink: 0 }} />
                 <div>
                   <strong style={{ color: '#fff', display: 'block' }}>
-                    24/7 Wholesale Portal
+                    24/7 Portal
                   </strong>
                   Manage inventory orders, view invoice histories, and track status.
                 </div>

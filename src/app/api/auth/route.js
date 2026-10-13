@@ -7,12 +7,17 @@ import { User } from '@/lib/models';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'fallback_secret_key';
 
-async function useMongoStorage() {
+async function checkMongoStorage() {
   try {
-    await connectDB();
+    const conn = await connectDB();
+    if (!conn) {
+      console.log('⚠️ MongoDB not configured, using JSON storage');
+      return false;
+    }
+    console.log('✅ Using MongoDB for storage');
     return true;
   } catch (error) {
-    console.warn('MongoDB unavailable, using JSON file storage instead:', error.message);
+    console.error('❌ MongoDB connection error:', error.message);
     return false;
   }
 }
@@ -31,43 +36,37 @@ function buildUserResponse(user) {
 export async function POST(req) {
   try {
     const { action, email, password, name, phone, address } = await req.json();
-    const useMongo = await useMongoStorage();
+    const useMongo = await checkMongoStorage();
 
     if (action === 'login') {
       const normalizedEmail = (email || '').toLowerCase().trim();
 
       if (useMongo) {
-        const user = await User.findOne({ email: normalizedEmail });
+        const mongoUser = await User.findOne({ email: normalizedEmail });
+        if (mongoUser) {
+          const isPasswordValid = bcrypt.compareSync(password, mongoUser.passwordHash);
+          if (!isPasswordValid) {
+            return NextResponse.json(
+              { message: 'Invalid email or password' },
+              { status: 401 }
+            );
+          }
 
-        if (!user) {
-          return NextResponse.json(
-            { message: 'Invalid email or password' },
-            { status: 401 }
+          const token = jwt.sign(
+            {
+              id: mongoUser._id.toString(),
+              email: mongoUser.email,
+              role: mongoUser.role,
+            },
+            JWT_SECRET,
+            { expiresIn: '7d' }
           );
+
+          return NextResponse.json({
+            token,
+            user: buildUserResponse(mongoUser),
+          });
         }
-
-        const isPasswordValid = bcrypt.compareSync(password, user.passwordHash);
-        if (!isPasswordValid) {
-          return NextResponse.json(
-            { message: 'Invalid email or password' },
-            { status: 401 }
-          );
-        }
-
-        const token = jwt.sign(
-          {
-            id: user._id.toString(),
-            email: user.email,
-            role: user.role,
-          },
-          JWT_SECRET,
-          { expiresIn: '7d' }
-        );
-
-        return NextResponse.json({
-          token,
-          user: buildUserResponse(user),
-        });
       }
 
       const users = db.getUsers();
@@ -90,7 +89,7 @@ export async function POST(req) {
 
       const token = jwt.sign(
         {
-          id: user.id,
+          id: user.id || user._id?.toString?.(),
           email: user.email,
           role: user.role,
         },
@@ -157,6 +156,7 @@ export async function POST(req) {
       const salt = bcrypt.genSaltSync(10);
       const passwordHash = bcrypt.hashSync(password, salt);
 
+      // eslint-disable-next-line react-hooks/purity
       const newUser = {
         id: `usr_${Date.now()}`,
         name,
@@ -217,7 +217,7 @@ export async function PUT(req) {
     }
 
     const { name, phone, address, password } = await req.json();
-    const useMongo = await useMongoStorage();
+    const useMongo = await checkMongoStorage();
 
     if (useMongo) {
       const user = await User.findById(decoded.id);

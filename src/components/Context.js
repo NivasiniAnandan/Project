@@ -1,9 +1,11 @@
 'use client';
 
-import React, { createContext, useState, useEffect, useContext } from 'react';
+import React, { createContext, useState, useEffect, useContext, startTransition } from 'react';
 import { useRouter } from 'next/navigation';
 
 const AppContext = createContext();
+
+export const getCartItemKey = (item) => `${item.id}::${item.packSize || item.unit || ''}`;
 
 export function AppProvider({ children }) {
   const router = useRouter();
@@ -14,26 +16,34 @@ export function AppProvider({ children }) {
 
   // Load cart and auth token from localStorage on mount
   useEffect(() => {
-    const storedCart = localStorage.getItem('bommal_cart');
-    if (storedCart) {
+    const readJson = (key, fallback = null) => {
       try {
-        setCart(JSON.parse(storedCart));
+        const storedValue = localStorage.getItem(key);
+        if (!storedValue) return fallback;
+        return JSON.parse(storedValue);
       } catch (e) {
-        console.error('Error parsing cart from localStorage', e);
+        console.error(`Error parsing ${key} from localStorage`, e);
+        localStorage.removeItem(key);
+        return fallback;
       }
-    }
+    };
 
+    // Read all values before state updates to avoid cascading renders
+    const storedCart = readJson('bommal_cart', []);
     const storedToken = localStorage.getItem('bommal_token');
-    const storedUser = localStorage.getItem('bommal_user');
-    if (storedToken && storedUser) {
-      try {
-        setToken(storedToken);
-        setUser(JSON.parse(storedUser));
-      } catch (e) {
-        console.error('Error parsing user/token from localStorage', e);
+    const storedUser = readJson('bommal_user', null);
+
+    // Batch all state updates to avoid cascading renders (ESLint: react-hooks/set-state-in-effect)
+    startTransition(() => {
+      if (Array.isArray(storedCart)) {
+        setCart(storedCart);
       }
-    }
-    setLoading(false);
+      if (storedToken && storedUser) {
+        setToken(storedToken);
+        setUser(storedUser);
+      }
+      setLoading(false);
+    });
   }, []);
 
   // Sync cart to localStorage
@@ -45,7 +55,17 @@ export function AppProvider({ children }) {
   // Cart operations
   const addToCart = (product, quantity = 1) => {
     const newCart = [...cart];
-    const existingIndex = newCart.findIndex((item) => item.id === product.id);
+    const packSize = product.packSize || product.unit;
+    const cartKey = getCartItemKey({ id: product.id, packSize });
+    const existingIndex = newCart.findIndex((item) => getCartItemKey(item) === cartKey);
+    const isWholesale = user?.role === 'wholesale' && product.wholesalePrice != null;
+    const selectedPrice = isWholesale ? product.wholesalePrice : product.price;
+    const wholesaleMinimumQuantity = Number(product.wholesaleMinimumQuantity) || 1;
+
+    if (isWholesale && existingIndex === -1 && quantity < wholesaleMinimumQuantity) {
+      alert(`Minimum order for ${packSize} is ${wholesaleMinimumQuantity} units.`);
+      return false;
+    }
 
     if (existingIndex > -1) {
       // Check stock limit
@@ -63,9 +83,15 @@ export function AppProvider({ children }) {
       newCart.push({
         id: product.id,
         name: product.name,
-        price: product.price,
-        unit: product.unit,
-        image: product.images[0],
+        price: selectedPrice,
+        retailPrice: product.price,
+        wholesalePrice: product.wholesalePrice ?? null,
+        wholesaleMinimumQuantity,
+        priceType: isWholesale ? 'wholesale' : 'retail',
+        unit: packSize,
+        packSize,
+        variantId: cartKey,
+        image: product.images?.[0] || product.image || '',
         stock: product.stock,
         categoryId: product.categoryId,
         quantity,
@@ -75,14 +101,14 @@ export function AppProvider({ children }) {
     return true;
   };
 
-  const removeFromCart = (productId) => {
-    const newCart = cart.filter((item) => item.id !== productId);
+  const removeFromCart = (cartKey) => {
+    const newCart = cart.filter((item) => getCartItemKey(item) !== cartKey);
     saveCartToStorage(newCart);
   };
 
-  const updateCartQty = (productId, quantity) => {
+  const updateCartQty = (cartKey, quantity) => {
     const newCart = cart.map((item) => {
-      if (item.id === productId) {
+      if (getCartItemKey(item) === cartKey) {
         if (quantity > item.stock) {
           alert(`Cannot update quantity. Available stock: ${item.stock}`);
           return item;

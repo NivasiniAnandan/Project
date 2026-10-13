@@ -16,7 +16,7 @@ export default function Home() {
   const heroSlides = [
     {
       title: "Direct From Manufacturers to Retailers",
-      tagline: "B2C Wholesale Portal",
+      tagline: "B2C Portal",
       desc: "Order bulk quantities of cold pressed oils, organic millets, high-quality spices, and flours. Enjoy competitive distributor pricing and reliable delivery.",
       img: "https://dms.mydukaan.io/original/webp/media/9f1fe248-f8df-42d1-8c00-4646e1d8aeec.png",
       link: "/catalog"
@@ -167,7 +167,7 @@ export default function Home() {
               <Percent size={28} />
             </div>
             <div>
-              <h3 style={{ fontSize: '1rem', fontWeight: 700 }}>Wholesale Price Margin</h3>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700 }}>Price Margin</h3>
               <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Highly competitive prices directly corresponding to production costs.</p>
             </div>
           </div>
@@ -210,7 +210,7 @@ export default function Home() {
       {/* Featured Products / Bestsellers */}
       <section className="container">
         <h2 className="section-title">
-          Wholesale Best Sellers
+          Best Sellers
           <Link href="/catalog" style={{ fontSize: '0.85rem', color: 'var(--primary-hover)', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
             Browse Catalog <ChevronRight size={14} />
           </Link>

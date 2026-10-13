@@ -190,7 +190,7 @@ export default function AdminInquiries() {
                 <div><strong>From:</strong> {selectedInquiry.name} ({selectedInquiry.email})</div>
                 <div><strong>Subject:</strong> {selectedInquiry.subject}</div>
                 <div style={{ borderTop: '1px solid var(--border-color)', marginTop: '0.5rem', paddingTop: '0.5rem', fontStyle: 'italic', color: 'var(--text-main)' }}>
-                  "{selectedInquiry.message}"
+                  &ldquo;{selectedInquiry.message}&rdquo;
                 </div>
               </div>
 

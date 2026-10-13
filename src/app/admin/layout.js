@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { useApp } from '@/components/Context';
 import Link from 'next/link';
-import { LayoutDashboard, ShoppingBag, Truck, Mail, LogOut, ArrowLeft, Loader2 } from 'lucide-react';
+import { LayoutDashboard, ShoppingBag, Truck, Mail, LogOut, ArrowLeft, Loader2, BarChart3 } from 'lucide-react';
 
 export default function AdminLayout({ children }) {
   const router = useRouter();
@@ -35,6 +35,7 @@ export default function AdminLayout({ children }) {
     { name: 'Manage Products', path: '/admin/products', icon: <ShoppingBag size={18} /> },
     { name: 'Manage Orders', path: '/admin/orders', icon: <Truck size={18} /> },
     { name: 'Customer Inquiries', path: '/admin/inquiries', icon: <Mail size={18} /> },
+    { name: 'Reports', path: '/admin/reports', icon: <BarChart3 size={18} /> },
   ];
 
   return (

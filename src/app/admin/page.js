@@ -73,7 +73,7 @@ export default function AdminDashboard() {
 
   const statCards = [
     {
-      title: "Total Wholesale Revenue",
+      title: "Total Revenue",
       value: `₹${metrics.totalSales.toLocaleString('en-IN')}`,
       icon: <IndianRupee size={22} />,
       color: "var(--primary-color)"
@@ -91,7 +91,7 @@ export default function AdminDashboard() {
       color: "#1e40af"
     },
     {
-      title: "Pending Wholesaler Inquiries",
+      title: "Pending Inquiries",
       value: metrics.pendingInquiries,
       icon: <MessageSquare size={22} />,
       color: "#0d9488"
@@ -151,7 +151,7 @@ export default function AdminDashboard() {
         {/* Recent Orders table */}
         <div style={{ background: 'white', borderRadius: '12px', padding: '1.5rem', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-sm)' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
-            <h3 style={{ fontSize: '1.05rem', fontWeight: 800 }}>Recent Wholesale Orders</h3>
+            <h3 style={{ fontSize: '1.05rem', fontWeight: 800 }}>Recent Orders</h3>
             <Link href="/admin/orders" style={{ fontSize: '0.8rem', color: 'var(--primary-hover)', fontWeight: 700 }}>
               View All Orders
             </Link>
@@ -196,24 +196,17 @@ export default function AdminDashboard() {
 
         {/* Info panel: Business stats */}
         <div style={{ background: 'white', borderRadius: '12px', padding: '1.5rem', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-sm)' }}>
-          <h3 style={{ fontSize: '1.05rem', fontWeight: 800, marginBottom: '1.25rem' }}>Wholesale Business Settings</h3>
+          <h3 style={{ fontSize: '1.05rem', fontWeight: 800, marginBottom: '1.25rem' }}>Business Settings</h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', fontSize: '0.85rem' }}>
             <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '0.75rem' }}>
               <strong>B2B Billing Currency:</strong>
               <div style={{ color: 'var(--text-muted)', marginTop: '2px' }}>INR (Indian Rupee - ₹)</div>
             </div>
-            <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '0.75rem' }}>
-              <strong>Bulk Discount Thresholds:</strong>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '3px', color: 'var(--text-muted)', marginTop: '4px' }}>
-                <div>• ₹10k+ Order Value: <strong>2% Discount</strong></div>
-                <div>• ₹25k+ Order Value: <strong>5% Discount</strong></div>
-                <div>• ₹50k+ Order Value: <strong>8% Discount</strong></div>
-              </div>
-            </div>
+            
             <div>
               <strong>Dispatch Center Address:</strong>
               <div style={{ color: 'var(--text-muted)', marginTop: '2px', lineHeight: '1.4' }}>
-                Main Loading Shed #4, Koyambedu Vegetable Terminal Yard, Chennai, TN, 600107
+                Kowsalya Traders, Vaikalmedu Perundurai to Erode main road, Erode 638052
               </div>
             </div>
           </div>

@@ -1,1 +1,492 @@
-[]
+[
+  {
+    "id": "ord_674794",
+    "userId": "usr_1784270269933",
+    "userEmail": "nivasini2239@gmail.com",
+    "items": [
+      {
+        "id": "prod_1",
+        "name": "Groundnut Oil",
+        "price": 280,
+        "unit": "1L",
+        "image": "/Groundnut Oil.jpeg",
+        "stock": 35,
+        "categoryId": "edible-oils",
+        "quantity": 1
+      },
+      {
+        "id": "prod_2",
+        "name": "Pure Turmeric Powder (High Curcumin)",
+        "price": 25,
+        "unit": "50gm",
+        "image": "/Turmeric Powder.jpeg",
+        "stock": 59,
+        "categoryId": "masala-items",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 305,
+    "discountAmount": 0,
+    "shippingFee": 50,
+    "total": 355,
+    "invoiceNumber": "INV-2026-674794",
+    "shippingAddress": {
+      "name": "Nivasini",
+      "businessName": "Retailer / Distributor Store",
+      "phone": "9488335556",
+      "address": "10/21 Ragavendra Nagar Poosari Palayam Chengapalli",
+      "city": "Tirupur",
+      "state": "Tamil Nadu",
+      "pincode": "638812"
+    },
+    "paymentMethod": "invoice",
+    "status": "pending",
+    "paymentStatus": "invoice_sent",
+    "createdAt": "2026-09-04T14:59:12.672Z"
+  },
+  {
+    "id": "ord_288967",
+    "userId": "usr_1784270269933",
+    "userEmail": "nivasini2239@gmail.com",
+    "items": [
+      {
+        "id": "prod_1",
+        "name": "Groundnut Oil",
+        "price": 280,
+        "unit": "1L",
+        "image": "/Groundnut Oil.jpeg",
+        "stock": 37,
+        "categoryId": "edible-oils",
+        "quantity": 2
+      },
+      {
+        "id": "prod_34",
+        "name": "Black Rice",
+        "price": 180,
+        "unit": "1Kg",
+        "image": "/Black Rice.jpeg",
+        "stock": 70,
+        "categoryId": "rice-varieties",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 740,
+    "discountAmount": 0,
+    "shippingFee": 50,
+    "total": 790,
+    "invoiceNumber": "INV-2026-288967",
+    "shippingAddress": {
+      "name": "Nivasini",
+      "businessName": "Retailer / Distributor Store",
+      "phone": "9488335556",
+      "address": "Tirupur",
+      "city": "Tirupur",
+      "state": "Tamil Nadu",
+      "pincode": "638812"
+    },
+    "paymentMethod": "invoice",
+    "status": "pending",
+    "paymentStatus": "invoice_sent",
+    "createdAt": "2026-09-04T14:56:19.812Z"
+  },
+  {
+    "id": "ord_747626",
+    "userId": "usr_1784270269933",
+    "userEmail": "nivasini2239@gmail.com",
+    "items": [
+      {
+        "id": "prod_27",
+        "name": "Garam Masala",
+        "price": 50,
+        "unit": "50gm",
+        "image": "/Garam Masala.jpeg",
+        "stock": 60,
+        "categoryId": "masala-items",
+        "quantity": 2
+      },
+      {
+        "id": "prod_48",
+        "name": "Black Ulunthu Health Mix",
+        "price": 110,
+        "unit": "250gm Pack",
+        "image": "/Black Ulunthu Health Mix.jpeg",
+        "stock": 80,
+        "categoryId": "health-mix-products",
+        "quantity": 1
+      },
+      {
+        "id": "prod_49",
+        "name": "Sprouted Health Mix",
+        "price": 130,
+        "unit": "250gm ",
+        "image": "/Sprouted Health Mix.jpeg",
+        "stock": 80,
+        "categoryId": "health-mix-products",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 340,
+    "total": 840,
+    "shippingAddress": {
+      "name": "Nivasini",
+      "businessName": "Retailer / Distributor Store",
+      "phone": "9488335556",
+      "address": "Tirupur",
+      "city": "Palayakadu",
+      "state": "Tamil Nadu",
+      "pincode": "638812"
+    },
+    "paymentMethod": "invoice",
+    "status": "pending",
+    "paymentStatus": "invoice_sent",
+    "createdAt": "2026-08-31T16:23:29.986Z"
+  },
+  {
+    "id": "ord_181169",
+    "userId": "usr_retailer",
+    "userEmail": "retailer@gmail.com",
+    "items": [
+      {
+        "id": "prod_1",
+        "name": "Groundnut Oil",
+        "price": 280,
+        "quantity": 1,
+        "image": "/Groundnut Oil.jpeg",
+        "unit": "1L",
+        "stock": 39,
+        "categoryId": "edible-oils"
+      }
+    ],
+    "subtotal": 280,
+    "total": 280,
+    "shippingAddress": {
+      "name": "Retailer",
+      "businessName": "Demo Shop",
+      "phone": "9876543210",
+      "address": "Test street",
+      "city": "Erode",
+      "state": "Tamil Nadu",
+      "pincode": "638001"
+    },
+    "paymentMethod": "invoice",
+    "status": "pending",
+    "paymentStatus": "invoice_sent",
+    "createdAt": "2026-08-31T04:23:36.882Z"
+  },
+  {
+    "id": "ord_615150",
+    "userId": "usr_1784270269933",
+    "userEmail": "nivasini2239@gmail.com",
+    "items": [
+      {
+        "id": "prod_2",
+        "name": "Pure Turmeric Powder (High Curcumin)",
+        "price": 25,
+        "unit": "50gm",
+        "image": "/Turmeric Powder.jpeg",
+        "stock": 60,
+        "categoryId": "masala-items",
+        "quantity": 1
+      },
+      {
+        "id": "prod_43",
+        "name": "Arapu Powder",
+        "price": 30,
+        "unit": "100gm Pack",
+        "image": "/Arapuu.jpeg",
+        "stock": 80,
+        "categoryId": "herbal-powders",
+        "quantity": 1
+      },
+      {
+        "id": "prod_5",
+        "name": "Premium Ragi Flour",
+        "price": 75,
+        "unit": "1kg",
+        "image": "/Ragi_Flour.jpeg",
+        "stock": 35,
+        "categoryId": "flours",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 130,
+    "total": 630,
+    "shippingAddress": {
+      "name": "Nivasini",
+      "businessName": "Retailer / Distributor Store",
+      "phone": "9488335556",
+      "address": "Tirupur",
+      "city": "Tirupur",
+      "state": "Tamil Nadu",
+      "pincode": "638812"
+    },
+    "paymentMethod": "invoice",
+    "status": "pending",
+    "paymentStatus": "invoice_sent",
+    "createdAt": "2026-08-31T04:11:25.218Z"
+  },
+  {
+    "id": "ord_400975",
+    "userId": "usr_retailer",
+    "userEmail": "retailer@gmail.com",
+    "items": [
+      {
+        "id": "prod_1",
+        "name": "Groundnut Oil",
+        "price": 280,
+        "quantity": 1,
+        "image": "/Groundnut Oil.jpeg",
+        "unit": "1L",
+        "stock": 39,
+        "categoryId": "edible-oils"
+      }
+    ],
+    "subtotal": 280,
+    "total": 280,
+    "shippingAddress": {
+      "name": "Retailer",
+      "businessName": "Demo Shop",
+      "phone": "9876543210",
+      "address": "Test street",
+      "city": "Erode",
+      "state": "Tamil Nadu",
+      "pincode": "638001"
+    },
+    "paymentMethod": "invoice",
+    "status": "pending",
+    "paymentStatus": "invoice_sent",
+    "createdAt": "2026-08-31T04:09:20.265Z"
+  },
+  {
+    "id": "ord_988537",
+    "userId": "usr_1784700187382",
+    "userEmail": "nivasinia.24bcr@kongu.edu",
+    "items": [
+      {
+        "id": "prod_1",
+        "name": "Groundnut Oil",
+        "price": 280,
+        "unit": "1L",
+        "image": "/Groundnut Oil.jpeg",
+        "stock": 40,
+        "categoryId": "edible-oils",
+        "quantity": 1
+      },
+      {
+        "id": "prod_18",
+        "name": "Coconut Oil",
+        "price": 360,
+        "unit": "1L",
+        "image": "/Coconut Oil.jpeg",
+        "stock": 38,
+        "categoryId": "edible-oils",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 640,
+    "total": 1140,
+    "shippingAddress": {
+      "name": "J",
+      "businessName": "Subhika",
+      "phone": "9488335556",
+      "address": "Erode",
+      "city": "Erode",
+      "state": "Tamil Nadu",
+      "pincode": "638052"
+    },
+    "paymentMethod": "invoice",
+    "status": "pending",
+    "paymentStatus": "invoice_sent",
+    "createdAt": "2026-08-29T14:59:56.837Z"
+  },
+  {
+    "id": "ord_115075",
+    "userId": "6a848423cf9e5b557cfcbb59",
+    "userEmail": "sam@gmail.com",
+    "items": [
+      {
+        "id": "prod_12",
+        "name": "Premium Wheat Flour",
+        "price": 2250,
+        "unit": "50kg Bag",
+        "image": "/Wheat Flour.jpeg",
+        "stock": 40,
+        "categoryId": "flours",
+        "quantity": 1
+      },
+      {
+        "id": "prod_73",
+        "name": "Dry Grapes (Raisins)",
+        "price": 320,
+        "unit": "500g Pack",
+        "image": "/dry grapes.jpg",
+        "stock": 90,
+        "categoryId": "millet-rice",
+        "quantity": 1
+      },
+      {
+        "id": "prod_1",
+        "name": "Groundnut Oil",
+        "price": 280,
+        "unit": "1L",
+        "image": "/Groundnut Oil.jpeg",
+        "stock": 43,
+        "categoryId": "edible-oils",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 2850,
+    "total": 3350,
+    "shippingAddress": {
+      "name": "sam",
+      "businessName": "XYZ",
+      "phone": "1234567890",
+      "address": "45,erode",
+      "city": "Tirupur",
+      "state": "Tamil Nadu",
+      "pincode": "638812"
+    },
+    "paymentMethod": "invoice",
+    "status": "pending",
+    "paymentStatus": "invoice_sent",
+    "createdAt": "2026-08-19T05:46:05.100Z"
+  },
+  {
+    "id": "ord_979016",
+    "userId": "usr_1787117543455",
+    "userEmail": "tharun@gmail.com",
+    "items": [
+      {
+        "id": "prod_1",
+        "name": "Groundnut Oil",
+        "price": 280,
+        "unit": "1L",
+        "image": "/Groundnut Oil.jpeg",
+        "stock": 42,
+        "categoryId": "edible-oils",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 280,
+    "total": 780,
+    "shippingAddress": {
+      "name": "Nivasini",
+      "businessName": "xyz",
+      "phone": "9488335556",
+      "address": "Tirupur",
+      "city": "Tirupur",
+      "state": "Tamil Nadu",
+      "pincode": "638812"
+    },
+    "paymentMethod": "invoice",
+    "status": "pending",
+    "paymentStatus": "invoice_sent",
+    "createdAt": "2026-08-19T05:41:55.815Z"
+  },
+  {
+    "id": "ord_510150",
+    "userId": "usr_1787117543455",
+    "userEmail": "tharun@gmail.com",
+    "items": [
+      {
+        "id": "prod_1",
+        "name": "Groundnut Oil",
+        "price": 280,
+        "unit": "1L",
+        "image": "/Groundnut Oil.jpeg",
+        "stock": 43,
+        "categoryId": "edible-oils",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 280,
+    "total": 780,
+    "shippingAddress": {
+      "name": "Nivasini",
+      "businessName": "xyz",
+      "phone": "9488335556",
+      "address": "Tirupur",
+      "city": "Tirupur",
+      "state": "Tamil Nadu",
+      "pincode": "638812"
+    },
+    "paymentMethod": "invoice",
+    "status": "pending",
+    "paymentStatus": "invoice_sent",
+    "createdAt": "2026-08-19T05:38:08.968Z"
+  },
+  {
+    "id": "ord_726747",
+    "userId": "usr_1784270269933",
+    "userEmail": "nivasini2239@gmail.com",
+    "items": [
+      {
+        "id": "prod_1",
+        "name": "Groundnut Oil",
+        "price": 280,
+        "unit": "1L",
+        "image": "/Groundnut Oil.jpeg",
+        "stock": 44,
+        "categoryId": "edible-oils",
+        "quantity": 1
+      },
+      {
+        "id": "prod_4",
+        "name": "Premium Wheat Flour",
+        "price": 75,
+        "unit": "1Kg",
+        "image": "/Wheat Flour.jpeg",
+        "stock": 40,
+        "categoryId": "flours",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 355,
+    "total": 855,
+    "shippingAddress": {
+      "name": "Nivasini",
+      "businessName": "Retailer / Distributor Store",
+      "phone": "9488335556",
+      "address": "Tirupur",
+      "city": "Tirupur",
+      "state": "Tamil Nadu",
+      "pincode": "638812"
+    },
+    "paymentMethod": "invoice",
+    "status": "pending",
+    "paymentStatus": "invoice_sent",
+    "createdAt": "2026-07-22T06:24:42.946Z"
+  },
+  {
+    "id": "ord_575712",
+    "userId": "usr_1784270269933",
+    "userEmail": "nivasini2239@gmail.com",
+    "items": [
+      {
+        "id": "prod_1",
+        "name": "Groundnut Oil",
+        "price": 280,
+        "unit": "1L",
+        "image": "/Groundnut Oil.jpeg",
+        "stock": 45,
+        "categoryId": "edible-oils",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 280,
+    "total": 780,
+    "shippingAddress": {
+      "name": "Nivasini",
+      "businessName": "Retailer / Distributor Store",
+      "phone": "9488335556",
+      "address": "10/21 Ragavendra nagar Chengapalli Tiruppur.",
+      "city": "Tirupur",
+      "state": "Tamil Nadu",
+      "pincode": "638812"
+    },
+    "paymentMethod": "credit-card",
+    "status": "delivered",
+    "paymentStatus": "paid",
+    "createdAt": "2026-07-22T06:23:20.001Z"
+  }
+]

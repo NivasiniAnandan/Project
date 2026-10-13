@@ -4,8 +4,20 @@ import bcrypt from 'bcryptjs';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 
+/**
+ * Detect if the filesystem is read-only (e.g. Vercel serverless environment).
+ * On Vercel, only /tmp is writable. The project /data directory is read-only.
+ * When running in read-only mode, write operations are silently skipped —
+ * MongoDB Atlas handles all persistent writes in production.
+ */
+function isReadOnlyFilesystem() {
+  // VERCEL env var is automatically set to "1" on Vercel deployments
+  return process.env.VERCEL === '1';
+}
+
 // Helper to ensure data directory and files exist
 function initDb() {
+  if (isReadOnlyFilesystem()) return; // skip on Vercel
   if (!fs.existsSync(DATA_DIR)) {
     fs.mkdirSync(DATA_DIR, { recursive: true });
   }
@@ -15,7 +27,7 @@ function initDb() {
     'products.json': getSeedProducts(),
     'users.json': getSeedUsers(),
     'orders.json': [],
-    'inquiries.json': getSeedInquiries()
+    'inquiries.json': getSeedInquiries(),
   };
 
   for (const [filename, defaultData] of Object.entries(files)) {
@@ -28,6 +40,19 @@ function initDb() {
 
 // Read data
 export function readData(file) {
+  if (isReadOnlyFilesystem()) {
+    // On Vercel, return in-memory seed data for read operations
+    // (MongoDB Atlas should always be configured and will be preferred by the API routes)
+    const seedMap = {
+      'categories.json': getSeedCategories(),
+      'products.json': getSeedProducts(),
+      'users.json': getSeedUsers(),
+      'orders.json': [],
+      'inquiries.json': getSeedInquiries(),
+    };
+    return seedMap[file] ?? [];
+  }
+
   initDb();
   const filePath = path.join(DATA_DIR, file);
   try {
@@ -39,8 +64,13 @@ export function readData(file) {
   }
 }
 
-// Write data
+// Write data — no-op on read-only filesystems (Vercel)
 export function writeData(file, data) {
+  if (isReadOnlyFilesystem()) {
+    console.warn(`[db.js] Skipping write to ${file} — read-only filesystem (Vercel). Use MongoDB Atlas in production.`);
+    return false;
+  }
+
   initDb();
   const filePath = path.join(DATA_DIR, file);
   try {

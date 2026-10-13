@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useApp } from '@/components/Context';
 import { Plus, Edit2, Trash2, Check, X, Loader2, Save } from 'lucide-react';
+import { getCategoryPackSizes, normalizeProduct } from '@/lib/productVariants';
 
 export default function AdminProducts() {
   const { token } = useApp();
@@ -17,11 +18,10 @@ export default function AdminProducts() {
   // Form Fields
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
-  const [price, setPrice] = useState('');
-  const [unit, setUnit] = useState('');
-  const [stock, setStock] = useState('');
   const [categoryId, setCategoryId] = useState('');
   const [imageUrl, setImageUrl] = useState('');
+  const [productVariants, setProductVariants] = useState([]);
+  const [customPackSize, setCustomPackSize] = useState('');
   
   // Custom specifications (simple text box parsing or key-value object)
   const [specGrade, setSpecGrade] = useState('');
@@ -48,18 +48,20 @@ export default function AdminProducts() {
     }
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     loadProducts();
+  // loadProducts is defined above and stable — intentionally omitted from deps
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleOpenAdd = () => {
     setEditingProduct(null);
     setName('');
     setDescription('');
-    setPrice('');
-    setUnit('');
-    setStock('');
     setCategoryId(categories.length > 0 ? categories[0].id : '');
+    setProductVariants([]);
+    setCustomPackSize('');
     setImageUrl('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&auto=format&fit=crop&q=80');
     
     // specs
@@ -75,10 +77,16 @@ export default function AdminProducts() {
     setEditingProduct(product);
     setName(product.name);
     setDescription(product.description || '');
-    setPrice(product.price);
-    setUnit(product.unit);
-    setStock(product.stock);
+    const normalizedProduct = normalizeProduct(product);
     setCategoryId(product.categoryId);
+    setProductVariants(normalizedProduct.variants.map((variant) => ({
+      ...variant,
+      price: String(variant.price),
+      stock: String(variant.stock),
+      wholesalePrice: variant.wholesalePrice == null ? '' : String(variant.wholesalePrice),
+      wholesaleMinimumQuantity: String(variant.wholesaleMinimumQuantity || 1)
+    })));
+    setCustomPackSize('');
     setImageUrl(product.images[0] || '');
     
     // specs
@@ -92,8 +100,12 @@ export default function AdminProducts() {
 
   const handleSaveProduct = async (e) => {
     e.preventDefault();
-    if (!name || !price || !unit || !stock || !categoryId || !imageUrl) {
-      setErrorMsg('Please fill in all required product fields.');
+    if (!name || !categoryId || !imageUrl || productVariants.length === 0) {
+      setErrorMsg('Enter the product details and select at least one pack size.');
+      return;
+    }
+    if (productVariants.some((variant) => variant.price === '' || variant.stock === '' || (variant.wholesalePrice !== '' && Number(variant.wholesalePrice) < 0))) {
+      setErrorMsg('Enter a retail price and stock quantity for every selected pack size.');
       return;
     }
 
@@ -103,9 +115,17 @@ export default function AdminProducts() {
     const productPayload = {
       name,
       description,
-      price: parseFloat(price),
-      unit,
-      stock: parseInt(stock),
+      price: Number(productVariants[0].price),
+      unit: productVariants[0].packSize,
+      packSize: productVariants[0].packSize,
+      stock: Number(productVariants[0].stock),
+      variants: productVariants.map((variant) => ({
+        packSize: variant.packSize,
+        price: Number(variant.price),
+        stock: Number(variant.stock),
+        wholesalePrice: variant.wholesalePrice === '' ? null : Number(variant.wholesalePrice),
+        wholesaleMinimumQuantity: Number(variant.wholesaleMinimumQuantity) || 1
+      })),
       categoryId,
       images: [imageUrl],
       specs: {
@@ -114,7 +134,7 @@ export default function AdminProducts() {
         'Packaging': specPackaging
       },
       benefits: ['Premium quality ingredients', 'FSSAI certified processing', 'Direct source pricing'],
-      usage: ['Perfect for wholesale commercial setups', 'Store in dry storage places']
+      usage: ['Perfect for commercial setups', 'Store in dry storage places']
     };
 
     try {
@@ -149,6 +169,31 @@ export default function AdminProducts() {
     }
   };
 
+  const categoryName = categories.find((category) => category.id === categoryId)?.name || '';
+  const packSizeOptions = [...new Set([
+    ...getCategoryPackSizes(categoryId, categoryName),
+    ...productVariants.map((variant) => variant.packSize)
+  ])];
+
+  const togglePackSize = (packSize, checked) => {
+    setProductVariants((current) => checked
+      ? [...current, { packSize, price: '', stock: '', wholesalePrice: '', wholesaleMinimumQuantity: '1' }]
+      : current.filter((variant) => variant.packSize !== packSize));
+  };
+
+  const addCustomPackSize = () => {
+    const packSize = customPackSize.trim();
+    if (!packSize || packSizeOptions.some((option) => option.toLowerCase() === packSize.toLowerCase())) return;
+    setProductVariants((current) => [...current, { packSize, price: '', stock: '', wholesalePrice: '', wholesaleMinimumQuantity: '1' }]);
+    setCustomPackSize('');
+  };
+
+  const updateVariant = (packSize, field, value) => {
+    setProductVariants((current) => current.map((variant) => variant.packSize === packSize
+      ? { ...variant, [field]: value }
+      : variant));
+  };
+
   const handleDeleteProduct = async (id) => {
     if (!confirm('Are you absolutely sure you want to delete this product? This action cannot be undone.')) {
       return;
@@ -177,7 +222,7 @@ export default function AdminProducts() {
     <div>
       <div className="admin-header-row">
         <div>
-          <h1 style={{ fontSize: '1.6rem', fontWeight: 800 }}>Manage Wholesale Products</h1>
+          <h1 style={{ fontSize: '1.6rem', fontWeight: 800 }}>Manage Products</h1>
           <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
             Add, update pricing, edit catalog details, and replenish inventory levels.
           </p>
@@ -201,8 +246,9 @@ export default function AdminProducts() {
                 <th style={{ width: '60px' }}>Image</th>
                 <th>Product Name</th>
                 <th>Category</th>
-                <th>Wholesale Price</th>
-                <th>Unit</th>
+                <th>Price</th>
+                <th>Pack Sizes</th>
+                <th>Manufacture Date</th>
                 <th>Inventory Stock</th>
                 <th style={{ width: '120px', textAlign: 'center' }}>Actions</th>
               </tr>
@@ -219,14 +265,15 @@ export default function AdminProducts() {
                   </td>
                   <td style={{ fontWeight: 700 }}>{p.name}</td>
                   <td style={{ textTransform: 'capitalize' }}>{p.categoryId.replace('-', ' ')}</td>
-                  <td>₹{p.price.toLocaleString('en-IN')}</td>
-                  <td>{p.unit}</td>
+                  <td>₹{Math.min(...normalizeProduct(p).variants.map((variant) => variant.price)).toLocaleString('en-IN')}+</td>
+                  <td>{normalizeProduct(p).variants.map((variant) => variant.packSize).join(', ')}</td>
+                  <td>{p.manufactureDate || 'N/A'}</td>
                   <td>
                     <span style={{
                       fontWeight: 700,
                       color: p.stock === 0 ? 'var(--color-danger)' : p.stock <= 10 ? 'var(--color-warning)' : 'var(--color-success)'
                     }}>
-                      {p.stock} units
+                      {normalizeProduct(p).variants.reduce((sum, variant) => sum + variant.stock, 0)} units
                     </span>
                   </td>
                   <td>
@@ -277,7 +324,7 @@ export default function AdminProducts() {
               borderBottom: '1px solid var(--border-color)'
             }}>
               <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--primary-color)' }}>
-                {editingProduct ? `Edit Details: ${editingProduct.name}` : 'Add New Wholesale Product'}
+                {editingProduct ? `Edit Details: ${editingProduct.name}` : 'Add New Product'}
               </h3>
               <button
                 onClick={() => setIsEditorOpen(false)}
@@ -319,49 +366,16 @@ export default function AdminProducts() {
                 ></textarea>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem' }}>
-                <div className="form-group">
-                  <label className="form-label">Wholesale Price (₹) *</label>
-                  <input
-                    type="number"
-                    required
-                    placeholder="Price per unit"
-                    className="form-control"
-                    value={price}
-                    onChange={(e) => setPrice(e.target.value)}
-                  />
-                </div>
-                <div className="form-group">
-                  <label className="form-label">Wholesale Unit *</label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="e.g. 15L Tin, 25kg Bag"
-                    className="form-control"
-                    value={unit}
-                    onChange={(e) => setUnit(e.target.value)}
-                  />
-                </div>
-                <div className="form-group">
-                  <label className="form-label">Initial Stock Level *</label>
-                  <input
-                    type="number"
-                    required
-                    placeholder="Available Units"
-                    className="form-control"
-                    value={stock}
-                    onChange={(e) => setStock(e.target.value)}
-                  />
-                </div>
-              </div>
-
               <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1.8fr', gap: '1rem' }}>
                 <div className="form-group">
                   <label className="form-label">Product Category *</label>
                   <select
                     className="form-control"
                     value={categoryId}
-                    onChange={(e) => setCategoryId(e.target.value)}
+                    onChange={(e) => {
+                      setCategoryId(e.target.value);
+                      setProductVariants([]);
+                    }}
                   >
                     {categories.map((c) => (
                       <option key={c.id} value={c.id}>
@@ -382,6 +396,43 @@ export default function AdminProducts() {
                   />
                 </div>
               </div>
+
+              <section style={{ margin: '1rem 0 1.5rem', padding: '1rem', backgroundColor: 'var(--bg-light)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
+                <h4 style={{ fontWeight: 800, marginBottom: '0.75rem' }}>Pack Sizes and Variant Pricing</h4>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '0.5rem 1rem', marginBottom: '1rem' }}>
+                  {packSizeOptions.map((packSize) => (
+                    <label key={packSize} style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontSize: '0.85rem' }}>
+                      <input
+                        type="checkbox"
+                        checked={productVariants.some((variant) => variant.packSize === packSize)}
+                        onChange={(event) => togglePackSize(packSize, event.target.checked)}
+                      />
+                      {packSize}
+                    </label>
+                  ))}
+                </div>
+                <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem' }}>
+                  <input
+                    type="text"
+                    value={customPackSize}
+                    onChange={(event) => setCustomPackSize(event.target.value)}
+                    placeholder="Custom pack size"
+                    className="form-control"
+                  />
+                  <button type="button" className="btn-sm btn-edit" onClick={addCustomPackSize}>Add size</button>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                  {productVariants.map((variant) => (
+                    <div key={variant.packSize} style={{ display: 'grid', gridTemplateColumns: 'minmax(80px, 1fr) repeat(4, minmax(100px, 1fr))', gap: '0.6rem', alignItems: 'center' }}>
+                      <strong style={{ fontSize: '0.85rem' }}>{variant.packSize}</strong>
+                      <input aria-label={`${variant.packSize} retail price`} type="number" min="0" step="0.01" required placeholder="Retail price" className="form-control" value={variant.price} onChange={(event) => updateVariant(variant.packSize, 'price', event.target.value)} />
+                      <input aria-label={`${variant.packSize} wholesale price`} type="number" min="0" step="0.01" placeholder="Wholesale price" className="form-control" value={variant.wholesalePrice} onChange={(event) => updateVariant(variant.packSize, 'wholesalePrice', event.target.value)} />
+                      <input aria-label={`${variant.packSize} stock`} type="number" min="0" step="1" required placeholder="Stock" className="form-control" value={variant.stock} onChange={(event) => updateVariant(variant.packSize, 'stock', event.target.value)} />
+                      <input aria-label={`${variant.packSize} wholesale minimum quantity`} type="number" min="1" step="1" placeholder="Wholesale MOQ" className="form-control" value={variant.wholesaleMinimumQuantity || '1'} onChange={(event) => updateVariant(variant.packSize, 'wholesaleMinimumQuantity', event.target.value)} />
+                    </div>
+                  ))}
+                </div>
+              </section>
 
               {/* Specifications Box */}
               <div style={{ backgroundColor: 'var(--bg-light)', padding: '1rem', borderRadius: '8px', marginBottom: '1.5rem', border: '1px solid var(--border-color)' }}>

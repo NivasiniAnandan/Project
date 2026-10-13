@@ -4,6 +4,7 @@ import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import ProductCard from '@/components/ProductCard';
 import { SlidersHorizontal, Check, Loader2 } from 'lucide-react';
+import { getAvailablePackSizes } from '@/lib/productVariants';
 
 function CatalogContent() {
   const searchParams = useSearchParams();
@@ -15,6 +16,7 @@ function CatalogContent() {
 
   // Local State
   const [categories, setCategories] = useState([]);
+  const [catalogProducts, setCatalogProducts] = useState([]);
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -23,6 +25,7 @@ function CatalogContent() {
   const [maxPrice, setMaxPrice] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
   const [sortBy, setSortBy] = useState('default');
+  const [selectedPackSizes, setSelectedPackSizes] = useState([]);
 
   // Load Categories & Products initially
   useEffect(() => {
@@ -33,6 +36,7 @@ function CatalogContent() {
         if (res.ok) {
           const data = await res.json();
           setCategories(data.categories || []);
+          setCatalogProducts(data.products || []);
         }
       } catch (err) {
         console.error('Failed to load categories', err);
@@ -49,6 +53,8 @@ function CatalogContent() {
       try {
         setLoading(true);
         let url = `/api/products?search=${encodeURIComponent(paramSearch)}&category=${paramCategory}&sort=${sortBy}`;
+
+        if (selectedPackSizes.length) url += `&packSize=${encodeURIComponent(selectedPackSizes.join(','))}`;
         
         if (minPrice) url += `&minPrice=${minPrice}`;
         if (maxPrice) url += `&maxPrice=${maxPrice}`;
@@ -66,9 +72,10 @@ function CatalogContent() {
       }
     }
     fetchFilteredProducts();
-  }, [paramSearch, paramCategory, minPrice, maxPrice, inStockOnly, sortBy]);
+  }, [paramSearch, paramCategory, minPrice, maxPrice, inStockOnly, sortBy, selectedPackSizes]);
 
   const handleCategorySelect = (catId) => {
+    setSelectedPackSizes([]);
     // Navigate updating URL query parameter
     const params = new URLSearchParams(searchParams.toString());
     if (catId) {
@@ -84,8 +91,14 @@ function CatalogContent() {
     setMaxPrice('');
     setInStockOnly(false);
     setSortBy('default');
+    setSelectedPackSizes([]);
     router.push('/catalog');
   };
+
+  const currentCategory = categories.find((category) => category.id === paramCategory);
+  const packSizeOptions = paramCategory
+    ? getAvailablePackSizes(paramCategory, currentCategory?.name, catalogProducts)
+    : [];
 
   return (
     <div className="container" style={{ paddingBottom: '4rem' }}>
@@ -93,7 +106,7 @@ function CatalogContent() {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', margin: '2rem 0 0.5rem 0' }}>
         <div>
           <h1 style={{ fontSize: '1.6rem', fontWeight: 800 }}>
-            {paramSearch ? `Search Results for "${paramSearch}"` : 'Wholesale Food Catalog'}
+            {paramSearch ? `Search Results for "${paramSearch}"` : 'Food Catalog'}
           </h1>
           <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
             Showing {products.length} products
@@ -156,6 +169,26 @@ function CatalogContent() {
             </div>
           </div>
 
+          {paramCategory && packSizeOptions.length > 0 && (
+            <div className="filter-section">
+              <h4 className="filter-title">Pack Size</h4>
+              <div className="filter-list">
+                {packSizeOptions.map((packSize) => (
+                  <label key={packSize} className="filter-item">
+                    <input
+                      type="checkbox"
+                      checked={selectedPackSizes.includes(packSize)}
+                      onChange={(event) => setSelectedPackSizes((current) => event.target.checked
+                        ? [...current, packSize]
+                        : current.filter((size) => size !== packSize))}
+                    />
+                    <span>{packSize}</span>
+                  </label>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Price Range Filter Inputs */}
           <div className="filter-section">
             <h4 className="filter-title">Price Range (₹)</h4>
@@ -205,7 +238,7 @@ function CatalogContent() {
             <div style={{ textAlign: 'center', padding: '4rem 2rem', background: 'white', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.5rem' }}>No products found</h3>
               <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
-                We couldn't find any products matching your current search criteria or filters.
+                We couldn&apos;t find any products matching your current search criteria or filters.
               </p>
               <button onClick={handleClearAllFilters} className="btn-primary">
                 Clear All Filters

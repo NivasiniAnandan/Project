@@ -150,7 +150,7 @@ export default function Register() {
       </form>
 
       <div className="auth-link-text">
-        Already have a wholesale account? <Link href="/login">Sign In</Link>
+        Already have a account? <Link href="/login">Sign In</Link>
       </div>
     </div>
   );

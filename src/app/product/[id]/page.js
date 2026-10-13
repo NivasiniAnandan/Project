@@ -10,7 +10,7 @@ import Link from 'next/link';
 export default function ProductDetail() {
   const { id } = useParams();
   const router = useRouter();
-  const { addToCart, cart } = useApp();
+  const { addToCart, cart, user } = useApp();
 
   const [product, setProduct] = useState(null);
   const [relatedProducts, setRelatedProducts] = useState([]);
@@ -19,6 +19,7 @@ export default function ProductDetail() {
   const [activeTab, setActiveTab] = useState('description');
   const [qty, setQty] = useState(1);
   const [isAdded, setIsAdded] = useState(false);
+  const [selectedPackSize, setSelectedPackSize] = useState('');
 
   useEffect(() => {
     async function loadProductDetails() {
@@ -32,6 +33,11 @@ export default function ProductDetail() {
         setProduct(data.product);
         setRelatedProducts(data.related || []);
         setActiveImageIdx(0);
+        const requestedPackSize = new URLSearchParams(window.location.search).get('packSize');
+        const variants = data.product.variants || [];
+        setSelectedPackSize(variants.some((variant) => variant.packSize === requestedPackSize)
+          ? requestedPackSize
+          : data.product.packSize || variants[0]?.packSize || '');
       } catch (err) {
         console.error('Failed to load product detail', err);
       } finally {
@@ -54,21 +60,23 @@ export default function ProductDetail() {
     return (
       <div className="container" style={{ textAlign: 'center', padding: '6rem 2rem' }}>
         <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Product Not Found</h2>
-        <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>The wholesale item you are looking for does not exist or has been removed.</p>
+        <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>The item you are looking for does not exist or has been removed.</p>
         <Link href="/catalog" className="btn-primary">Back to Catalog</Link>
       </div>
     );
   }
 
   // Calculate cart states
-  const cartItem = cart.find(item => item.id === product.id);
+  const selectedVariant = product.variants?.find((variant) => variant.packSize === selectedPackSize) || product.variants?.[0];
+  const activeProduct = selectedVariant ? { ...product, ...selectedVariant, unit: selectedVariant.packSize } : product;
+  const cartItem = cart.find(item => item.id === product.id && (item.packSize || item.unit) === (activeProduct.packSize || activeProduct.unit));
   const currentCartQty = cartItem ? cartItem.quantity : 0;
 
   const handleIncrement = () => {
-    if (qty + currentCartQty < product.stock) {
+    if (qty + currentCartQty < activeProduct.stock) {
       setQty(prev => prev + 1);
     } else {
-      alert(`Cannot add more. Available stock is ${product.stock} units.`);
+      alert(`Cannot add more. Available stock is ${activeProduct.stock} units.`);
     }
   };
 
@@ -77,7 +85,7 @@ export default function ProductDetail() {
   };
 
   const handleAddToCartClick = () => {
-    const success = addToCart(product, qty);
+    const success = addToCart(activeProduct, qty);
     if (success) {
       setIsAdded(true);
       setQty(1);
@@ -165,13 +173,46 @@ export default function ProductDetail() {
           <div className="detail-price-box">
             <div className="detail-price-row">
               <span style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-main)' }}>₹</span>
-              <span className="detail-price">{product.price.toLocaleString('en-IN')}</span>
-              <span style={{ fontSize: '0.95rem', color: 'var(--text-muted)' }}>/ {product.unit} (Wholesale Price)</span>
+              <span className="detail-price">{(user?.role === 'wholesale' && activeProduct.wholesalePrice != null ? activeProduct.wholesalePrice : activeProduct.price).toLocaleString('en-IN')}</span>
+              <span style={{ fontSize: '0.95rem', color: 'var(--text-muted)' }}>/ {activeProduct.packSize || activeProduct.unit}</span>
             </div>
+            {activeProduct.wholesalePrice != null && (
+              <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.35rem' }}>
+                    Wholesale price: ₹{activeProduct.wholesalePrice.toLocaleString('en-IN')} / {activeProduct.packSize}
+              </p>
+            )}
+            {activeProduct.wholesalePrice != null && (
+              <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.2rem' }}>
+                Wholesale MOQ: {activeProduct.wholesaleMinimumQuantity || 1} units
+              </p>
+            )}
             <p style={{ fontSize: '0.75rem', color: 'var(--primary-hover)', fontWeight: 600, marginTop: '0.25rem' }}>
               * FSSAI approved packing. Price includes local manufacturing duties.
             </p>
           </div>
+
+          {product.variants?.length > 0 && (
+            <fieldset style={{ border: 0, padding: 0, margin: '1rem 0' }}>
+              <legend style={{ fontSize: '0.9rem', fontWeight: 700, marginBottom: '0.5rem' }}>Select Pack Size</legend>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem 1rem' }}>
+                {product.variants.map((variant) => (
+                  <label key={variant.packSize} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', border: '1px solid var(--border-color)', borderRadius: '6px', padding: '0.45rem 0.65rem', cursor: 'pointer' }}>
+                    <input
+                      type="radio"
+                      name="packSize"
+                      value={variant.packSize}
+                      checked={selectedPackSize === variant.packSize}
+                      onChange={() => {
+                        setSelectedPackSize(variant.packSize);
+                        setQty(user?.role === 'wholesale' ? variant.wholesaleMinimumQuantity || 1 : 1);
+                      }}
+                    />
+                    <span>{variant.packSize}</span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+          )}
 
           {/* Core specs list */}
           <div className="detail-specs">
@@ -194,9 +235,9 @@ export default function ProductDetail() {
           }}>
             <div>
               <span style={{ fontSize: '0.9rem', fontWeight: 600 }}>Stock Availability: </span>
-              {product.stock > 0 ? (
+              {activeProduct.stock > 0 ? (
                 <span style={{ color: 'var(--color-success)', fontWeight: 700, fontSize: '0.95rem' }}>
-                  In Stock ({product.stock} units available)
+                  In Stock ({activeProduct.stock} units available)
                 </span>
               ) : (
                 <span style={{ color: 'var(--color-danger)', fontWeight: 700, fontSize: '0.95rem' }}>
@@ -205,7 +246,7 @@ export default function ProductDetail() {
               )}
             </div>
 
-            {product.stock > 0 && (
+            {activeProduct.stock > 0 && (
               <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
                 <div className="quantity-selector" style={{ width: '120px' }}>
                   <button onClick={handleDecrement} className="qty-btn" type="button">
@@ -233,7 +274,7 @@ export default function ProductDetail() {
                     </>
                   ) : (
                     <>
-                      <ShoppingCart size={18} /> Add to Wholesale Order
+                      <ShoppingCart size={18} /> Add to Order
                     </>
                   )}
                 </button>

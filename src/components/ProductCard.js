@@ -6,12 +6,12 @@ import { useApp } from './Context';
 import { Star, ShoppingCart, Plus, Minus, Check } from 'lucide-react';
 
 export default function ProductCard({ product }) {
-  const { addToCart, cart } = useApp();
+  const { addToCart, cart, user } = useApp();
   const [qty, setQty] = useState(1);
   const [isAdded, setIsAdded] = useState(false);
 
   // Check if item is already in cart to sync local qty if needed
-  const cartItem = cart.find((item) => item.id === product.id);
+  const cartItem = cart.find((item) => item.id === product.id && (item.packSize || item.unit) === (product.packSize || product.unit));
   const currentCartQty = cartItem ? cartItem.quantity : 0;
 
   const handleIncrement = () => {
@@ -60,7 +60,7 @@ export default function ProductCard({ product }) {
 
   return (
     <div className="product-card">
-      <Link href={`/product/${product.id}`} className="product-card-img-wrapper">
+      <Link href={`/product/${product.id}?packSize=${encodeURIComponent(product.packSize || product.unit || '')}`} className="product-card-img-wrapper">
         <img
           src={product.images[0]}
           alt={product.name}
@@ -73,7 +73,7 @@ export default function ProductCard({ product }) {
       <div className="product-card-body">
         <span className="product-card-category">{product.categoryId.replace('-', ' ')}</span>
         
-        <Link href={`/product/${product.id}`}>
+        <Link href={`/product/${product.id}?packSize=${encodeURIComponent(product.packSize || product.unit || '')}`}>
           <h3 className="product-card-title">{product.name}</h3>
         </Link>
 
@@ -83,11 +83,19 @@ export default function ProductCard({ product }) {
           <span className="rating-count">({product.numReviews})</span>
         </div>
 
+        <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.35rem' }}>
+          Pack Size: {product.packSize || product.unit}
+        </div>
+
         {/* Price */}
         <div className="product-card-price-row">
           <span className="price-symbol">₹</span>
-          <span className="price-amt">{product.price.toLocaleString('en-IN')}</span>
-          <span className="price-unit">/ {product.unit}</span>
+          <span className="price-amt">{(user?.role === 'wholesale' && product.wholesalePrice != null ? product.wholesalePrice : product.price).toLocaleString('en-IN')}</span>
+          <span className="price-unit">/ {product.packSize || product.unit}</span>
+        </div>
+
+        <div className="product-card-date" style={{ marginTop: '0.3rem', fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+          Manufactured: {product.manufactureDate || 'N/A'}
         </div>
 
         {/* Actions */}

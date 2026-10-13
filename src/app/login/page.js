@@ -48,7 +48,7 @@ function LoginContent() {
 
   return (
     <div className="auth-container">
-      <h1 className="auth-title">Wholesale Sign In</h1>
+      <h1 className="auth-title">Welcome To Bommal Foods</h1>
       
       {errorMsg && (
         <div style={{ backgroundColor: '#fee2e2', border: '1px solid #fca5a5', color: '#b91c1c', padding: '0.75rem', borderRadius: '6px', fontSize: '0.8rem', marginBottom: '1.25rem', fontWeight: 600 }}>

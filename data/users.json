@@ -6,7 +6,7 @@
     "passwordHash": "$2b$10$R2AkK5EalFCngzKUs8fazO.5X/NI9yJhIPh5WX2ro0pI.DTyRgBIG",
     "role": "admin",
     "phone": "+91 9876543210",
-    "address": "Admin Block, Bommal Foods Wholesale Plaza, Chennai, TN, India"
+    "address": "Kowsalya Traders, Vaikalmedu Perundurai to Erode main road, Erode 638052"
   },
   {
     "id": "usr_retailer",
@@ -24,7 +24,11 @@
     "passwordHash": "$2b$10$2d9zij/0cKdl/biyzi6JVedlEy0c9sKhvM/fDd82KhCNA9n77RsJW",
     "role": "retailer",
     "phone": "9488335556",
-    "address": "Tirupur"
+    "address": "Tirupur",
+    "otpHash": "$2b$10$UsW45wx47HUXsV3eYdGjdOCY1cbCVzL5fk8FzUj14L7tw4mulSnOa",
+    "otpExpiresAt": "2026-07-22T06:18:57.117Z",
+    "otpPurpose": "login",
+    "isVerified": false
   },
   {
     "id": "usr_1784270775146",
@@ -34,5 +38,67 @@
     "role": "retailer",
     "phone": "9150591408",
     "address": "Perundurai"
+  },
+  {
+    "id": "usr_1784700050866",
+    "name": "Rithika ",
+    "email": "rithika@gmail.com",
+    "passwordHash": "$2b$10$Wx0qOkP6fA3V8aC5YA8p..qlQnaizhgnCCDwR1CNSKD4DMO0Wz76u",
+    "role": "retailer",
+    "phone": "9488335556",
+    "address": "Erode",
+    "isVerified": false,
+    "otpHash": "$2b$10$cJAiPq1XGfg.m0kIcq7/debE/te4FqxIi7ysktrYQ3L3mHkRw6Vzy",
+    "otpExpiresAt": "2026-07-22T06:05:51.052Z",
+    "otpPurpose": "register"
+  },
+  {
+    "id": "usr_1784700187382",
+    "name": "Rithika",
+    "email": "nivasinia.24bcr@kongu.edu",
+    "passwordHash": "$2b$10$plPX8K2KJ8FPCx0QXiXVSOWKgPcIDdGOMHfmfwGSBMrFPZJHCD436",
+    "role": "retailer",
+    "phone": "9488335556",
+    "address": "Erode",
+    "isVerified": false,
+    "otpHash": "$2b$10$xl4Kvnvd9LOqdL.UjP/Ix.XhUcTNLiae.RDYGTANBMAv1sgoGlxPu",
+    "otpExpiresAt": "2026-07-22T06:09:02.038Z",
+    "otpPurpose": "register"
+  },
+  {
+    "id": "usr_1787065715675",
+    "name": "Gopal",
+    "email": "gopal@gmail.com",
+    "passwordHash": "$2b$10$mLfGy8onW2qll3MEEVtzrOj449wBrZRi9QKRdg118R0T6EWYHFQqe",
+    "role": "retailer",
+    "phone": "9842356123",
+    "address": ""
+  },
+  {
+    "id": "usr_1787065986422",
+    "name": "sanjuga",
+    "email": "sanju@gmail.com",
+    "passwordHash": "$2b$10$sSlNYbSESHq9WT5bbwaB2./VpoE2XX335uUfd1OQf0LdE.psYgYIu",
+    "role": "retailer",
+    "phone": "9685741425",
+    "address": ""
+  },
+  {
+    "id": "usr_1787066353838",
+    "name": "wdsger",
+    "email": "wad@gmail.com",
+    "passwordHash": "$2b$10$HWDFrw0nOlx1OlDpoN4sD.wdF9MUmbWzZlH/ZSx2EXG4YItJP7Ew6",
+    "role": "retailer",
+    "phone": "9685741425",
+    "address": ""
+  },
+  {
+    "id": "usr_1787117543455",
+    "name": "Nivasini",
+    "email": "tharun@gmail.com",
+    "passwordHash": "$2b$10$J6J/Wlt09em6ko2TmqO.veoaNU386C85YscFh7uo9mnJMXVgzGqTe",
+    "role": "retailer",
+    "phone": "9488335556",
+    "address": "Tirupur"
   }
 ]

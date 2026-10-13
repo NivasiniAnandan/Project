@@ -1,11 +1,11 @@
- [
+[
   {
     "id": "prod_1",
     "name": "Groundnut Oil",
     "description": "100% pure cold-pressed groundnut oil, made using traditional wooden chekku methods. Packed with nutrients and retains its natural aroma. Ideal for wholesale distribution and bulk kitchen applications.",
     "price": 280,
     "unit": "1L",
-    "stock": 45,
+    "stock": 34,
     "rating": 4.8,
     "numReviews": 24,
     "categoryId": "edible-oils",
@@ -26,15 +26,16 @@
     "usage": [
       "Ideal for daily cooking and deep frying",
       "Used in commercial kitchens and pickle manufacturing"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_3",
-    "name": "Pure Turmeric Powder (High Curcumin)",
+    "id": "prod_2",
+    "name": "Turmeric Powder",
     "description": "Grown organically, harvested, polished, and ground. Contains high natural curcumin content (~5%) giving a deep golden color and strong earthy flavor.",
     "price": 25,
     "unit": "50gm",
-    "stock": 60,
+    "stock": 58,
     "rating": 4.9,
     "numReviews": 32,
     "categoryId": "masala-items",
@@ -55,10 +56,11 @@
     "usage": [
       "Daily cooking and food industries",
       "Ayurvedic formulations and cosmetic labs"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_5",
+    "id": "prod_3",
     "name": "Health Mix",
     "description": "A traditional nutritious health mix prepared with a balanced blend of grains, millets, pulses, and dry fruits. Rich in essential nutrients, it is suitable for children, adults, and health-conscious families.",
     "price": 125,
@@ -86,15 +88,16 @@
       "Prepare porridge with milk or water",
       "Can be mixed with smoothies",
       "Suitable for breakfast and evening snacks"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_12",
-    "name": "Premium Wheat Flour",
+    "id": "prod_4",
+    "name": "Wheat Flour",
     "description": "Finely milled premium wheat flour made from carefully selected wheat grains. Ideal for preparing soft rotis, chapatis, and bakery products.",
     "price": 75,
     "unit": "1Kg",
-    "stock": 40,
+    "stock": 39,
     "rating": 4.8,
     "numReviews": 46,
     "categoryId": "flours",
@@ -114,15 +117,16 @@
     "usage": [
       "Chapati, Roti, Parotta",
       "Bakery and Hotel Use"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_13",
-    "name": "Premium Ragi Flour",
+    "id": "prod_5",
+    "name": "Ragi Flour",
     "description": "Nutritious finger millet flour processed hygienically to preserve natural nutrients. Rich in calcium and ideal for healthy traditional recipes.",
     "price": 75,
     "unit": "1kg",
-    "stock": 35,
+    "stock": 34,
     "rating": 4.9,
     "numReviews": 41,
     "categoryId": "flours",
@@ -142,11 +146,12 @@
     "usage": [
       "Ragi Dosa, Roti, Porridge",
       "Health Foods and Bakery"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_14",
-    "name": "Premium Gram Flour (Besan)",
+    "id": "prod_6",
+    "name": "Gram Flour (Besan)",
     "description": "Freshly milled gram flour prepared from premium quality Bengal gram. Perfect for snacks, sweets, and traditional recipes.",
     "price": 75,
     "unit": "1kg ",
@@ -170,11 +175,12 @@
     "usage": [
       "Pakora, Murukku, Sweets",
       "Bakery and Food Industry"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_15",
-    "name": "Premium Raw Rice Flour",
+    "id": "prod_7",
+    "name": "Raw Rice Flour",
     "description": "High-quality raw rice flour made from carefully selected rice grains. Suitable for traditional South Indian dishes and snacks.",
     "price": 50,
     "unit": "1kg",
@@ -198,11 +204,12 @@
     "usage": [
       "Murukku, Idiyappam, Kozhukattai",
       "Commercial Food Preparation"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_16",
-    "name": "Premium Nattu Kambu Flour",
+    "id": "prod_8",
+    "name": "Nattu Kambu Flour",
     "description": "Traditional pearl millet flour made from naturally grown kambu. Rich in essential nutrients and suitable for healthy everyday meals.",
     "price": 85,
     "unit": "1kg",
@@ -226,11 +233,12 @@
     "usage": [
       "Kambu Koozh, Roti",
       "Healthy Traditional Recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_17",
-    "name": "Premium Thinai Flour",
+    "id": "prod_9",
+    "name": "Thinai Flour",
     "description": "Premium foxtail millet flour produced from carefully selected thinai grains. Ideal for healthy recipes and traditional cooking.",
     "price": 180,
     "unit": "1Kg",
@@ -254,11 +262,12 @@
     "usage": [
       "Dosa, Idli, Porridge",
       "Health Foods and Millet Recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_18",
-    "name": "Premium Multimillet Chapatti Flour",
+    "id": "prod_10",
+    "name": "Multimillet Chapatti Flour",
     "description": "Healthy blend of multiple millets including ragi, kambu, thinai, and jowar. Stone-ground flour designed for soft, nutritious chapatis and daily consumption.",
     "price": 110,
     "unit": "1kg ",
@@ -282,11 +291,12 @@
     "usage": [
       "Chapati, Roti, Parotta",
       "Healthy daily meals"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_19",
-    "name": "Premium Multimillet Dosa Flour",
+    "id": "prod_11",
+    "name": "Multimillet Dosa Flour",
     "description": "Special blend of millets finely ground for crispy and nutritious dosas. Perfect alternative to traditional rice-based dosa batter.",
     "price": 130,
     "unit": "1kg ",
@@ -310,15 +320,16 @@
     "usage": [
       "Dosa, Uttapam, Pancakes",
       "Breakfast recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_20",
-    "name": "Premium Multi Millets Sathu Maavu",
+    "id": "prod_12",
+    "name": "Multi Millets Sathu Maavu",
     "description": "Nutritious health mix prepared from a blend of premium millets, cereals, and pulses. Rich in protein, fiber, vitamins, and minerals for a wholesome diet suitable for all age groups.",
     "price": 130,
     "unit": "250gm",
-    "stock": 35,
+    "stock": 34,
     "rating": 4.9,
     "numReviews": 40,
     "categoryId": "flours",
@@ -339,11 +350,12 @@
       "Health drink",
       "Porridge",
       "Breakfast recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_21",
-    "name": "Premium Sprouted Health Mix",
+    "id": "prod_13",
+    "name": "Sprouted Health Mix",
     "description": "Traditional health mix made from carefully sprouted grains, millets, and pulses to enhance nutrition and improve digestibility.",
     "price": 130,
     "unit": "250gm",
@@ -368,11 +380,12 @@
       "Health drink",
       "Porridge",
       "Baby food"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_22",
-    "name": "Premium Health Mix",
+    "id": "prod_14",
+    "name": "Health Mix",
     "description": "Wholesome flour blend made from nutritious grains and pulses for preparing healthy drinks and porridges with excellent taste and nutrition.",
     "price": 150,
     "unit": "250gm",
@@ -397,11 +410,12 @@
       "Health drink",
       "Porridge",
       "Breakfast recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_23",
-    "name": "Premium Karuppu Ulunthu Kanji Maavu",
+    "id": "prod_15",
+    "name": "Karuppu Ulunthu Kanji Maavu",
     "description": "Traditional porridge flour made from premium black urad dal. Rich in calcium, protein, and iron, making it ideal for a healthy lifestyle.",
     "price": 125,
     "unit": "250gm",
@@ -425,11 +439,12 @@
     "usage": [
       "Kanji",
       "Health drink"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_24",
-    "name": "Premium Poongar Rice Kanji Maavu",
+    "id": "prod_16",
+    "name": "Poongar Rice Kanji Maavu",
     "description": "Traditional porridge flour made from native Poongar rice, known for its nutritional value and authentic taste. Suitable for all age groups.",
     "price": 200,
     "unit": "1kg",
@@ -454,11 +469,12 @@
       "Kanji",
       "Health drink",
       "Baby food"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_25",
-    "name": "Premium Red Rice Puttu Maavu",
+    "id": "prod_17",
+    "name": "Red Rice Puttu Maavu",
     "description": "Finely ground red rice flour specially prepared for making soft and delicious puttu. Rich in fiber and essential nutrients.",
     "price": 210,
     "unit": "1kg",
@@ -482,15 +498,16 @@
     "usage": [
       "Puttu",
       "Traditional breakfast recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_26",
+    "id": "prod_18",
     "name": "Coconut Oil",
     "description": "100% pure cold-pressed coconut oil, extracted from premium quality coconuts using traditional wooden chekku methods. Naturally rich in nutrients and aroma. Suitable for cooking, hair care, skin care, and wholesale distribution.",
     "price": 360,
     "unit": "1L",
-    "stock": 38,
+    "stock": 37,
     "rating": 4.9,
     "numReviews": 19,
     "categoryId": "edible-oils",
@@ -511,10 +528,11 @@
     "usage": [
       "Ideal for cooking and baking",
       "Suitable for hair oiling, skincare, and wholesale supply"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_27",
+    "id": "prod_19",
     "name": "Deepam Oil",
     "description": "Premium quality Deepam Oil specially prepared for lighting traditional lamps during daily pooja and religious ceremonies. Produces a bright, steady flame with minimal smoke and long-lasting performance.",
     "price": 200,
@@ -540,10 +558,11 @@
     "usage": [
       "Used for lighting diyas and traditional lamps",
       "Suitable for homes, temples, and religious functions"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_28",
+    "id": "prod_20",
     "name": "Gingelly Oil",
     "description": "100% pure cold-pressed gingelly (sesame) oil extracted using traditional wooden chekku methods. Rich in natural antioxidants and nutrients, it enhances flavor while supporting a healthy lifestyle. Ideal for cooking, traditional recipes, and wholesale distribution.",
     "price": 400,
@@ -569,10 +588,11 @@
     "usage": [
       "Ideal for cooking, seasoning, and pickling",
       "Suitable for household and commercial kitchen use"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_29",
+    "id": "prod_21",
     "name": "Castor Oil",
     "description": "100% pure cold-pressed castor oil extracted using traditional wooden chekku methods. Rich in natural nutrients and widely used for hair care, skin care, massage, and industrial applications. Hygienically processed to retain its natural purity.",
     "price": 380,
@@ -598,11 +618,12 @@
     "usage": [
       "Suitable for hair oiling and skincare",
       "Used for massage and traditional applications"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_30",
-    "name": "Pure Coriander Powder",
+    "id": "prod_22",
+    "name": "Coriander Powder",
     "description": "Finely ground premium coriander seeds with rich aroma and mild citrus flavor. Essential spice for everyday Indian cooking.",
     "price": 180,
     "unit": "250gm",
@@ -626,10 +647,11 @@
     "usage": [
       "Curries and gravies",
       "Marinades and spice blends"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_31",
+    "id": "prod_23",
     "name": "Red Chilli Powder",
     "description": "Hot and vibrant red chilli powder made from sun-dried chillies, delivering strong heat and rich color to dishes.",
     "price": 30,
@@ -654,10 +676,11 @@
     "usage": [
       "Spicy curries",
       "Pickles and marinades"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_32",
+    "id": "prod_24",
     "name": "Sambar Powder",
     "description": "Traditional South Indian spice blend made from roasted lentils, red chillies, and aromatic spices for authentic sambar flavor.",
     "price": 30,
@@ -682,10 +705,11 @@
     "usage": [
       "Sambar preparation",
       "Vegetable curries"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_33",
+    "id": "prod_25",
     "name": "Kari Masala",
     "description": "Aromatic curry masala blend made with carefully selected spices for rich and flavorful gravies.",
     "price": 30,
@@ -709,10 +733,11 @@
     "usage": [
       "Chicken curry",
       "Vegetable gravies"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_34",
+    "id": "prod_26",
     "name": "Rasam Powder",
     "description": "Traditional South Indian rasam spice mix made from pepper, cumin, and lentils for a tangy and spicy soup base.",
     "price": 35,
@@ -736,15 +761,16 @@
     "usage": [
       "Rasam soup",
       "Medicinal home remedies"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_35",
+    "id": "prod_27",
     "name": "Garam Masala",
     "description": "Classic Indian spice blend made from roasted aromatic spices, adding warmth and depth to dishes.",
     "price": 50,
     "unit": "50gm",
-    "stock": 60,
+    "stock": 58,
     "rating": 4.9,
     "numReviews": 48,
     "categoryId": "masala-items",
@@ -763,10 +789,11 @@
     "usage": [
       "Curries and gravies",
       "Biryani seasoning"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_36",
+    "id": "prod_28",
     "name": "Biryani Masala Powder",
     "description": "Special blend of premium spices crafted to enhance the aroma and taste of authentic biryani dishes.",
     "price": 40,
@@ -790,10 +817,11 @@
     "usage": [
       "Chicken biryani",
       "Mutton biryani"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_37",
+    "id": "prod_29",
     "name": "Chicken Masala",
     "description": "Perfectly balanced spice mix designed specifically for delicious and flavorful chicken dishes.",
     "price": 45,
@@ -817,10 +845,11 @@
     "usage": [
       "Chicken curry",
       "Fried chicken seasoning"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_38",
+    "id": "prod_30",
     "name": "Mutton Masala",
     "description": "Strong and aromatic spice blend specially crafted for rich and flavorful mutton dishes.",
     "price": 45,
@@ -844,10 +873,11 @@
     "usage": [
       "Mutton curry",
       "Gravy preparations"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_39",
+    "id": "prod_31",
     "name": "Idly Podi",
     "description": "Traditional South Indian dry chutney powder made from roasted lentils and spices, perfect with idly and dosa.",
     "price": 35,
@@ -871,10 +901,11 @@
     "usage": [
       "Idly and dosa accompaniment",
       "Travel food mix"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_40",
+    "id": "prod_32",
     "name": "Paruppu Podi",
     "description": "Healthy lentil-based spice powder made from roasted dals and spices, rich in protein and flavor.",
     "price": 40,
@@ -898,10 +929,11 @@
     "usage": [
       "Mix with rice and ghee",
       "Side dish for meals"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_41",
+    "id": "prod_33",
     "name": "Kashmiri Chilli Powder",
     "description": "Premium Kashmiri chilli powder known for its vibrant red color, mild heat, and rich aroma. Perfect for enhancing the appearance and flavor of Indian dishes without excessive spiciness.",
     "price": 60,
@@ -927,15 +959,16 @@
     "usage": [
       "Curries and gravies",
       "Tandoori dishes and marinades"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_42",
+    "id": "prod_34",
     "name": "Black Rice",
     "description": "Premium quality Black Rice, naturally rich in antioxidants, fiber, and essential nutrients. Known as 'Forbidden Rice', it has a unique nutty flavor and deep purple-black color, making it an excellent choice for healthy meals.",
     "price": 180,
     "unit": "1Kg",
-    "stock": 70,
+    "stock": 69,
     "rating": 4.9,
     "numReviews": 28,
     "categoryId": "rice-varieties",
@@ -959,10 +992,11 @@
       "Rice bowls",
       "Salads",
       "Desserts and puddings"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_43",
+    "id": "prod_35",
     "name": "Red Cholam",
     "description": "Premium quality Red Cholam (Red Sorghum), a wholesome millet rich in fiber, protein, and essential minerals. Ideal for preparing healthy traditional recipes and everyday meals.",
     "price": 170,
@@ -991,10 +1025,11 @@
       "Porridge",
       "Dosa and roti",
       "Traditional millet recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_44",
+    "id": "prod_36",
     "name": "White Cholam",
     "description": "Premium quality White Cholam (White Sorghum), a nutritious millet rich in fiber, protein, and essential minerals. Perfect for preparing healthy traditional dishes and everyday meals.",
     "price": 120,
@@ -1023,10 +1058,11 @@
       "Roti and dosa",
       "Porridge",
       "Traditional millet recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_45",
+    "id": "prod_37",
     "name": "Kambu",
     "description": "Premium quality Kambu (Pearl Millet), a highly nutritious grain rich in fiber, protein, and essential minerals. Ideal for preparing healthy traditional foods.",
     "price": 80,
@@ -1055,10 +1091,11 @@
       "Roti",
       "Dosa",
       "Porridge"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_46",
+    "id": "prod_38",
     "name": "Thinai",
     "description": "Premium quality Thinai (Foxtail Millet), packed with nutrients and ideal for healthy everyday meals.",
     "price": 120,
@@ -1087,10 +1124,11 @@
       "Pongal",
       "Upma",
       "Porridge"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_47",
+    "id": "prod_39",
     "name": "Kuthiraivali",
     "description": "Premium quality Kuthiraivali (Barnyard Millet), a healthy millet known for its light texture and nutritional value.",
     "price": 90,
@@ -1119,10 +1157,11 @@
       "Pongal",
       "Khichdi",
       "Rice substitute"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_48",
+    "id": "prod_40",
     "name": "Saamai",
     "description": "Premium quality Saamai (Little Millet), naturally rich in fiber and essential nutrients for a healthy lifestyle.",
     "price": 120,
@@ -1151,10 +1190,11 @@
       "Pongal",
       "Upma",
       "Pulao"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_49",
+    "id": "prod_41",
     "name": "Varagu",
     "description": "Premium quality Varagu (Kodo Millet), a wholesome grain suitable for nutritious everyday meals.",
     "price": 110,
@@ -1183,10 +1223,11 @@
       "Upma",
       "Porridge",
       "Traditional recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_50",
+    "id": "prod_42",
     "name": "Kelvaragu",
     "description": "Premium quality Kelvaragu (Finger Millet/Ragi), naturally rich in calcium, iron, and dietary fiber. A nutritious choice for all age groups.",
     "price": 50,
@@ -1215,15 +1256,16 @@
       "Porridge",
       "Dosa",
       "Roti"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_51",
+    "id": "prod_43",
     "name": "Arapu Powder",
     "description": "Premium quality Arapu Powder made from naturally dried Arapu leaves. Traditionally used as a natural hair cleanser, it helps maintain healthy hair and provides gentle cleansing without harsh chemicals.",
     "price": 30,
     "unit": "100gm Pack",
-    "stock": 80,
+    "stock": 79,
     "rating": 4.8,
     "numReviews": 25,
     "categoryId": "herbal-powders",
@@ -1247,10 +1289,11 @@
       "Herbal hair pack",
       "Traditional hair care routine",
       "Natural cleansing treatment"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_52",
+    "id": "prod_44",
     "name": "Kuliyal Podi",
     "description": "Premium quality Kuliyal Podi made from a traditional blend of natural herbs and ingredients. Used as a herbal bath powder for gentle cleansing, refreshing skin care, and maintaining natural glow.",
     "price": 60,
@@ -1279,10 +1322,11 @@
       "Daily body cleansing",
       "Skin care routine",
       "Traditional beauty care"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_53",
+    "id": "prod_45",
     "name": "Seekakai Powder",
     "description": "Premium quality Shikakai Powder made from naturally dried Shikakai pods. Traditionally used as a natural hair cleanser, it gently cleans the scalp while helping maintain healthy, soft, and shiny hair.",
     "price": 70,
@@ -1311,10 +1355,11 @@
       "Herbal hair pack",
       "Traditional hair care",
       "Natural shampoo alternative"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_54",
+    "id": "prod_46",
     "name": "Multani Mitti Powder",
     "description": "Premium quality Multani Mitti Powder (Fuller's Earth) known for its natural cleansing and skin-refreshing properties. Traditionally used in face packs and skincare routines to help maintain smooth and healthy-looking skin.",
     "price": 80,
@@ -1343,10 +1388,11 @@
       "Skin care routine",
       "Natural beauty treatments",
       "Body pack"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_55",
+    "id": "prod_47",
     "name": "Kasthuri Manjal Powder",
     "description": "Premium quality Kasthuri Manjal Powder (Wild Turmeric) made from naturally processed turmeric roots. Traditionally used in skincare routines for its natural cleansing and skin-enhancing properties.",
     "price": 80,
@@ -1375,15 +1421,16 @@
       "Herbal skincare",
       "Beauty treatments",
       "Traditional bathing routine"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_56",
+    "id": "prod_48",
     "name": "Black Ulunthu Health Mix",
     "description": "Premium quality Black Ulunthu Health Mix prepared with nutritious black urad dal and natural ingredients. A traditional health drink mix rich in protein, calcium, and essential nutrients for overall wellness.",
     "price": 110,
     "unit": "250gm Pack",
-    "stock": 80,
+    "stock": 79,
     "rating": 4.9,
     "numReviews": 30,
     "categoryId": "health-mix-products",
@@ -1407,15 +1454,16 @@
       "Porridge preparation",
       "Breakfast mix",
       "Traditional recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_57",
+    "id": "prod_49",
     "name": "Sprouted Health Mix",
     "description": "Premium quality Sprouted Health Mix made from carefully selected sprouted grains, millets, and pulses. A nutrient-rich blend designed to provide natural energy and balanced nutrition for all age groups.",
     "price": 130,
     "unit": "250gm ",
-    "stock": 80,
+    "stock": 79,
     "rating": 4.9,
     "numReviews": 35,
     "categoryId": "health-mix-products",
@@ -1439,10 +1487,11 @@
       "Porridge",
       "Milk mix",
       "Breakfast preparation"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_58",
+    "id": "prod_50",
     "name": "Poongar Rice",
     "description": "Premium quality Poongar Rice, a traditional Tamil Nadu rice variety known for its rich nutrition, natural aroma, and health benefits. Suitable for everyday cooking.",
     "price": 180,
@@ -1451,7 +1500,9 @@
     "rating": 4.8,
     "numReviews": 28,
     "categoryId": "rice-varieties",
-    "images": ["/poongar rice.jpg"],
+    "images": [
+      "/poongar rice.jpg"
+    ],
     "specs": {
       "Type": "Traditional Rice",
       "Color": "Brownish Red",
@@ -1469,10 +1520,11 @@
       "Rice porridge",
       "Traditional recipes",
       "Daily cooking"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_59",
+    "id": "prod_51",
     "name": "Mapillai Samba Rice",
     "description": "Premium quality Mapillai Samba Rice, a heritage red rice variety packed with iron, fiber, and natural nutrients.",
     "price": 200,
@@ -1481,7 +1533,9 @@
     "rating": 4.9,
     "numReviews": 36,
     "categoryId": "rice-varieties",
-    "images": ["/mapalai samba rice.jpg"],
+    "images": [
+      "/mapalai samba rice.jpg"
+    ],
     "specs": {
       "Type": "Traditional Rice",
       "Color": "Red",
@@ -1499,19 +1553,22 @@
       "Rice meals",
       "Porridge",
       "Traditional dishes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_60",
+    "id": "prod_52",
     "name": "Karuppu Kavuni Rice",
     "description": "Premium quality Karuppu Kavuni Rice, an antioxidant-rich black rice traditionally valued for its exceptional nutritional benefits.",
     "price": 320,
     "unit": "1kg Pack",
     "stock": 70,
-    "rating": 5.0,
+    "rating": 5,
     "numReviews": 42,
     "categoryId": "rice-varieties",
-    "images": ["/karupu kavuni.jpg"],
+    "images": [
+      "/karupu kavuni.jpg"
+    ],
     "specs": {
       "Type": "Black Rice",
       "Color": "Black",
@@ -1529,10 +1586,11 @@
       "Desserts",
       "Porridge",
       "Healthy meals"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_61",
+    "id": "prod_53",
     "name": "Kattuyanam Rice",
     "description": "Premium quality Kattuyanam Rice, a traditional rice variety known for its rich nutritional value and authentic taste.",
     "price": 210,
@@ -1541,7 +1599,9 @@
     "rating": 4.8,
     "numReviews": 24,
     "categoryId": "rice-varieties",
-    "images": ["/kattuyanam rice.jpg"],
+    "images": [
+      "/kattuyanam rice.jpg"
+    ],
     "specs": {
       "Type": "Traditional Rice",
       "Color": "Red",
@@ -1559,10 +1619,11 @@
       "Rice dishes",
       "Porridge",
       "Traditional recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_62",
+    "id": "prod_54",
     "name": "Karunguruvai Rice",
     "description": "Premium quality Karunguruvai Rice, a medicinal traditional rice variety appreciated for its unique nutritional profile.",
     "price": 250,
@@ -1571,7 +1632,9 @@
     "rating": 4.9,
     "numReviews": 29,
     "categoryId": "rice-varieties",
-    "images": ["/karunguruvai rice.jpg"],
+    "images": [
+      "/karunguruvai rice.jpg"
+    ],
     "specs": {
       "Type": "Traditional Rice",
       "Color": "Dark Brown",
@@ -1589,10 +1652,11 @@
       "Porridge",
       "Healthy meals",
       "Traditional cooking"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_63",
+    "id": "prod_55",
     "name": "Thooyamalli Rice",
     "description": "Premium quality Thooyamalli Rice with natural aroma, soft texture, and excellent taste for daily cooking.",
     "price": 180,
@@ -1601,7 +1665,9 @@
     "rating": 4.8,
     "numReviews": 31,
     "categoryId": "rice-varieties",
-    "images": ["/thooyamalli.jpg"],
+    "images": [
+      "/thooyamalli.jpg"
+    ],
     "specs": {
       "Type": "Traditional Rice",
       "Color": "White",
@@ -1619,10 +1685,11 @@
       "Lunch meals",
       "Biryani",
       "Traditional recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_64",
+    "id": "prod_56",
     "name": "Sivan Samba Rice",
     "description": "Premium quality Sivan Samba Rice, a heritage rice variety valued for its nutrition and distinctive flavor.",
     "price": 190,
@@ -1631,7 +1698,9 @@
     "rating": 4.8,
     "numReviews": 20,
     "categoryId": "rice-varieties",
-    "images": ["/sivan samba rice.jpg"],
+    "images": [
+      "/sivan samba rice.jpg"
+    ],
     "specs": {
       "Type": "Traditional Rice",
       "Color": "Brown",
@@ -1649,10 +1718,11 @@
       "Traditional meals",
       "Rice porridge",
       "Healthy recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_65",
+    "id": "prod_57",
     "name": "Kichili Samba Rice",
     "description": "Premium quality Kichili Samba Rice known for its aroma, soft texture, and suitability for biryani and daily meals.",
     "price": 190,
@@ -1661,7 +1731,9 @@
     "rating": 4.9,
     "numReviews": 33,
     "categoryId": "rice-varieties",
-    "images": ["/kichili samba.jpg"],
+    "images": [
+      "/kichili samba.jpg"
+    ],
     "specs": {
       "Type": "Traditional Rice",
       "Color": "White",
@@ -1679,10 +1751,11 @@
       "Steamed rice",
       "Pulao",
       "Daily meals"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_66",
+    "id": "prod_58",
     "name": "Red Rice",
     "description": "Premium quality Red Rice rich in fiber, antioxidants, and essential nutrients for a healthy lifestyle.",
     "price": 170,
@@ -1691,7 +1764,9 @@
     "rating": 4.8,
     "numReviews": 40,
     "categoryId": "rice-varieties",
-    "images": ["/red rice.jpg"],
+    "images": [
+      "/red rice.jpg"
+    ],
     "specs": {
       "Type": "Whole Grain Rice",
       "Color": "Red",
@@ -1709,10 +1784,11 @@
       "Rice bowls",
       "Healthy recipes",
       "Porridge"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_67",
+    "id": "prod_59",
     "name": "Kaikuthal Rice",
     "description": "Premium quality hand-pounded Kaikuthal Rice retaining natural bran, nutrients, and authentic taste.",
     "price": 220,
@@ -1721,7 +1797,9 @@
     "rating": 4.9,
     "numReviews": 22,
     "categoryId": "rice-varieties",
-    "images": ["/kaikuthal rice.jpg"],
+    "images": [
+      "/kaikuthal rice.jpg"
+    ],
     "specs": {
       "Type": "Hand-Pounded Rice",
       "Color": "Brown",
@@ -1739,10 +1817,11 @@
       "Traditional meals",
       "Healthy diet",
       "Daily cooking"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_68",
+    "id": "prod_60",
     "name": "Matta Rice",
     "description": "Premium quality Matta Rice, a Kerala traditional rice known for its distinctive flavor and nutritional value.",
     "price": 160,
@@ -1751,7 +1830,9 @@
     "rating": 4.8,
     "numReviews": 27,
     "categoryId": "rice-varieties",
-    "images": ["/matta rice.jpg"],
+    "images": [
+      "/matta rice.jpg"
+    ],
     "specs": {
       "Type": "Traditional Rice",
       "Color": "Pink",
@@ -1769,19 +1850,22 @@
       "Kerala meals",
       "Lunch",
       "Daily cooking"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_69",
+    "id": "prod_61",
     "name": "Moongil Rice",
     "description": "Premium quality Moongil Rice (Bamboo Rice), a rare forest grain valued for its unique taste and nutritional richness.",
     "price": 450,
     "unit": "1kg Pack",
     "stock": 40,
-    "rating": 5.0,
+    "rating": 5,
     "numReviews": 18,
     "categoryId": "rice-varieties",
-    "images": ["/moongil rice.jpg"],
+    "images": [
+      "/moongil rice.jpg"
+    ],
     "specs": {
       "Type": "Bamboo Rice",
       "Color": "Brown",
@@ -1799,10 +1883,11 @@
       "Porridge",
       "Healthy recipes",
       "Traditional meals"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_70",
+    "id": "prod_62",
     "name": "Barley Rice",
     "description": "Premium quality Barley Rice, a wholesome grain rich in fiber and essential nutrients for a balanced diet.",
     "price": 140,
@@ -1811,7 +1896,9 @@
     "rating": 4.8,
     "numReviews": 25,
     "categoryId": "rice-varieties",
-    "images": ["/barley rice.jpg"],
+    "images": [
+      "/barley rice.jpg"
+    ],
     "specs": {
       "Type": "Barley Grain",
       "Color": "Light Brown",
@@ -1829,10 +1916,11 @@
       "Soup",
       "Porridge",
       "Healthy meals"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_71",
+    "id": "prod_63",
     "name": "Kadala Paruppu (Chana Dal)",
     "description": "Premium quality Chana Dal rich in protein and dietary fiber, suitable for a variety of Indian dishes.",
     "price": 110,
@@ -1841,7 +1929,9 @@
     "rating": 4.8,
     "numReviews": 22,
     "categoryId": "millet-rice",
-    "images": ["/channa dal.jpg"],
+    "images": [
+      "/channa dal.jpg"
+    ],
     "specs": {
       "Type": "Pulse",
       "Color": "Yellow",
@@ -1854,10 +1944,16 @@
       "Supports digestion",
       "Healthy everyday food"
     ],
-    "usage": ["Dal", "Snacks", "Curries", "Sundal"]
+    "usage": [
+      "Dal",
+      "Snacks",
+      "Curries",
+      "Sundal"
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_72",
+    "id": "prod_64",
     "name": "Cashew Nuts",
     "description": "Premium quality whole cashew nuts with rich taste and nutrition.",
     "price": 450,
@@ -1866,7 +1962,9 @@
     "rating": 4.9,
     "numReviews": 35,
     "categoryId": "millet-rice",
-    "images": ["/cashew.jpg"],
+    "images": [
+      "/cashew.jpg"
+    ],
     "specs": {
       "Type": "Dry Fruit",
       "Color": "Cream",
@@ -1879,10 +1977,16 @@
       "Supports heart health",
       "Energy boosting"
     ],
-    "usage": ["Snacks", "Sweets", "Cooking", "Desserts"]
+    "usage": [
+      "Snacks",
+      "Sweets",
+      "Cooking",
+      "Desserts"
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_73",
+    "id": "prod_65",
     "name": "Dry Grapes (Raisins)",
     "description": "Naturally dried premium raisins with sweet taste and nutritional value.",
     "price": 320,
@@ -1891,7 +1995,9 @@
     "rating": 4.8,
     "numReviews": 30,
     "categoryId": "millet-rice",
-    "images": ["/dry grapes.jpg"],
+    "images": [
+      "/dry grapes.jpg"
+    ],
     "specs": {
       "Type": "Dry Fruit",
       "Color": "Brown",
@@ -1904,10 +2010,16 @@
       "Supports digestion",
       "Healthy snack"
     ],
-    "usage": ["Desserts", "Snacks", "Sweets", "Baking"]
+    "usage": [
+      "Desserts",
+      "Snacks",
+      "Sweets",
+      "Baking"
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_74",
+    "id": "prod_66",
     "name": "Cardamom",
     "description": "Premium aromatic green cardamom for cooking and beverages.",
     "price": 250,
@@ -1916,7 +2028,9 @@
     "rating": 4.9,
     "numReviews": 20,
     "categoryId": "millet-rice",
-    "images": ["/cardamom.jpg"],
+    "images": [
+      "/cardamom.jpg"
+    ],
     "specs": {
       "Type": "Whole Spice",
       "Color": "Green",
@@ -1929,10 +2043,16 @@
       "Natural freshness",
       "Antioxidant properties"
     ],
-    "usage": ["Tea", "Sweets", "Curries", "Biryani"]
+    "usage": [
+      "Tea",
+      "Sweets",
+      "Curries",
+      "Biryani"
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_75",
+    "id": "prod_67",
     "name": "Green Gram",
     "description": "Premium quality whole green gram rich in protein and nutrients.",
     "price": 160,
@@ -1941,7 +2061,9 @@
     "rating": 4.8,
     "numReviews": 24,
     "categoryId": "millet-rice",
-    "images": ["/green gram.jpg"],
+    "images": [
+      "/green gram.jpg"
+    ],
     "specs": {
       "Type": "Pulse",
       "Color": "Green",
@@ -1954,10 +2076,16 @@
       "Easy to digest",
       "Supports immunity"
     ],
-    "usage": ["Sprouts", "Dal", "Sundal", "Curries"]
+    "usage": [
+      "Sprouts",
+      "Dal",
+      "Sundal",
+      "Curries"
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_76",
+    "id": "prod_68",
     "name": "Pottu Kadalai (Roasted Gram)",
     "description": "Premium roasted gram ideal for snacks and traditional recipes.",
     "price": 130,
@@ -1966,7 +2094,9 @@
     "rating": 4.7,
     "numReviews": 18,
     "categoryId": "millet-rice",
-    "images": ["/pottukadalai.jpg"],
+    "images": [
+      "/pottukadalai.jpg"
+    ],
     "specs": {
       "Type": "Roasted Pulse",
       "Color": "Yellow",
@@ -1979,10 +2109,16 @@
       "High fiber",
       "Low fat"
     ],
-    "usage": ["Snacks", "Chutney", "Laddu", "Health Mix"]
+    "usage": [
+      "Snacks",
+      "Chutney",
+      "Laddu",
+      "Health Mix"
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_77",
+    "id": "prod_69",
     "name": "Javvarisi (Sago)",
     "description": "Premium quality sago pearls suitable for porridge and desserts.",
     "price": 90,
@@ -1991,7 +2127,9 @@
     "rating": 4.6,
     "numReviews": 16,
     "categoryId": "millet-rice",
-    "images": ["/sago.jpg"],
+    "images": [
+      "/sago.jpg"
+    ],
     "specs": {
       "Type": "Sago",
       "Color": "White",
@@ -2004,10 +2142,16 @@
       "Gluten free",
       "Ideal for fasting"
     ],
-    "usage": ["Payasam", "Porridge", "Khichdi", "Desserts"]
+    "usage": [
+      "Payasam",
+      "Porridge",
+      "Khichdi",
+      "Desserts"
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_78",
+    "id": "prod_70",
     "name": "Brown Sugar",
     "description": "Natural brown sugar with rich flavor for healthier sweetening.",
     "price": 75,
@@ -2016,7 +2160,9 @@
     "rating": 4.7,
     "numReviews": 19,
     "categoryId": "millet-rice",
-    "images": ["/brown sugar.jpg"],
+    "images": [
+      "/brown sugar.jpg"
+    ],
     "specs": {
       "Type": "Natural Sugar",
       "Color": "Brown",
@@ -2029,10 +2175,16 @@
       "Contains minerals",
       "Ideal for desserts"
     ],
-    "usage": ["Tea", "Coffee", "Baking", "Desserts"]
+    "usage": [
+      "Tea",
+      "Coffee",
+      "Baking",
+      "Desserts"
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_79",
+    "id": "prod_71",
     "name": "Mustard Seeds",
     "description": "Premium quality mustard seeds for authentic Indian seasoning.",
     "price": 120,
@@ -2041,7 +2193,9 @@
     "rating": 4.8,
     "numReviews": 17,
     "categoryId": "millet-rice",
-    "images": ["/mustard seed.jpg"],
+    "images": [
+      "/mustard seed.jpg"
+    ],
     "specs": {
       "Type": "Whole Spice",
       "Color": "Black",
@@ -2054,10 +2208,16 @@
       "Supports digestion",
       "Natural spice"
     ],
-    "usage": ["Tempering", "Pickles", "Curries", "Seasoning"]
+    "usage": [
+      "Tempering",
+      "Pickles",
+      "Curries",
+      "Seasoning"
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_80",
+    "id": "prod_72",
     "name": "Cumin Seeds",
     "description": "Premium cumin seeds with strong aroma and authentic taste.",
     "price": 320,
@@ -2066,7 +2226,9 @@
     "rating": 4.9,
     "numReviews": 28,
     "categoryId": "millet-rice",
-    "images": ["/cumin seeds.jpg"],
+    "images": [
+      "/cumin seeds.jpg"
+    ],
     "specs": {
       "Type": "Whole Spice",
       "Color": "Brown",
@@ -2079,19 +2241,27 @@
       "Natural antioxidant",
       "Enhances taste"
     ],
-    "usage": ["Curries", "Rice", "Masala", "Seasoning"]
+    "usage": [
+      "Curries",
+      "Rice",
+      "Masala",
+      "Seasoning"
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_81",
+    "id": "prod_73",
     "name": "Sombu (Fennel Seeds)",
     "description": "Premium quality fennel seeds with a refreshing aroma, widely used in Indian cooking and traditional remedies.",
     "price": 220,
     "unit": "1kg Pack",
-    "stock": 90,
+    "stock": 89,
     "rating": 4.8,
     "numReviews": 20,
     "categoryId": "millet-rice",
-    "images": ["/fennel.jpg"],
+    "images": [
+      "/fennel.jpg"
+    ],
     "specs": {
       "Type": "Whole Spice",
       "Color": "Green",
@@ -2109,10 +2279,11 @@
       "Masala",
       "Tea",
       "Mouth Freshener"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_82",
+    "id": "prod_74",
     "name": "Sabja Seeds",
     "description": "Premium quality basil seeds known for their cooling properties and nutritional benefits.",
     "price": 280,
@@ -2121,7 +2292,9 @@
     "rating": 4.8,
     "numReviews": 18,
     "categoryId": "millet-rice",
-    "images": ["/Sabja seed.jpeg"],
+    "images": [
+      "/Sabja seed.jpeg"
+    ],
     "specs": {
       "Type": "Basil Seeds",
       "Color": "Black",
@@ -2139,10 +2312,11 @@
       "Milkshakes",
       "Falooda",
       "Healthy Drinks"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_83",
+    "id": "prod_75",
     "name": "Rock Salt",
     "description": "Natural rock salt with essential minerals, suitable for cooking and seasoning.",
     "price": 70,
@@ -2151,7 +2325,9 @@
     "rating": 4.7,
     "numReviews": 16,
     "categoryId": "millet-rice",
-    "images": ["/rock salt.jpg"],
+    "images": [
+      "/rock salt.jpg"
+    ],
     "specs": {
       "Type": "Salt",
       "Color": "Pink",
@@ -2169,10 +2345,11 @@
       "Seasoning",
       "Salads",
       "Health Drinks"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_84",
+    "id": "prod_76",
     "name": "Normal Salt",
     "description": "Premium quality refined iodized salt for everyday cooking.",
     "price": 28,
@@ -2181,7 +2358,9 @@
     "rating": 4.6,
     "numReviews": 14,
     "categoryId": "millet-rice",
-    "images": ["/salt.jpg"],
+    "images": [
+      "/salt.jpg"
+    ],
     "specs": {
       "Type": "Refined Salt",
       "Color": "White",
@@ -2199,10 +2378,11 @@
       "Seasoning",
       "Baking",
       "Food Preparation"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_85",
+    "id": "prod_77",
     "name": "Meal Maker",
     "description": "Premium quality soya chunks rich in protein for healthy meals.",
     "price": 180,
@@ -2211,7 +2391,9 @@
     "rating": 4.8,
     "numReviews": 22,
     "categoryId": "millet-rice",
-    "images": ["/meal maker.jpg"],
+    "images": [
+      "/meal maker.jpg"
+    ],
     "specs": {
       "Type": "Soya Chunks",
       "Color": "Cream",
@@ -2229,10 +2411,11 @@
       "Biryani",
       "Gravy",
       "Snacks"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_86",
+    "id": "prod_78",
     "name": "Groundnut",
     "description": "Premium quality groundnuts rich in protein, healthy fats, and nutrients.",
     "price": 140,
@@ -2241,7 +2424,9 @@
     "rating": 4.8,
     "numReviews": 24,
     "categoryId": "millet-rice",
-    "images": ["/groundnut.jpg"],
+    "images": [
+      "/groundnut.jpg"
+    ],
     "specs": {
       "Type": "Nut",
       "Color": "Brown",
@@ -2259,10 +2444,11 @@
       "Chutney",
       "Sweets",
       "Cooking"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_87",
+    "id": "prod_79",
     "name": "Mochai Kottai",
     "description": "Premium quality field beans ideal for traditional South Indian recipes.",
     "price": 180,
@@ -2271,7 +2457,9 @@
     "rating": 4.7,
     "numReviews": 15,
     "categoryId": "millet-rice",
-    "images": ["/mocha kottai.jpg"],
+    "images": [
+      "/mocha kottai.jpg"
+    ],
     "specs": {
       "Type": "Field Beans",
       "Color": "Brown",
@@ -2289,10 +2477,11 @@
       "Gravy",
       "Sundal",
       "Rice Dishes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_88",
+    "id": "prod_80",
     "name": "Green Peas",
     "description": "Premium quality dried green peas packed with nutrition and flavor.",
     "price": 120,
@@ -2301,7 +2490,9 @@
     "rating": 4.7,
     "numReviews": 18,
     "categoryId": "millet-rice",
-    "images": ["/green peas.jpg"],
+    "images": [
+      "/green peas.jpg"
+    ],
     "specs": {
       "Type": "Dried Peas",
       "Color": "Green",
@@ -2319,10 +2510,11 @@
       "Snacks",
       "Soups",
       "Rice"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_89",
+    "id": "prod_81",
     "name": "Farm Fresh Eggs",
     "description": "Fresh and hygienically packed farm eggs rich in protein and essential nutrients.",
     "price": 90,
@@ -2331,7 +2523,9 @@
     "rating": 4.9,
     "numReviews": 30,
     "categoryId": "millet-rice",
-    "images": ["/egg.jpg"],
+    "images": [
+      "/egg.jpg"
+    ],
     "specs": {
       "Type": "Chicken Eggs",
       "Color": "Brown",
@@ -2349,10 +2543,11 @@
       "Omelette",
       "Baking",
       "Curries"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_90",
+    "id": "prod_82",
     "name": "Kidney Beans (Rajma)",
     "description": "Premium quality kidney beans rich in protein, fiber, and essential nutrients.",
     "price": 180,
@@ -2361,7 +2556,9 @@
     "rating": 4.8,
     "numReviews": 21,
     "categoryId": "millet-rice",
-    "images": ["/kidney beans.jpg"],
+    "images": [
+      "/kidney beans.jpg"
+    ],
     "specs": {
       "Type": "Kidney Beans",
       "Color": "Red",
@@ -2379,10 +2576,11 @@
       "Salads",
       "Rice",
       "Soups"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_91",
+    "id": "prod_83",
     "name": "Pasi Paruppu (Moong Dal)",
     "description": "Premium quality split moong dal, easy to digest and rich in protein.",
     "price": 170,
@@ -2391,7 +2589,9 @@
     "rating": 4.8,
     "numReviews": 22,
     "categoryId": "millet-rice",
-    "images": ["/pasi parupu.jpg"],
+    "images": [
+      "/pasi parupu.jpg"
+    ],
     "specs": {
       "Type": "Split Moong Dal",
       "Color": "Yellow",
@@ -2409,10 +2609,11 @@
       "Khichdi",
       "Payasam",
       "Soups"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_92",
+    "id": "prod_84",
     "name": "Orange Paruppu (Masoor Dal)",
     "description": "Premium quality masoor dal packed with protein and essential nutrients.",
     "price": 150,
@@ -2421,7 +2622,9 @@
     "rating": 4.7,
     "numReviews": 19,
     "categoryId": "millet-rice",
-    "images": ["/orange da.jpg"],
+    "images": [
+      "/orange da.jpg"
+    ],
     "specs": {
       "Type": "Masoor Dal",
       "Color": "Orange",
@@ -2439,10 +2642,11 @@
       "Soup",
       "Curries",
       "Khichdi"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   },
   {
-    "id": "prod_93",
+    "id": "prod_85",
     "name": "Ragi Aval",
     "description": "Premium quality flattened finger millet, a healthy and nutritious breakfast option.",
     "price": 120,
@@ -2451,7 +2655,9 @@
     "rating": 4.8,
     "numReviews": 17,
     "categoryId": "millet-rice",
-    "images": ["/ragi aval.jpg"],
+    "images": [
+      "/ragi aval.jpg"
+    ],
     "specs": {
       "Type": "Flattened Ragi",
       "Color": "Brown",
@@ -2469,6 +2675,7 @@
       "Upma",
       "Snacks",
       "Health Recipes"
-    ]
+    ],
+    "manufactureDate": "2026-07-01"
   }
 ]

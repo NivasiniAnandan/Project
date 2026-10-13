@@ -48,9 +48,9 @@ export default function Contact() {
 
   return (
     <div className="container" style={{ paddingBottom: '4rem' }}>
-      <h1 style={{ fontSize: '1.75rem', fontWeight: 800, margin: '2rem 0 0.5rem 0' }}>Wholesale Contact & Inquiries</h1>
+      <h1 style={{ fontSize: '1.75rem', fontWeight: 800, margin: '2rem 0 0.5rem 0' }}>Contact & Inquiries</h1>
       <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '2rem' }}>
-        Are you a retailer looking to stock Bommal Foods products or a distributor inquiring about regional permissions? Please submit details below. Our wholesale manager will contact you within 24 hours.
+        Are you a retailer looking to stock Bommal Foods products or a distributor inquiring about regional permissions? Please submit details below. Our manager will contact you within 24 hours.
       </p>
 
       <div className="cart-layout" style={{ gridTemplateColumns: '1.2fr 1fr' }}>
@@ -115,7 +115,7 @@ export default function Contact() {
                   <option value="Distributor Application">Regional Dealership / Distributor Application</option>
                   <option value="Product Quality Inquiry">Product Quality & Specifications (FSSAI/Organic)</option>
                   <option value="Logistics/Delivery Inquiry">Direct Shipping & Logistics Inquiries</option>
-                  <option value="Other Wholesale Inquiries">Other Wholesale Query</option>
+                  <option value="Other Inquiries">Other Query</option>
                 </select>
               </div>
 
@@ -124,7 +124,7 @@ export default function Contact() {
                 <textarea
                   required
                   rows={5}
-                  placeholder="Please describe your wholesale requirements, shop location, estimated monthly volume, or any specific questions..."
+                  placeholder="Please describe your inquiry, shop location, estimated monthly volume, or any specific questions..."
                   className="form-control"
                   style={{ resize: 'none' }}
                   value={message}
@@ -156,16 +156,15 @@ export default function Contact() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           {/* Info Card */}
           <div style={{ background: 'white', border: '1px solid var(--border-color)', padding: '2rem', borderRadius: '12px', boxShadow: 'var(--shadow-sm)' }}>
-            <h3 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: '1.25rem', color: 'var(--primary-color)' }}>Wholesale Office</h3>
+            <h3 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: '1.25rem', color: 'var(--primary-color)' }}>Contact Office</h3>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', fontSize: '0.9rem' }}>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
                 <MapPin size={20} style={{ color: 'var(--primary-color)', marginTop: '3px', flexShrink: 0 }} />
                 <div>
-                  <strong>Bommal Foods Plaza</strong>
+                  <strong>Bommal Foods</strong>
                   <span style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>
-                    No. 12, Wholesale Merchant Street, Koyambedu, Chennai - 600107, Tamil Nadu, India
-                  </span>
+                  Kowsalya Traders, Vaikalmedu Perundurai to Erode main road, Erode 638052                  </span>
                 </div>
               </div>
 
@@ -174,8 +173,8 @@ export default function Contact() {
                 <div>
                   <strong>Direct Inquiry Hotlines</strong>
                   <span style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>
-                    Distributor Support: +91 94441 23456<br />
-                    Office Line: +91 44 2838 4949
+                    Distributor Support: +91 9171994151<br />
+                    Office Line: +91 9677112113
                   </span>
                 </div>
               </div>
@@ -183,10 +182,9 @@ export default function Contact() {
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
                 <Mail size={20} style={{ color: 'var(--primary-color)', marginTop: '3px', flexShrink: 0 }} />
                 <div>
-                  <strong>Email Channels</strong>
+                  <strong>Email</strong>
                   <span style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>
-                    Bulk Quotes: sales@bommalfoods.com<br />
-                    General Support: support@bommalfoods.com
+                    General: bommalfoods@gmail.com
                   </span>
                 </div>
               </div>
@@ -195,7 +193,7 @@ export default function Contact() {
 
           {/* Timings Card */}
           <div style={{ background: 'var(--primary-light)', border: '1px solid #d1fae5', padding: '1.5rem', borderRadius: '12px', color: 'var(--primary-color)', fontSize: '0.85rem' }}>
-            <h4 style={{ fontWeight: 800, fontSize: '0.95rem', marginBottom: '0.5rem' }}>Wholesale Dispatch Timings</h4>
+            <h4 style={{ fontWeight: 800, fontSize: '0.95rem', marginBottom: '0.5rem' }}>Dispatch Timings</h4>
             <p style={{ lineHeight: '1.5' }}>
               Our Koyambedu loading warehouse operates from <strong>Monday to Saturday (8:00 AM to 6:00 PM)</strong>. Direct truck dispatches are scheduled within 48 hours of payment clearance or invoice confirmation.
             </p>
